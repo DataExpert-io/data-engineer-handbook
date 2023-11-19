@@ -98,6 +98,6 @@ Design Patterns
 
 
 Courses / Academies
-- [DataEngineer.io Bootcamp/course](https://www.dataengineer.io)
+- [DataEngineer.io Bootcamp/course](https://www.dataengineer.io) use code **HANDBOOK10** for a discount!
 - [LearnDataEngineering.com](https://www.learndataengineering.com)
 - [Technical Freelancer Academy](https://www.technicalfreelanceracademy.com/) Use code **zwtech** for a discount!
