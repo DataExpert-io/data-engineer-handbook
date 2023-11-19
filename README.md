@@ -42,6 +42,11 @@ Data Engineering blogs of companies:
 - [Uber](https://www.uber.com/blog/houston/data/?uclick_id=b2f43229-f3f4-4bae-bd5d-10a05db2f70c)
 - [Databricks](https://www.databricks.com/blog/category/engineering/data-engineering)
 - [Airbnb](https://medium.com/airbnb-engineering/data/home)
+
+Data Engineering Whitepapers:
+- [A Five-Layered Business Intelligence Architecture](https://ibimapublishing.com/articles/CIBIMA/2011/695619/695619.pdf)
+- [Lakehouse:A New Generation of Open Platforms that Unify Data Warehousing and Advanced Analytics](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf)
+- [Big Data Quality: A Data Quality Profiling Model](https://link.springer.com/chapter/10.1007/978-3-030-23381-5_5)
   
 Great YouTube Channels:
 
@@ -64,8 +69,6 @@ Great Podcasts
 - [DataTopics](https://www.datatopics.io/)
 - [The Data Engineering Side Of Data](https://podcasts.apple.com/us/podcast/the-engineering-side-of-data/id1566999533)
 - [DataWare](https://www.ascend.io/dataaware-podcast/)
-
-
 
 
 Newsletters:
