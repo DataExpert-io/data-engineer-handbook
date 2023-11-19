@@ -21,7 +21,7 @@ Great books:
 - [Building Evolutionary Architectures, 2nd Edition](https://www.oreilly.com/library/view/building-evolutionary-architectures/9781492097532/)
 - [Data Management at Scale, 2nd Edition](https://www.oreilly.com/library/view/data-management-at/9781098138851/)
 - [Deciphering Data Architectures](https://www.oreilly.com/library/view/deciphering-data-architectures/9781098150754/)
-- 
+  
 
 
 Communities:
@@ -132,6 +132,7 @@ Design Patterns
 
 
 Courses / Academies
+
 - [DataEngineer.io Bootcamp/course](https://www.dataengineer.io) use code **HANDBOOK10** for a discount!
 - [LearnDataEngineering.com](https://www.learndataengineering.com)
 - [Technical Freelancer Academy](https://www.technicalfreelanceracademy.com/) Use code **zwtech** for a discount!
@@ -140,11 +141,13 @@ Courses / Academies
 
 
  Certification Courses
+ 
   - [Google Cloud Certified - Professional Data Engineer](https://cloud.google.com/certification/data-engineer)
   - [AWS Certified Big Data - Specialty](https://aws.amazon.com/certification/certified-data-engineer-associate/)
   - [Databricks](https://www.databricks.com/learn/certification/data-engineer-professional)
     
 Blogs
+
 - [Amazon AWS Blog](https://aws.amazon.com/blogs/big-data/)
 - [Microsoft Data Architecture Blogs](https://techcommunity.microsoft.com/t5/data-architecture-blog/bg-p/DataArchitectureBlog)
 
