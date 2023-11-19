@@ -88,3 +88,12 @@ TikTok
 
 - [Zach Wilson](https://www.tiktok.com/@eczachly)
 - [Alex The Analyst](https://www.tiktok.com/@alex_the_analyst)
+
+
+
+Design Patterns 
+
+- [Cumulative Table Design](https://www.github.com/EcZachly/cumulative-table-design)
+- [Microbatch Deduplication](https://www.github.com/EcZachly/microbatch-hourly-deduped-tutorial)
+- [The Little Book of Pipelines](https://www.github.com/EcZachly/little-book-of-pipelines)
+
