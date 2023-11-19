@@ -61,7 +61,7 @@ Newsletters:
 LinkedIn
 
 - [Zach Wilson](https://www.linkedin.com/in/eczachly)
-- [Ben Rogojan](https://www.linkedin.com/in/benrogojan)
+- [Ben Rogojan](https://www.linkedin.com/in/benjaminrogojan)
 - [Joe Reis](https://www.linkedin.com/in/josephreis)
 - [Sumit Mittal](https://www.linkedin.com/in/bigdatabysumit/)
 - [Shashank Mishra](https://www.linkedin.com/in/shashank219/)
@@ -90,11 +90,14 @@ TikTok
 - [Zach Wilson](https://www.tiktok.com/@eczachly)
 - [Alex The Analyst](https://www.tiktok.com/@alex_the_analyst)
 
-
-
 Design Patterns 
 
 - [Cumulative Table Design](https://www.github.com/EcZachly/cumulative-table-design)
 - [Microbatch Deduplication](https://www.github.com/EcZachly/microbatch-hourly-deduped-tutorial)
 - [The Little Book of Pipelines](https://www.github.com/EcZachly/little-book-of-pipelines)
 
+
+Courses / Academies
+- [DataEngineer.io Bootcamp/course](https://www.dataengineer.io)
+- [LearnDataEngineering.com](https://www.learndataengineering.com)
+- [Technical Freelancer Academy](https://www.technicalfreelanceracademy.com/) Use code **zwtech** for a discount!
