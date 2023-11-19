@@ -39,7 +39,8 @@ Great YouTube Channels:
 - [Darshil Parmar](https://www.youtube.com/@DarshilParmar)
 - [Andreas Kretz](https://www.youtube.com/c/andreaskayy)
 - [ByteByteGo](https://www.youtube.com/c/ByteByteGo)
-
+  [The Ravit Show]
+  (https://youtube.com/@theravitshow)
 Newsletters:
 
 - [DataEngineer.io Newsletter](https://blog.dataengineer.io)
