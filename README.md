@@ -18,6 +18,7 @@ Communities:
 - [Chip Huyen MLOps Discord](https://discord.gg/dzh728c5t3)
 - [Data Engineer Things Slack](https://dataengineerthings.slack.com/join/shared_invite/zt-27gp9ayz4-hRq5h1ElxVZf2rRqjEwKHQ#/shared-invite/email)
 - [DBT Community](https://www.getdbt.com/community/join-the-community/)
+- [r/dataengineering](https://www.reddit.com/r/dataengineering)
 
 Companies:
 - [Tabular](https://www.tabular.io)
@@ -39,8 +40,9 @@ Great YouTube Channels:
 - [Darshil Parmar](https://www.youtube.com/@DarshilParmar)
 - [Andreas Kretz](https://www.youtube.com/c/andreaskayy)
 - [ByteByteGo](https://www.youtube.com/c/ByteByteGo)
-  [The Ravit Show]
-  (https://youtube.com/@theravitshow)
+- [The Ravit Show](https://youtube.com/@theravitshow)
+- [Azure Lib](https://www.youtube.com/@azurelib-academy)
+
 Newsletters:
 
 - [DataEngineer.io Newsletter](https://blog.dataengineer.io)
@@ -67,6 +69,7 @@ LinkedIn
 - [Joseph Machado](https://www.linkedin.com/in/josephmachado1991/)
 - [Chip Huyen](https://www.linkedin.com/in/chiphuyen/)
 - [Alex Xu](https://www.linkedin.com/in/alexxubyte)
+- [Deepak Goyal](https://www.linkedin.com/in/deepak-goyal-93805a17/)
 
 Twitter / X 
 
@@ -86,3 +89,12 @@ TikTok
 
 - [Zach Wilson](https://www.tiktok.com/@eczachly)
 - [Alex The Analyst](https://www.tiktok.com/@alex_the_analyst)
+
+
+
+Design Patterns 
+
+- [Cumulative Table Design](https://www.github.com/EcZachly/cumulative-table-design)
+- [Microbatch Deduplication](https://www.github.com/EcZachly/microbatch-hourly-deduped-tutorial)
+- [The Little Book of Pipelines](https://www.github.com/EcZachly/little-book-of-pipelines)
+
