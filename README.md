@@ -15,6 +15,7 @@ Great books:
 - [The Hundred Page Machine Learning Book](https://www.amazon.com/Hundred-Page-Machine-Learning-Book/dp/199957950X)
 - [Kimball - The Data Warehouse Toolkit](https://github.com/ms2ag16/Books/blob/master/Kimball_The-Data-Warehouse-Toolkit-3rd-Edition.pdf)
 - [Data Mesh](https://www.oreilly.com/library/view/data-mesh/9781492092384/)
+- [Machine Learning System Design Interview](https://www.amazon.com/Machine-Learning-System-Design-Interview/dp/1736049127)
 
 
 Communities:
@@ -36,6 +37,12 @@ Companies:
 - [AlgoExpert](https://www.algoexpert.io)
 - [ByteByteGo](https://www.bytebytego.com)
 
+Data Engineering blogs of companies:
+- [Netfix](https://netflixtechblog.com/tagged/big-data)
+- [Uber](https://www.uber.com/blog/houston/data/?uclick_id=b2f43229-f3f4-4bae-bd5d-10a05db2f70c)
+- [Databricks](https://www.databricks.com/blog/category/engineering/data-engineering)
+- [Airbnb](https://medium.com/airbnb-engineering/data/home)
+  
 Great YouTube Channels:
 
 - [Data with Zach](https://www.youtube.com/c/datawithzach)
