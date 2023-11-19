@@ -14,6 +14,7 @@ Great books:
 - [Designing Machine Learning Systems](https://www.amazon.com/Designing-Machine-Learning-Systems-Production-Ready/dp/1098107969)
 - [The Hundred Page Machine Learning Book](https://www.amazon.com/Hundred-Page-Machine-Learning-Book/dp/199957950X)
 - [Kimball - The Data Warehouse Toolkit](https://github.com/ms2ag16/Books/blob/master/Kimball_The-Data-Warehouse-Toolkit-3rd-Edition.pdf)
+- [Data Mesh](https://www.oreilly.com/library/view/data-mesh/9781492092384/)
 
 
 Communities:
