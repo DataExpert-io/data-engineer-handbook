@@ -1,6 +1,7 @@
 # The Data Engineering Handbook
 This repo has all the resources you need to become an amazing data engineer!
 
+Make sure to check out the [projects](projects.md) section for more hands on examples!
 
 ## Resources
 
