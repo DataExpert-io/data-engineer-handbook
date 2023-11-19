@@ -9,7 +9,18 @@ Great books:
 - [The Fundamentals of Data Engineering](https://www.amazon.com/Fundamentals-Data-Engineering-Robust-Systems/dp/1098108302/)
 - [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321/)
 - [Designing Machine Learning Systems](https://www.amazon.com/Designing-Machine-Learning-Systems-Production-Ready/dp/1098107969)
+- [The Hundred Page Machine Learning Book](https://www.amazon.com/Hundred-Page-Machine-Learning-Book/dp/199957950X)
 
+Companies:
+- [Tabular](https://www.tabular.io)
+- [Starburst](https://www.starburst.io)
+- [Preset](https://www.preset.io)
+- [Astronomer](https://www.astronomer.io)
+- [Mage](https://www.mage.ai)
+- [Dagster](https://www.dagster.io)
+- [Prefect](https://www.prefect.io)
+- [AlgoExpert](https://www.algoexpert.io)
+- [ByteByteGo](https://www.bytebytego.com)
 
 Great YouTube Channels:
 
@@ -19,6 +30,7 @@ Great YouTube Channels:
 - [E-learning Bridge](https://www.youtube.com/@shashank_mishra)
 - [Darshil Parmar](https://www.youtube.com/@DarshilParmar)
 - [Andreas Kretz](https://www.youtube.com/c/andreaskayy)
+- [ByteByteGo](https://www.youtube.com/c/ByteByteGo)
 
 Newsletters:
 
@@ -35,7 +47,6 @@ Newsletters:
 - [Learn Analytics Engineering](https://learnanalyticsengineering.substack.com/)
 - [Marvelous MLOps](https://marvelousmlops.substack.com/)
 
-
 LinkedIn
 
 - [Zach Wilson](https://www.linkedin.com/in/eczachly)
@@ -46,7 +57,7 @@ LinkedIn
 - [Darshil Parmar](https://www.linkedin.com/in/darshil-parmar/)
 - [Joseph Machado](https://www.linkedin.com/in/josephmachado1991/)
 - [Chip Huyen](https://www.linkedin.com/in/chiphuyen/)
-
+- [Alex Xu](https://www.linkedin.com/in/alexxubyte)
 
 Twitter / X 
 
@@ -54,22 +65,15 @@ Twitter / X
 - [Seattle Data Guy](https://www.twitter.com/SeattleDataGuy)
 - [Sumit Mittal](https://www.twitter.com/bigdatasumit)
 - [Joseph Machado](https://twitter.com/startdataeng)
+- [Alex Xu](https://twitter.com/alexxubyte/)
   
-
 Instagram
 
 - [Zach Wilson](https://www.instagram.com/eczachly)
 - [Andreas Kretz](https://www.instagram.com/learndataengineering)
 - [Seattle Data Guy](https://www.instagram.com/seattledataguy)
 
-
 TikTok
 
 - [Zach Wilson](https://www.tiktok.com/@eczachly)
-- [Alex The Analyst](https://www.tiktok.com/@alex_theanalyst)
-
-
-
-
-
-
+- [Alex The Analyst](https://www.tiktok.com/@alex_the_analyst)
