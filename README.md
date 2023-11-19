@@ -18,6 +18,7 @@ Communities:
 - [Chip Huyen MLOps Discord](https://discord.gg/dzh728c5t3)
 - [Data Engineer Things Slack](https://dataengineerthings.slack.com/join/shared_invite/zt-27gp9ayz4-hRq5h1ElxVZf2rRqjEwKHQ#/shared-invite/email)
 - [DBT Community](https://www.getdbt.com/community/join-the-community/)
+- [r/dataengineering](https://www.reddit.com/r/dataengineering)
 
 Companies:
 - [Tabular](https://www.tabular.io)
@@ -39,6 +40,7 @@ Great YouTube Channels:
 - [Darshil Parmar](https://www.youtube.com/@DarshilParmar)
 - [Andreas Kretz](https://www.youtube.com/c/andreaskayy)
 - [ByteByteGo](https://www.youtube.com/c/ByteByteGo)
+- [Azure Lib](https://www.youtube.com/@azurelib-academy)
 
 Newsletters:
 
@@ -66,6 +68,7 @@ LinkedIn
 - [Joseph Machado](https://www.linkedin.com/in/josephmachado1991/)
 - [Chip Huyen](https://www.linkedin.com/in/chiphuyen/)
 - [Alex Xu](https://www.linkedin.com/in/alexxubyte)
+- [Deepak Goyal](https://www.linkedin.com/in/deepak-goyal-93805a17/)
 
 Twitter / X 
 
