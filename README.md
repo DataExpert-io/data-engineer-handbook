@@ -16,6 +16,12 @@ Great books:
 - [Kimball - The Data Warehouse Toolkit](https://github.com/ms2ag16/Books/blob/master/Kimball_The-Data-Warehouse-Toolkit-3rd-Edition.pdf)
 - [Data Mesh](https://www.oreilly.com/library/view/data-mesh/9781492092384/)
 - [Machine Learning System Design Interview](https://www.amazon.com/Machine-Learning-System-Design-Interview/dp/1736049127)
+- [Streaming Systems](https://www.amazon.com/Streaming-Systems-Where-Large-Scale-Processing/dp/1491983876)
+- [High Performance Spark](https://www.amazon.com/High-Performance-Spark-Practices-Optimizing/dp/1491943203)
+- [Building Evolutionary Architectures, 2nd Edition](https://www.oreilly.com/library/view/building-evolutionary-architectures/9781492097532/)
+- [Data Management at Scale, 2nd Edition](https://www.oreilly.com/library/view/data-management-at/9781098138851/)
+- [Deciphering Data Architectures](https://www.oreilly.com/library/view/deciphering-data-architectures/9781098150754/)
+- 
 
 
 Communities:
@@ -36,6 +42,9 @@ Companies:
 - [Prefect](https://www.prefect.io)
 - [AlgoExpert](https://www.algoexpert.io)
 - [ByteByteGo](https://www.bytebytego.com)
+- [Databricks](https://www.databricks.com/company/about-us)
+- [Spark](https://spark.apache.org/)
+- [dbt](https://www.getdbt.com/)
 
 Data Engineering blogs of companies:
 - [Netfix](https://netflixtechblog.com/tagged/big-data)
@@ -119,9 +128,27 @@ Design Patterns
 - [Cumulative Table Design](https://www.github.com/EcZachly/cumulative-table-design)
 - [Microbatch Deduplication](https://www.github.com/EcZachly/microbatch-hourly-deduped-tutorial)
 - [The Little Book of Pipelines](https://www.github.com/EcZachly/little-book-of-pipelines)
+- [Data Governance: The Definitive Guide](https://www.oreilly.com/library/view/data-governance-the/9781492063483/)
 
 
 Courses / Academies
 - [DataEngineer.io Bootcamp/course](https://www.dataengineer.io) use code **HANDBOOK10** for a discount!
 - [LearnDataEngineering.com](https://www.learndataengineering.com)
 - [Technical Freelancer Academy](https://www.technicalfreelanceracademy.com/) Use code **zwtech** for a discount!
+- [Qwiklabs](https://www.qwiklabs.com/)
+- [DataCamp](https://www.datacamp.com/)
+
+
+ Certification Courses
+  - [Google Cloud Certified - Professional Data Engineer](https://cloud.google.com/certification/data-engineer)
+  - [AWS Certified Big Data - Specialty](https://aws.amazon.com/certification/certified-data-engineer-associate/)
+  - [Databricks](https://www.databricks.com/learn/certification/data-engineer-professional)
+    
+Blogs
+- [Amazon AWS Blog](https://aws.amazon.com/blogs/big-data/)
+- [Microsoft Data Architecture Blogs](https://techcommunity.microsoft.com/t5/data-architecture-blog/bg-p/DataArchitectureBlog)
+
+
+
+
+
