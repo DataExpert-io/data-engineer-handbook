@@ -102,6 +102,7 @@ LinkedIn
 - [Alex Xu](https://www.linkedin.com/in/alexxubyte)
 - [Deepak Goyal](https://www.linkedin.com/in/deepak-goyal-93805a17/)
 - [Eric Roby](https://www.linkedin.com/in/codingwithroby/)
+- [Shruti Mantri](https://www.linkedin.com/in/shruti-mantri-88527a67/)
 - [Hugo Lu](https://www.linkedin.com/in/hugo-lu-confirmed/)
 - [Daniel Ciocirlan](https://www.linkedin.com/in/danielciocirlan)
 
@@ -136,4 +137,5 @@ Courses / Academies
 - [DataEngineer.io Bootcamp/course](https://www.dataengineer.io) use code **HANDBOOK10** for a discount!
 - [LearnDataEngineering.com](https://www.learndataengineering.com)
 - [Technical Freelancer Academy](https://www.technicalfreelanceracademy.com/) Use code **zwtech** for a discount!
+- [Udemy Courses from Shruti Mantri](https://www.udemy.com/user/shruti-mantri-5/)
 - [Rock the JVM](https://rockthejvm.com/) teaches Spark (in Scala), Flink and others
