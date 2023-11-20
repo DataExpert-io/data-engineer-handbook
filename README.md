@@ -13,7 +13,7 @@ Great books:
 - [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321/)
 - [Designing Machine Learning Systems](https://www.amazon.com/Designing-Machine-Learning-Systems-Production-Ready/dp/1098107969)
 - [The Hundred Page Machine Learning Book](https://www.amazon.com/Hundred-Page-Machine-Learning-Book/dp/199957950X)
-- [Kimball - The Data Warehouse Toolkit](https://github.com/ms2ag16/Books/blob/master/Kimball_The-Data-Warehouse-Toolkit-3rd-Edition.pdf)
+- [Kimball - The Data Warehouse Toolkit](https://ia801609.us.archive.org/14/items/the-data-warehouse-toolkit-kimball/The%20Data%20Warehouse%20Toolkit%20-%20Kimball.pdf)
 - [Data Mesh](https://www.oreilly.com/library/view/data-mesh/9781492092384/)
 - [Machine Learning System Design Interview](https://www.amazon.com/Machine-Learning-System-Design-Interview/dp/1736049127)
 - [Streaming Systems](https://www.amazon.com/Streaming-Systems-Where-Large-Scale-Processing/dp/1491983876)
@@ -21,8 +21,8 @@ Great books:
 - [Building Evolutionary Architectures, 2nd Edition](https://www.oreilly.com/library/view/building-evolutionary-architectures/9781492097532/)
 - [Data Management at Scale, 2nd Edition](https://www.oreilly.com/library/view/data-management-at/9781098138851/)
 - [Deciphering Data Architectures](https://www.oreilly.com/library/view/deciphering-data-architectures/9781098150754/)
-  
-
+- [97 Things Every Data Engineer Should Know: Collective Wisdom from the Experts](https://www.amazon.com/Things-Every-Data-Engineer-Should/dp/1492062413)
+- [Data Governance: The Definitive Guide](https://www.oreilly.com/library/view/data-governance-the/9781492063483/)
 
 Communities:
 
@@ -47,9 +47,11 @@ Companies:
 - [Databricks](https://www.databricks.com/company/about-us)
 - [Spark](https://spark.apache.org/)
 - [dbt](https://www.getdbt.com/)
+- [Cube](https://cube.dev)
+- [Airbyte](https://airbyte.com)
+
 
 Data Engineering blogs of companies:
-
 - [Netflix](https://netflixtechblog.com/tagged/big-data)
 - [Uber](https://www.uber.com/blog/houston/data/?uclick_id=b2f43229-f3f4-4bae-bd5d-10a05db2f70c)
 - [Databricks](https://www.databricks.com/blog/category/engineering/data-engineering)
@@ -59,6 +61,12 @@ Data Engineering blogs of companies:
 - [Oracle](https://blogs.oracle.com/datawarehousing/)
 - [Meta](https://engineering.fb.com/category/data-infrastructure/)
   
+
+Data Engineering Whitepapers:
+- [A Five-Layered Business Intelligence Architecture](https://ibimapublishing.com/articles/CIBIMA/2011/695619/695619.pdf)
+- [Lakehouse:A New Generation of Open Platforms that Unify Data Warehousing and Advanced Analytics](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf)
+- [Big Data Quality: A Data Quality Profiling Model](https://link.springer.com/chapter/10.1007/978-3-030-23381-5_5)
+
   
 Great YouTube Channels:
 
@@ -95,8 +103,6 @@ Great Podcasts
 - [Streaming Audio by confluent](https://developer.confluent.io/podcast/)
 
 
-
-
 Newsletters:
 
 - [DataEngineer.io Newsletter](https://blog.dataengineer.io)
@@ -131,6 +137,11 @@ LinkedIn
 - [Alex Xu](https://www.linkedin.com/in/alexxubyte)
 - [Deepak Goyal](https://www.linkedin.com/in/deepak-goyal-93805a17/)
 - [Eric Roby](https://www.linkedin.com/in/codingwithroby/)
+- [Andreas Kretz](https://www.linkedin.com/in/andreas-kretz)
+- [Tobias Macey](https://www.linkedin.com/in/tmacey)
+- [Shruti Mantri](https://www.linkedin.com/in/shruti-mantri-88527a67/)
+- [Hugo Lu](https://www.linkedin.com/in/hugo-lu-confirmed/)
+- [Daniel Ciocirlan](https://www.linkedin.com/in/danielciocirlan)
 
 Twitter / X 
 
@@ -140,6 +151,7 @@ Twitter / X
 - [Joseph Machado](https://twitter.com/startdataeng)
 - [Alex Xu](https://twitter.com/alexxubyte/)
 - [Eric Roby](https://twitter.com/codingwithroby)
+- [Andreas Kretz](https://twitter.com/andreaskayy)
   
 Instagram
 
@@ -158,7 +170,6 @@ Design Patterns
 - [Cumulative Table Design](https://www.github.com/EcZachly/cumulative-table-design)
 - [Microbatch Deduplication](https://www.github.com/EcZachly/microbatch-hourly-deduped-tutorial)
 - [The Little Book of Pipelines](https://www.github.com/EcZachly/little-book-of-pipelines)
-- [Data Governance: The Definitive Guide](https://www.oreilly.com/library/view/data-governance-the/9781492063483/)
 
 
 Courses / Academies
@@ -166,18 +177,14 @@ Courses / Academies
 - [DataEngineer.io Bootcamp/course](https://www.dataengineer.io) use code **HANDBOOK10** for a discount!
 - [LearnDataEngineering.com](https://www.learndataengineering.com)
 - [Technical Freelancer Academy](https://www.technicalfreelanceracademy.com/) Use code **zwtech** for a discount!
+- [IBM Data Engineering for Everyone](https://www.edx.org/learn/data-engineering/ibm-data-engineering-basics-for-everyone)
 - [Qwiklabs](https://www.qwiklabs.com/)
 - [DataCamp](https://www.datacamp.com/)
+- [Udemy Courses from Shruti Mantri](https://www.udemy.com/user/shruti-mantri-5/)
+- [Rock the JVM](https://rockthejvm.com/) teaches Spark (in Scala), Flink and others
 
+Certifications Courses
 
- Certification Courses
- 
-  - [Google Cloud Certified - Professional Data Engineer](https://cloud.google.com/certification/data-engineer)
-  - [AWS Certified Big Data - Specialty](https://aws.amazon.com/certification/certified-data-engineer-associate/)
-  - [Databricks](https://www.databricks.com/learn/certification/data-engineer-professional)
-    
-
-
-
-
-
+- [Google Cloud Certified - Professional Data Engineer](https://cloud.google.com/certification/data-engineer)
+- [AWS Certified Big Data - Specialty](https://aws.amazon.com/certification/certified-data-engineer-associate/)
+- [Databricks - Data Engineer Professional](https://www.databricks.com/learn/certification/data-engineer-professional)
