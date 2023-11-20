@@ -97,6 +97,7 @@ LinkedIn
 - [Alex Xu](https://www.linkedin.com/in/alexxubyte)
 - [Deepak Goyal](https://www.linkedin.com/in/deepak-goyal-93805a17/)
 - [Eric Roby](https://www.linkedin.com/in/codingwithroby/)
+- [Daniel Ciocirlan](https://www.linkedin.com/in/danielciocirlan)
 
 Twitter / X 
 
@@ -129,3 +130,4 @@ Courses / Academies
 - [DataEngineer.io Bootcamp/course](https://www.dataengineer.io) use code **HANDBOOK10** for a discount!
 - [LearnDataEngineering.com](https://www.learndataengineering.com)
 - [Technical Freelancer Academy](https://www.technicalfreelanceracademy.com/) Use code **zwtech** for a discount!
+- [Rock the JVM](https://rockthejvm.com/) teaches Spark (in Scala), Flink and others
