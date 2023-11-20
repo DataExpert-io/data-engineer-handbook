@@ -13,7 +13,7 @@ Great books:
 - [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321/)
 - [Designing Machine Learning Systems](https://www.amazon.com/Designing-Machine-Learning-Systems-Production-Ready/dp/1098107969)
 - [The Hundred Page Machine Learning Book](https://www.amazon.com/Hundred-Page-Machine-Learning-Book/dp/199957950X)
-- [Kimball - The Data Warehouse Toolkit](https://github.com/ms2ag16/Books/blob/master/Kimball_The-Data-Warehouse-Toolkit-3rd-Edition.pdf)
+- [Kimball - The Data Warehouse Toolkit](https://ia801609.us.archive.org/14/items/the-data-warehouse-toolkit-kimball/The%20Data%20Warehouse%20Toolkit%20-%20Kimball.pdf)
 - [Data Mesh](https://www.oreilly.com/library/view/data-mesh/9781492092384/)
 - [Machine Learning System Design Interview](https://www.amazon.com/Machine-Learning-System-Design-Interview/dp/1736049127)
 
@@ -37,12 +37,18 @@ Companies:
 - [AlgoExpert](https://www.algoexpert.io)
 - [ByteByteGo](https://www.bytebytego.com)
 - [Cube](https://cube.dev)
+- [Airbyte](https://airbyte.com)
 
 Data Engineering blogs of companies:
 - [Netfix](https://netflixtechblog.com/tagged/big-data)
 - [Uber](https://www.uber.com/blog/houston/data/?uclick_id=b2f43229-f3f4-4bae-bd5d-10a05db2f70c)
 - [Databricks](https://www.databricks.com/blog/category/engineering/data-engineering)
 - [Airbnb](https://medium.com/airbnb-engineering/data/home)
+
+Data Engineering Whitepapers:
+- [A Five-Layered Business Intelligence Architecture](https://ibimapublishing.com/articles/CIBIMA/2011/695619/695619.pdf)
+- [Lakehouse:A New Generation of Open Platforms that Unify Data Warehousing and Advanced Analytics](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf)
+- [Big Data Quality: A Data Quality Profiling Model](https://link.springer.com/chapter/10.1007/978-3-030-23381-5_5)
   
 Great YouTube Channels:
 
@@ -65,8 +71,6 @@ Great Podcasts
 - [DataTopics](https://www.datatopics.io/)
 - [The Data Engineering Side Of Data](https://podcasts.apple.com/us/podcast/the-engineering-side-of-data/id1566999533)
 - [DataWare](https://www.ascend.io/dataaware-podcast/)
-
-
 
 
 Newsletters:
@@ -98,6 +102,8 @@ LinkedIn
 - [Alex Xu](https://www.linkedin.com/in/alexxubyte)
 - [Deepak Goyal](https://www.linkedin.com/in/deepak-goyal-93805a17/)
 - [Eric Roby](https://www.linkedin.com/in/codingwithroby/)
+- [Hugo Lu](https://www.linkedin.com/in/hugo-lu-confirmed/)
+- [Daniel Ciocirlan](https://www.linkedin.com/in/danielciocirlan)
 
 Twitter / X 
 
@@ -130,3 +136,4 @@ Courses / Academies
 - [DataEngineer.io Bootcamp/course](https://www.dataengineer.io) use code **HANDBOOK10** for a discount!
 - [LearnDataEngineering.com](https://www.learndataengineering.com)
 - [Technical Freelancer Academy](https://www.technicalfreelanceracademy.com/) Use code **zwtech** for a discount!
+- [Rock the JVM](https://rockthejvm.com/) teaches Spark (in Scala), Flink and others
