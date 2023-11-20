@@ -16,7 +16,7 @@ Great books:
 - [Kimball - The Data Warehouse Toolkit](https://github.com/ms2ag16/Books/blob/master/Kimball_The-Data-Warehouse-Toolkit-3rd-Edition.pdf)
 - [Data Mesh](https://www.oreilly.com/library/view/data-mesh/9781492092384/)
 - [Machine Learning System Design Interview](https://www.amazon.com/Machine-Learning-System-Design-Interview/dp/1736049127)
-
+- [97 Things Every Data Engineer Should Know: Collective Wisdom from the Experts](https://www.amazon.com/Things-Every-Data-Engineer-Should/dp/1492062413)
 
 Communities:
 - [Seattle Data Guy Discord](https://discord.gg/ah95MZKkFF)
@@ -65,9 +65,6 @@ Great Podcasts
 - [The Data Engineering Side Of Data](https://podcasts.apple.com/us/podcast/the-engineering-side-of-data/id1566999533)
 - [DataWare](https://www.ascend.io/dataaware-podcast/)
 
-
-
-
 Newsletters:
 
 - [DataEngineer.io Newsletter](https://blog.dataengineer.io)
@@ -97,6 +94,8 @@ LinkedIn
 - [Alex Xu](https://www.linkedin.com/in/alexxubyte)
 - [Deepak Goyal](https://www.linkedin.com/in/deepak-goyal-93805a17/)
 - [Eric Roby](https://www.linkedin.com/in/codingwithroby/)
+- [Andreas Kretz](https://www.linkedin.com/in/andreas-kretz)
+- [Tobias Macey](https://www.linkedin.com/in/tmacey)
 
 Twitter / X 
 
@@ -106,6 +105,7 @@ Twitter / X
 - [Joseph Machado](https://twitter.com/startdataeng)
 - [Alex Xu](https://twitter.com/alexxubyte/)
 - [Eric Roby](https://twitter.com/codingwithroby)
+- [Andreas Kretz](https://twitter.com/andreaskayy)
   
 Instagram
 
@@ -123,7 +123,6 @@ Design Patterns
 - [Cumulative Table Design](https://www.github.com/EcZachly/cumulative-table-design)
 - [Microbatch Deduplication](https://www.github.com/EcZachly/microbatch-hourly-deduped-tutorial)
 - [The Little Book of Pipelines](https://www.github.com/EcZachly/little-book-of-pipelines)
-
 
 Courses / Academies
 - [DataEngineer.io Bootcamp/course](https://www.dataengineer.io) use code **HANDBOOK10** for a discount!
