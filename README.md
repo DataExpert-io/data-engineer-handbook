@@ -1,7 +1,7 @@
 # The Data Engineering Handbook
 This repo has all the resources you need to become an amazing data engineer!
 
-Make sure to check out the [projects](projects.md) section for more hands on examples!
+Make sure to check out the [projects](projects.md) section for more hands-on examples!
 
 Make sure to check out the [interviews](interviews.md) section for more advice on how to pass data engineering interviews!
 
@@ -142,6 +142,7 @@ LinkedIn
 - [Shruti Mantri](https://www.linkedin.com/in/shruti-mantri-88527a67/)
 - [Hugo Lu](https://www.linkedin.com/in/hugo-lu-confirmed/)
 - [Daniel Ciocirlan](https://www.linkedin.com/in/danielciocirlan)
+- [Marc Lamberti](https://www.linkedin.com/in/marclamberti)
 
 Twitter / X 
 
@@ -152,13 +153,13 @@ Twitter / X
 - [Alex Xu](https://twitter.com/alexxubyte/)
 - [Eric Roby](https://twitter.com/codingwithroby)
 - [Andreas Kretz](https://twitter.com/andreaskayy)
+- [Marc Lamberti](https://twitter.com/marclambertiml)
   
 Instagram
 
 - [Zach Wilson](https://www.instagram.com/eczachly)
 - [Andreas Kretz](https://www.instagram.com/learndataengineering)
-- [Seattle Data Guy](https://www.instagram.com/seattledataguy)
-- 
+- [Seattle Data Guy](https://www.instagram.com/seattledataguy) 
 
 TikTok
 
