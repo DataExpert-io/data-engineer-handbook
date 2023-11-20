@@ -16,9 +16,16 @@ Great books:
 - [Kimball - The Data Warehouse Toolkit](https://ia801609.us.archive.org/14/items/the-data-warehouse-toolkit-kimball/The%20Data%20Warehouse%20Toolkit%20-%20Kimball.pdf)
 - [Data Mesh](https://www.oreilly.com/library/view/data-mesh/9781492092384/)
 - [Machine Learning System Design Interview](https://www.amazon.com/Machine-Learning-System-Design-Interview/dp/1736049127)
+- [Streaming Systems](https://www.amazon.com/Streaming-Systems-Where-Large-Scale-Processing/dp/1491983876)
+- [High Performance Spark](https://www.amazon.com/High-Performance-Spark-Practices-Optimizing/dp/1491943203)
+- [Building Evolutionary Architectures, 2nd Edition](https://www.oreilly.com/library/view/building-evolutionary-architectures/9781492097532/)
+- [Data Management at Scale, 2nd Edition](https://www.oreilly.com/library/view/data-management-at/9781098138851/)
+- [Deciphering Data Architectures](https://www.oreilly.com/library/view/deciphering-data-architectures/9781098150754/)
 - [97 Things Every Data Engineer Should Know: Collective Wisdom from the Experts](https://www.amazon.com/Things-Every-Data-Engineer-Should/dp/1492062413)
+- [Data Governance: The Definitive Guide](https://www.oreilly.com/library/view/data-governance-the/9781492063483/)
 
 Communities:
+
 - [Seattle Data Guy Discord](https://discord.gg/ah95MZKkFF)
 - [EcZachly Data Engineering Discord](https://discord.gg/JGumAXncAK)
 - [Chip Huyen MLOps Discord](https://discord.gg/dzh728c5t3)
@@ -27,6 +34,7 @@ Communities:
 - [r/dataengineering](https://www.reddit.com/r/dataengineering)
 
 Companies:
+
 - [Tabular](https://www.tabular.io)
 - [Starburst](https://www.starburst.io)
 - [Preset](https://www.preset.io)
@@ -36,19 +44,29 @@ Companies:
 - [Prefect](https://www.prefect.io)
 - [AlgoExpert](https://www.algoexpert.io)
 - [ByteByteGo](https://www.bytebytego.com)
+- [Databricks](https://www.databricks.com/company/about-us)
+- [Spark](https://spark.apache.org/)
+- [dbt](https://www.getdbt.com/)
 - [Cube](https://cube.dev)
 - [Airbyte](https://airbyte.com)
+
 
 Data Engineering blogs of companies:
 - [Netflix](https://netflixtechblog.com/tagged/big-data)
 - [Uber](https://www.uber.com/blog/houston/data/?uclick_id=b2f43229-f3f4-4bae-bd5d-10a05db2f70c)
 - [Databricks](https://www.databricks.com/blog/category/engineering/data-engineering)
 - [Airbnb](https://medium.com/airbnb-engineering/data/home)
+- [Amazon AWS Blog](https://aws.amazon.com/blogs/big-data/)
+- [Microsoft Data Architecture Blogs](https://techcommunity.microsoft.com/t5/data-architecture-blog/bg-p/DataArchitectureBlog)
+- [Oracle](https://blogs.oracle.com/datawarehousing/)
+- [Meta](https://engineering.fb.com/category/data-infrastructure/)
+  
 
 Data Engineering Whitepapers:
 - [A Five-Layered Business Intelligence Architecture](https://ibimapublishing.com/articles/CIBIMA/2011/695619/695619.pdf)
 - [Lakehouse:A New Generation of Open Platforms that Unify Data Warehousing and Advanced Analytics](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf)
 - [Big Data Quality: A Data Quality Profiling Model](https://link.springer.com/chapter/10.1007/978-3-030-23381-5_5)
+
   
 Great YouTube Channels:
 
@@ -71,6 +89,18 @@ Great Podcasts
 - [DataTopics](https://www.datatopics.io/)
 - [The Data Engineering Side Of Data](https://podcasts.apple.com/us/podcast/the-engineering-side-of-data/id1566999533)
 - [DataWare](https://www.ascend.io/dataaware-podcast/)
+- [The Data Coffee Break Podcast](https://www.deezer.com/us/show/5293247)
+- [Thd datastack show](https://datastackshow.com/)
+- [Intricity101 Data Sharks Podcast](https://www.intricity.com/learningcenter/podcast)
+- [Drill to Detail with Mark Rittman](https://www.rittmananalytics.com/drilltodetail/)
+- [Analytics Power Hour](https://analyticshour.io/)
+- [Catalog & cocktails](https://listen.casted.us/public/127/Catalog-%26-Cocktails-2fcf8728)
+- [Datatalks](https://datatalks.club/podcast.html)
+- [Data Brew by Databricks](https://www.databricks.com/discover/data-brew)
+- [The Data Cloud Podcast by Snowflake](https://rise-of-the-data-cloud.simplecast.com/)
+- [What's New in data](https://www.striim.com/podcast/)
+- [Open||Source||Data by Datastax](https://www.datastax.com/resources/podcast/open-source-data) 
+- [Streaming Audio by confluent](https://developer.confluent.io/podcast/)
 
 
 Newsletters:
@@ -87,7 +117,12 @@ Newsletters:
 - [High Growth Engineer](https://careercutler.substack.com/)
 - [Learn Analytics Engineering](https://learnanalyticsengineering.substack.com/)
 - [Marvelous MLOps](https://marvelousmlops.substack.com/)
-- [Inside the Developer Mind](https://codingwithroby.substack.com/)
+- [medium Data Engineering Newsletter](https://medium.com/data-engineering-weekly)
+- [Benn Stancil](https://benn.substack.com/)
+- [Metadata Weekly](https://metadataweekly.substack.com/)
+- [Technically](https://technically.substack.com/)
+- [Blef.fr Data News](https://www.blef.fr/blog/)
+- [All Hands on Data](https://allhandsondata.substack.com/)
 
 LinkedIn
 
@@ -123,6 +158,7 @@ Instagram
 - [Zach Wilson](https://www.instagram.com/eczachly)
 - [Andreas Kretz](https://www.instagram.com/learndataengineering)
 - [Seattle Data Guy](https://www.instagram.com/seattledataguy)
+- 
 
 TikTok
 
@@ -134,11 +170,21 @@ Design Patterns
 - [Cumulative Table Design](https://www.github.com/EcZachly/cumulative-table-design)
 - [Microbatch Deduplication](https://www.github.com/EcZachly/microbatch-hourly-deduped-tutorial)
 - [The Little Book of Pipelines](https://www.github.com/EcZachly/little-book-of-pipelines)
-- [IBM Data Engineering for Everyone](https://www.edx.org/learn/data-engineering/ibm-data-engineering-basics-for-everyone)
+
 
 Courses / Academies
+
 - [DataEngineer.io Bootcamp/course](https://www.dataengineer.io) use code **HANDBOOK10** for a discount!
 - [LearnDataEngineering.com](https://www.learndataengineering.com)
 - [Technical Freelancer Academy](https://www.technicalfreelanceracademy.com/) Use code **zwtech** for a discount!
+- [IBM Data Engineering for Everyone](https://www.edx.org/learn/data-engineering/ibm-data-engineering-basics-for-everyone)
+- [Qwiklabs](https://www.qwiklabs.com/)
+- [DataCamp](https://www.datacamp.com/)
 - [Udemy Courses from Shruti Mantri](https://www.udemy.com/user/shruti-mantri-5/)
 - [Rock the JVM](https://rockthejvm.com/) teaches Spark (in Scala), Flink and others
+
+Certifications Courses
+
+- [Google Cloud Certified - Professional Data Engineer](https://cloud.google.com/certification/data-engineer)
+- [AWS Certified Big Data - Specialty](https://aws.amazon.com/certification/certified-data-engineer-associate/)
+- [Databricks - Data Engineer Professional](https://www.databricks.com/learn/certification/data-engineer-professional)
