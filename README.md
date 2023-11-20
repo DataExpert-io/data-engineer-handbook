@@ -71,6 +71,7 @@ Great YouTube Channels:
 - [ByteByteGo](https://www.youtube.com/c/ByteByteGo)
 - [The Ravit Show](https://youtube.com/@theravitshow)
 - [Azure Lib](https://www.youtube.com/@azurelib-academy)
+- [Eric Roby](https://www.youtube.com/@codingwithroby)
 
 
 Great Podcasts
@@ -117,7 +118,6 @@ Newsletters:
 - [Blef.fr Data News](https://www.blef.fr/blog/)
 - [All Hands on Data](https://allhandsondata.substack.com/)
 
-
 LinkedIn
 
 - [Zach Wilson](https://www.linkedin.com/in/eczachly)
@@ -130,6 +130,7 @@ LinkedIn
 - [Chip Huyen](https://www.linkedin.com/in/chiphuyen/)
 - [Alex Xu](https://www.linkedin.com/in/alexxubyte)
 - [Deepak Goyal](https://www.linkedin.com/in/deepak-goyal-93805a17/)
+- [Eric Roby](https://www.linkedin.com/in/codingwithroby/)
 
 Twitter / X 
 
@@ -138,6 +139,7 @@ Twitter / X
 - [Sumit Mittal](https://www.twitter.com/bigdatasumit)
 - [Joseph Machado](https://twitter.com/startdataeng)
 - [Alex Xu](https://twitter.com/alexxubyte/)
+- [Eric Roby](https://twitter.com/codingwithroby)
   
 Instagram
 
