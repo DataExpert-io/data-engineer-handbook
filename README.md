@@ -36,6 +36,7 @@ Companies:
 - [Prefect](https://www.prefect.io)
 - [AlgoExpert](https://www.algoexpert.io)
 - [ByteByteGo](https://www.bytebytego.com)
+- [Airbyte] (https://airbyte.com)
 
 Data Engineering blogs of companies:
 - [Netfix](https://netflixtechblog.com/tagged/big-data)
