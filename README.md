@@ -97,6 +97,7 @@ LinkedIn
 - [Alex Xu](https://www.linkedin.com/in/alexxubyte)
 - [Deepak Goyal](https://www.linkedin.com/in/deepak-goyal-93805a17/)
 - [Eric Roby](https://www.linkedin.com/in/codingwithroby/)
+- [Hugo Lu](https://www.linkedin.com/in/hugo-lu-confirmed/)
 
 Twitter / X 
 
