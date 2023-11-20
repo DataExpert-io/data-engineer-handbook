@@ -32,6 +32,8 @@ Communities:
 - [Data Engineer Things Slack](https://dataengineerthings.slack.com/join/shared_invite/zt-27gp9ayz4-hRq5h1ElxVZf2rRqjEwKHQ#/shared-invite/email)
 - [DBT Community](https://www.getdbt.com/community/join-the-community/)
 - [r/dataengineering](https://www.reddit.com/r/dataengineering)
+- [Microsoft Fabric Community](https://community.fabric.microsoft.com/)
+- [r/MicrosoftFabric](https://www.reddit.com/r/MicrosoftFabric/)
 
 Companies:
 
@@ -49,6 +51,7 @@ Companies:
 - [dbt](https://www.getdbt.com/)
 - [Cube](https://cube.dev)
 - [Airbyte](https://airbyte.com)
+- [Microsoft](https://www.microsoft.com)
 
 
 Data Engineering blogs of companies:
@@ -58,6 +61,7 @@ Data Engineering blogs of companies:
 - [Airbnb](https://medium.com/airbnb-engineering/data/home)
 - [Amazon AWS Blog](https://aws.amazon.com/blogs/big-data/)
 - [Microsoft Data Architecture Blogs](https://techcommunity.microsoft.com/t5/data-architecture-blog/bg-p/DataArchitectureBlog)
+- [Microsoft Fabric Blog](https://blog.fabric.microsoft.com/)
 - [Oracle](https://blogs.oracle.com/datawarehousing/)
 - [Meta](https://engineering.fb.com/category/data-infrastructure/)
   
@@ -80,6 +84,7 @@ Great YouTube Channels:
 - [The Ravit Show](https://youtube.com/@theravitshow)
 - [Azure Lib](https://www.youtube.com/@azurelib-academy)
 - [Eric Roby](https://www.youtube.com/@codingwithroby)
+- [Guy in a Cube](https://www.youtube.com/@GuyInACube)
 
 
 Great Podcasts
@@ -189,3 +194,5 @@ Certifications Courses
 - [Google Cloud Certified - Professional Data Engineer](https://cloud.google.com/certification/data-engineer)
 - [AWS Certified Big Data - Specialty](https://aws.amazon.com/certification/certified-data-engineer-associate/)
 - [Databricks - Data Engineer Professional](https://www.databricks.com/learn/certification/data-engineer-professional)
+- [Azure Data Engineer Associate](https://learn.microsoft.com/credentials/certifications/azure-data-engineer/)
+- [Microsoft Fabric Analytics Engineer Associate](https://learn.microsoft.com/credentials/certifications/fabric-analytics-engineer-associate/)
