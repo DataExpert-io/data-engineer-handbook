@@ -38,7 +38,7 @@ Companies:
 - [ByteByteGo](https://www.bytebytego.com)
 
 Data Engineering blogs of companies:
-- [Netfix](https://netflixtechblog.com/tagged/big-data)
+- [Netflix](https://netflixtechblog.com/tagged/big-data)
 - [Uber](https://www.uber.com/blog/houston/data/?uclick_id=b2f43229-f3f4-4bae-bd5d-10a05db2f70c)
 - [Databricks](https://www.databricks.com/blog/category/engineering/data-engineering)
 - [Airbnb](https://medium.com/airbnb-engineering/data/home)
