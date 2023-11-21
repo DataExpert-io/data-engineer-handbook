@@ -53,6 +53,7 @@ Companies:
 - [Airbyte](https://airbyte.com)
 - [Microsoft](https://www.microsoft.com)
 - [Snowflake](https://www.snowflake.com/en/)
+- [Onehouse](https://www.onehouse.ai)
 
 
 Data Engineering blogs of companies:
@@ -71,6 +72,7 @@ Data Engineering Whitepapers:
 - [A Five-Layered Business Intelligence Architecture](https://ibimapublishing.com/articles/CIBIMA/2011/695619/695619.pdf)
 - [Lakehouse:A New Generation of Open Platforms that Unify Data Warehousing and Advanced Analytics](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf)
 - [Big Data Quality: A Data Quality Profiling Model](https://link.springer.com/chapter/10.1007/978-3-030-23381-5_5)
+- [The Data Lakehouse: Data Warehousing and More](https://arxiv.org/abs/2310.08697)
 
   
 Great YouTube Channels:
@@ -152,6 +154,7 @@ LinkedIn
 - [Daniel Ciocirlan](https://www.linkedin.com/in/danielciocirlan)
 - [Marc Lamberti](https://www.linkedin.com/in/marclamberti)
 - [Simon Whiteley](https://www.linkedin.com/in/simon-whiteley-uk/)
+- [Dipankar Mazumdar](https://www.linkedin.com/in/dipankar-mazumdar/)
 
 Twitter / X 
 
@@ -163,6 +166,7 @@ Twitter / X
 - [Eric Roby](https://twitter.com/codingwithroby)
 - [Andreas Kretz](https://twitter.com/andreaskayy)
 - [Marc Lamberti](https://twitter.com/marclambertiml)
+- [Dipankar Mazumdar](https://twitter.com/Dipankartnt)
   
 Instagram
 
