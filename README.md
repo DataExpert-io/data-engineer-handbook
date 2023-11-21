@@ -52,6 +52,7 @@ Companies:
 - [Cube](https://cube.dev)
 - [Airbyte](https://airbyte.com)
 - [Microsoft](https://www.microsoft.com)
+- [Snowflake](https://www.snowflake.com/en/)
 
 
 Data Engineering blogs of companies:
@@ -85,6 +86,8 @@ Great YouTube Channels:
 - [Azure Lib](https://www.youtube.com/@azurelib-academy)
 - [Eric Roby](https://www.youtube.com/@codingwithroby)
 - [Guy in a Cube](https://www.youtube.com/@GuyInACube)
+- [Advancing Analytics](https://www.youtube.com/@AdvancingAnalytics)
+- [Adam Marczak](https://www.youtube.com/@AdamMarczakYT)
 
 
 Great Podcasts
@@ -148,6 +151,7 @@ LinkedIn
 - [Hugo Lu](https://www.linkedin.com/in/hugo-lu-confirmed/)
 - [Daniel Ciocirlan](https://www.linkedin.com/in/danielciocirlan)
 - [Marc Lamberti](https://www.linkedin.com/in/marclamberti)
+- [Simon Whiteley](https://www.linkedin.com/in/simon-whiteley-uk/)
 
 Twitter / X 
 
