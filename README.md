@@ -208,7 +208,6 @@ Courses / Academies
 Certifications Courses
 
 - [Google Cloud Certified - Professional Data Engineer](https://cloud.google.com/certification/data-engineer)
-- [AWS Certified Big Data - Specialty](https://aws.amazon.com/certification/certified-data-engineer-associate/)
 - [Databricks - Data Engineer Professional](https://www.databricks.com/learn/certification/data-engineer-professional)
 - [Azure Data Engineer Associate](https://learn.microsoft.com/credentials/certifications/azure-data-engineer/)
 - [Microsoft Fabric Analytics Engineer Associate](https://learn.microsoft.com/credentials/certifications/fabric-analytics-engineer-associate/)
