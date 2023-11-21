@@ -23,6 +23,8 @@ Great books:
 - [Deciphering Data Architectures](https://www.oreilly.com/library/view/deciphering-data-architectures/9781098150754/)
 - [97 Things Every Data Engineer Should Know: Collective Wisdom from the Experts](https://www.amazon.com/Things-Every-Data-Engineer-Should/dp/1492062413)
 - [Data Governance: The Definitive Guide](https://www.oreilly.com/library/view/data-governance-the/9781492063483/)
+- [Delta Lake: The Definitive Guide](https://www.oreilly.com/library/view/delta-lake-the/9781098151935/)
+- [Hadoop: The Definitive Guide](https://www.oreilly.com/library/view/hadoop-the-definitive/9781491901687/)
 
 Communities:
 
@@ -34,6 +36,7 @@ Communities:
 - [r/dataengineering](https://www.reddit.com/r/dataengineering)
 - [Microsoft Fabric Community](https://community.fabric.microsoft.com/)
 - [r/MicrosoftFabric](https://www.reddit.com/r/MicrosoftFabric/)
+- [Data Talks Club Slack](https://datatalks.club/slack)
 
 Companies:
 
@@ -88,6 +91,8 @@ Great YouTube Channels:
 - [Guy in a Cube](https://www.youtube.com/@GuyInACube)
 - [Advancing Analytics](https://www.youtube.com/@AdvancingAnalytics)
 - [Adam Marczak](https://www.youtube.com/@AdamMarczakYT)
+- [nullQueries](https://www.youtube.com/@nullQueries)
+- [Kahan Data Solutions](https://www.youtube.com/@KahanDataSolutions)
 
 
 Great Podcasts
@@ -192,6 +197,7 @@ Courses / Academies
 - [DataCamp](https://www.datacamp.com/)
 - [Udemy Courses from Shruti Mantri](https://www.udemy.com/user/shruti-mantri-5/)
 - [Rock the JVM](https://rockthejvm.com/) teaches Spark (in Scala), Flink and others
+- [Data Engineering Zoomcamp by DataTalksClub](https://dezoomcamp.streamlit.app/)
 
 Certifications Courses
 
