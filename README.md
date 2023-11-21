@@ -196,3 +196,5 @@ Certifications Courses
 - [Databricks - Data Engineer Professional](https://www.databricks.com/learn/certification/data-engineer-professional)
 - [Azure Data Engineer Associate](https://learn.microsoft.com/credentials/certifications/azure-data-engineer/)
 - [Microsoft Fabric Analytics Engineer Associate](https://learn.microsoft.com/credentials/certifications/fabric-analytics-engineer-associate/)
+- [Exam DP-203: Data Engineering on Microsoft Azure](https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-203/?tab=tab-learning-paths)
+- [AWS Certified Data Engineer - Associate](https://aws.amazon.com/certification/certified-data-engineer-associate/)
