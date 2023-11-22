@@ -95,7 +95,7 @@ Great YouTube Channels:
 - [Adam Marczak](https://www.youtube.com/@AdamMarczakYT)
 - [nullQueries](https://www.youtube.com/@nullQueries)
 - [Kahan Data Solutions](https://www.youtube.com/@KahanDataSolutions)
-
+- [Ankit Bansal](https://youtube.com/@ankitbansal6)
 
 Great Podcasts
 
