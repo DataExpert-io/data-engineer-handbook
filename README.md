@@ -141,6 +141,7 @@ Newsletters:
 - [Technically](https://technically.substack.com/)
 - [Blef.fr Data News](https://www.blef.fr/blog/)
 - [All Hands on Data](https://allhandsondata.substack.com/)
+- [Modern Data 101](https://moderndata101.substack.com/)
 
 LinkedIn
 
