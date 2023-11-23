@@ -192,6 +192,7 @@ Design Patterns
 - [Cumulative Table Design](https://www.github.com/EcZachly/cumulative-table-design)
 - [Microbatch Deduplication](https://www.github.com/EcZachly/microbatch-hourly-deduped-tutorial)
 - [The Little Book of Pipelines](https://www.github.com/EcZachly/little-book-of-pipelines)
+- [Data Developer Platform](https://datadeveloperplatform.org/architecture/)
 
 
 Courses / Academies
