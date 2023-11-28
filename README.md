@@ -178,6 +178,7 @@ Twitter / X
 - [Andreas Kretz](https://twitter.com/andreaskayy)
 - [Marc Lamberti](https://twitter.com/marclambertiml)
 - [Dipankar Mazumdar](https://twitter.com/Dipankartnt)
+- [Data Cyborg](https://twitter.com/data_cyborg)
   
 Instagram
 
