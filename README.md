@@ -180,6 +180,7 @@ Twitter / X
 - [Marc Lamberti](https://twitter.com/marclambertiml)
 - [Dipankar Mazumdar](https://twitter.com/Dipankartnt)
 - [Start Data Engineering](https://twitter.com/startdataeng)
+- [Data Cyborg](https://twitter.com/data_cyborg)
   
 Instagram
 
