@@ -99,6 +99,7 @@ Great YouTube Channels:
 - [nullQueries](https://www.youtube.com/@nullQueries)
 - [Kahan Data Solutions](https://www.youtube.com/@KahanDataSolutions)
 - [Ankit Bansal](https://youtube.com/@ankitbansal6)
+- [TECHTFQ by Thoufiq](https://www.youtube.com/@techTFQ)
 
 Great Podcasts
 
@@ -178,6 +179,7 @@ Twitter / X
 - [Andreas Kretz](https://twitter.com/andreaskayy)
 - [Marc Lamberti](https://twitter.com/marclambertiml)
 - [Dipankar Mazumdar](https://twitter.com/Dipankartnt)
+- [Start Data Engineering](https://twitter.com/startdataeng)
 - [Data Cyborg](https://twitter.com/data_cyborg)
   
 Instagram
