@@ -222,3 +222,9 @@ Certifications Courses
 - [Microsoft Fabric Analytics Engineer Associate](https://learn.microsoft.com/credentials/certifications/fabric-analytics-engineer-associate/)
 - [Exam DP-203: Data Engineering on Microsoft Azure](https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-203/?tab=tab-learning-paths)
 - [AWS Certified Data Engineer - Associate](https://aws.amazon.com/certification/certified-data-engineer-associate/)
+
+Conferences
+
+- [Trino Summit - December 13-14, 2023 - Virtual](https://www.starburst.io/info/trinosummit2023/)
+- [Data Universe - April 10-11, 2024 - New York City](https://www.datauniverseevent.com/)
+- [Data Nova @ Data Universe - April 10-11, 2024 - New York City](https://www.starburst.io/datanova/)
