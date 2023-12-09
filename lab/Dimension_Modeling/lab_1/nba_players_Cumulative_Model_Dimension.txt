@@ -1,0 +1,478 @@
+CREATE SCHEMA Jaswanthv
+
+CREATE TABLE Jaswanthv.nba_players(
+player_name varchar,
+college varchar,
+country varchar,
+draft_year varchar,
+draft_round varchar,
+draft_number varchar,
+seasons ARRAY(
+  ROW(
+    season INTEGER,
+    age INTEGER,
+    weight INTEGER,
+    gp INTEGER,
+    pts DOUBLE,
+    reb DOUBLE,
+    ast DOUBLE   
+  )),
+is_active boolean,
+years_since_last_active INTEGER,
+current_season INTEGER
+)
+WITH
+(
+FORMAT = 'PARQUET',
+partitioning = ARRAY['current_season']
+)
+
+
+With 
+last_season As (SELECT * from Jaswanthv.nba_players where current_season = 1995
+),
+current_season AS
+(Select * from bootcamp.nba_player_seasons
+where season = 1996
+)
+Select * from last_season ls FULL OUTER JOIN current_season cs on cs.player_name = ls.player_name
+
+With 
+last_season As (SELECT * from Jaswanthv.nba_players where current_season = 1995
+),
+current_season AS
+(Select * from bootcamp.nba_player_seasons
+where season = 1996
+)
+Select 
+COALESCE(ls.player_name,cs.player_name),
+COALESCE(ls.college,cs.college),
+COALESCE(ls.country,cs.college),
+COALESCE(ls.draft_year,cs.draft_year),
+COALESCE(ls.draft_round,cs.draft_round),
+COALESCE(ls.draft_number,cs.draft_number), 
+Array[] As seasons,
+cs.season IS NOT NULL As is_active,
+CASE
+  WHEN cs.season IS NOT NULL THEN 0
+  ELSE years_since_last_active + 1
+END As years_since_last_active,
+COALESCE(cs.season, ls.current_season + 1) As current_season
+from last_season ls FULL OUTER JOIN current_season cs on cs.player_name = ls.player_name
+
+
+-- Insert data into table
+
+Insert into Jaswanthv.nba_players
+With 
+last_season As (SELECT * from Jaswanthv.nba_players where current_season = 1995
+),
+current_season AS
+(Select * from bootcamp.nba_player_seasons
+where season = 1996
+)
+Select 
+COALESCE(ls.player_name,cs.player_name),
+COALESCE(ls.college,cs.college),
+COALESCE(ls.country,cs.college),
+COALESCE(ls.draft_year,cs.draft_year),
+COALESCE(ls.draft_round,cs.draft_round),
+COALESCE(ls.draft_number,cs.draft_number), 
+CASE
+  WHEN cs.season IS NULL THEN ls.seasons
+  WHEN cs.season IS NOT NULL
+  AND ls.seasons IS NULL THEN ARRAY[
+  ROW (
+      cs.season,
+      cs.age,
+      cs.weight,
+      cs.gp,
+      cs.pts,
+      cs.ast,
+      cs.reb
+    ) 
+    ]
+  WHEN cs.season IS NOT NULL 
+  AND ls.seasons IS NOT NULL THEN ARRAY[
+  ROW (
+      cs.season,
+      cs.age,
+      cs.weight,
+      cs.gp,
+      cs.pts,
+      cs.ast,
+      cs.reb
+    ) 
+    ] || ls.seasons
+ END As seasons,
+cs.season IS NOT NULL As is_active,
+CASE
+  WHEN cs.season IS NOT NULL THEN 0
+  ELSE years_since_last_active + 1
+END As years_since_last_active,
+COALESCE(cs.season, ls.current_season + 1) As current_season
+from last_season ls FULL OUTER JOIN current_season cs on cs.player_name = ls.player_name
+
+
+Insert into Jaswanthv.nba_players
+With 
+last_season As (SELECT * from Jaswanthv.nba_players where current_season = 1996
+),
+current_season AS
+(Select * from bootcamp.nba_player_seasons
+where season = 1997
+)
+Select 
+COALESCE(ls.player_name,cs.player_name),
+COALESCE(ls.college,cs.college),
+COALESCE(ls.country,cs.college),
+COALESCE(ls.draft_year,cs.draft_year),
+COALESCE(ls.draft_round,cs.draft_round),
+COALESCE(ls.draft_number,cs.draft_number), 
+CASE
+  WHEN cs.season IS NULL THEN ls.seasons
+  WHEN cs.season IS NOT NULL
+  AND ls.seasons IS NULL THEN ARRAY[
+  ROW (
+      cs.season,
+      cs.age,
+      cs.weight,
+      cs.gp,
+      cs.pts,
+      cs.ast,
+      cs.reb
+    ) 
+    ]
+  WHEN cs.season IS NOT NULL 
+  AND ls.seasons IS NOT NULL THEN ARRAY[
+  ROW (
+      cs.season,
+      cs.age,
+      cs.weight,
+      cs.gp,
+      cs.pts,
+      cs.ast,
+      cs.reb
+    ) 
+    ] || ls.seasons
+ END As seasons,
+cs.season IS NOT NULL As is_active,
+CASE
+  WHEN cs.season IS NOT NULL THEN 0
+  ELSE years_since_last_active + 1
+END As years_since_last_active,
+COALESCE(cs.season, ls.current_season + 1) As current_season
+from last_season ls FULL OUTER JOIN current_season cs on cs.player_name = ls.player_name
+
+
+Insert into Jaswanthv.nba_players
+With 
+last_season As (SELECT * from Jaswanthv.nba_players where current_season = 1997
+),
+current_season AS
+(Select * from bootcamp.nba_player_seasons
+where season = 1998
+)
+Select 
+COALESCE(ls.player_name,cs.player_name),
+COALESCE(ls.college,cs.college),
+COALESCE(ls.country,cs.college),
+COALESCE(ls.draft_year,cs.draft_year),
+COALESCE(ls.draft_round,cs.draft_round),
+COALESCE(ls.draft_number,cs.draft_number), 
+CASE
+  WHEN cs.season IS NULL THEN ls.seasons
+  WHEN cs.season IS NOT NULL
+  AND ls.seasons IS NULL THEN ARRAY[
+  ROW (
+      cs.season,
+      cs.age,
+      cs.weight,
+      cs.gp,
+      cs.pts,
+      cs.ast,
+      cs.reb
+    ) 
+    ]
+  WHEN cs.season IS NOT NULL 
+  AND ls.seasons IS NOT NULL THEN ARRAY[
+  ROW (
+      cs.season,
+      cs.age,
+      cs.weight,
+      cs.gp,
+      cs.pts,
+      cs.ast,
+      cs.reb
+    ) 
+    ] || ls.seasons
+ END As seasons,
+cs.season IS NOT NULL As is_active,
+CASE
+  WHEN cs.season IS NOT NULL THEN 0
+  ELSE years_since_last_active + 1
+END As years_since_last_active,
+COALESCE(cs.season, ls.current_season + 1) As current_season
+from last_season ls FULL OUTER JOIN current_season cs on cs.player_name = ls.player_name
+
+
+Insert into Jaswanthv.nba_players
+With 
+last_season As (SELECT * from Jaswanthv.nba_players where current_season = 1998
+),
+current_season AS
+(Select * from bootcamp.nba_player_seasons
+where season = 1999
+)
+Select 
+COALESCE(ls.player_name,cs.player_name),
+COALESCE(ls.college,cs.college),
+COALESCE(ls.country,cs.college),
+COALESCE(ls.draft_year,cs.draft_year),
+COALESCE(ls.draft_round,cs.draft_round),
+COALESCE(ls.draft_number,cs.draft_number), 
+CASE
+  WHEN cs.season IS NULL THEN ls.seasons
+  WHEN cs.season IS NOT NULL
+  AND ls.seasons IS NULL THEN ARRAY[
+  ROW (
+      cs.season,
+      cs.age,
+      cs.weight,
+      cs.gp,
+      cs.pts,
+      cs.ast,
+      cs.reb
+    ) 
+    ]
+  WHEN cs.season IS NOT NULL 
+  AND ls.seasons IS NOT NULL THEN ARRAY[
+  ROW (
+      cs.season,
+      cs.age,
+      cs.weight,
+      cs.gp,
+      cs.pts,
+      cs.ast,
+      cs.reb
+    ) 
+    ] || ls.seasons
+ END As seasons,
+cs.season IS NOT NULL As is_active,
+CASE
+  WHEN cs.season IS NOT NULL THEN 0
+  ELSE years_since_last_active + 1
+END As years_since_last_active,
+COALESCE(cs.season, ls.current_season + 1) As current_season
+from last_season ls FULL OUTER JOIN current_season cs on cs.player_name = ls.player_name
+
+
+Insert into Jaswanthv.nba_players
+With 
+last_season As (SELECT * from Jaswanthv.nba_players where current_season = 1999
+),
+current_season AS
+(Select * from bootcamp.nba_player_seasons
+where season = 2000
+)
+Select 
+COALESCE(ls.player_name,cs.player_name),
+COALESCE(ls.college,cs.college),
+COALESCE(ls.country,cs.college),
+COALESCE(ls.draft_year,cs.draft_year),
+COALESCE(ls.draft_round,cs.draft_round),
+COALESCE(ls.draft_number,cs.draft_number), 
+CASE
+  WHEN cs.season IS NULL THEN ls.seasons
+  WHEN cs.season IS NOT NULL
+  AND ls.seasons IS NULL THEN ARRAY[
+  ROW (
+      cs.season,
+      cs.age,
+      cs.weight,
+      cs.gp,
+      cs.pts,
+      cs.ast,
+      cs.reb
+    ) 
+    ]
+  WHEN cs.season IS NOT NULL 
+  AND ls.seasons IS NOT NULL THEN ARRAY[
+  ROW (
+      cs.season,
+      cs.age,
+      cs.weight,
+      cs.gp,
+      cs.pts,
+      cs.ast,
+      cs.reb
+    ) 
+    ] || ls.seasons
+ END As seasons,
+cs.season IS NOT NULL As is_active,
+CASE
+  WHEN cs.season IS NOT NULL THEN 0
+  ELSE years_since_last_active + 1
+END As years_since_last_active,
+COALESCE(cs.season, ls.current_season + 1) As current_season
+from last_season ls FULL OUTER JOIN current_season cs on cs.player_name = ls.player_name
+
+
+Insert into Jaswanthv.nba_players
+With 
+last_season As (SELECT * from Jaswanthv.nba_players where current_season = 2000
+),
+current_season AS
+(Select * from bootcamp.nba_player_seasons
+where season = 2001
+)
+Select 
+COALESCE(ls.player_name,cs.player_name),
+COALESCE(ls.college,cs.college),
+COALESCE(ls.country,cs.college),
+COALESCE(ls.draft_year,cs.draft_year),
+COALESCE(ls.draft_round,cs.draft_round),
+COALESCE(ls.draft_number,cs.draft_number), 
+CASE
+  WHEN cs.season IS NULL THEN ls.seasons
+  WHEN cs.season IS NOT NULL
+  AND ls.seasons IS NULL THEN ARRAY[
+  ROW (
+      cs.season,
+      cs.age,
+      cs.weight,
+      cs.gp,
+      cs.pts,
+      cs.ast,
+      cs.reb
+    ) 
+    ]
+  WHEN cs.season IS NOT NULL 
+  AND ls.seasons IS NOT NULL THEN ARRAY[
+  ROW (
+      cs.season,
+      cs.age,
+      cs.weight,
+      cs.gp,
+      cs.pts,
+      cs.ast,
+      cs.reb
+    ) 
+    ] || ls.seasons
+ END As seasons,
+cs.season IS NOT NULL As is_active,
+CASE
+  WHEN cs.season IS NOT NULL THEN 0
+  ELSE years_since_last_active + 1
+END As years_since_last_active,
+COALESCE(cs.season, ls.current_season + 1) As current_season
+from last_season ls FULL OUTER JOIN current_season cs on cs.player_name = ls.player_name
+
+
+Insert into Jaswanthv.nba_players
+With 
+last_season As (SELECT * from Jaswanthv.nba_players where current_season = 2001
+),
+current_season AS
+(Select * from bootcamp.nba_player_seasons
+where season = 2002
+)
+Select 
+COALESCE(ls.player_name,cs.player_name),
+COALESCE(ls.college,cs.college),
+COALESCE(ls.country,cs.college),
+COALESCE(ls.draft_year,cs.draft_year),
+COALESCE(ls.draft_round,cs.draft_round),
+COALESCE(ls.draft_number,cs.draft_number), 
+CASE
+  WHEN cs.season IS NULL THEN ls.seasons
+  WHEN cs.season IS NOT NULL
+  AND ls.seasons IS NULL THEN ARRAY[
+  ROW (
+      cs.season,
+      cs.age,
+      cs.weight,
+      cs.gp,
+      cs.pts,
+      cs.ast,
+      cs.reb
+    ) 
+    ]
+  WHEN cs.season IS NOT NULL 
+  AND ls.seasons IS NOT NULL THEN ARRAY[
+  ROW (
+      cs.season,
+      cs.age,
+      cs.weight,
+      cs.gp,
+      cs.pts,
+      cs.ast,
+      cs.reb
+    ) 
+    ] || ls.seasons
+ END As seasons,
+cs.season IS NOT NULL As is_active,
+CASE
+  WHEN cs.season IS NOT NULL THEN 0
+  ELSE years_since_last_active + 1
+END As years_since_last_active,
+COALESCE(cs.season, ls.current_season + 1) As current_season
+from last_season ls FULL OUTER JOIN current_season cs on cs.player_name = ls.player_name
+
+
+-- Example to query array datatype in Cumulative model
+
+SELECT 
+player_name,
+t.*
+from 
+Jaswanthv.nba_players
+CROSS JOIN UNNEST(seasons) t 
+WHERE current_season = 2002 AND 
+PLAYER_NAME = 'Michael Jordan'
+
+SELECT 
+player_name,
+SUM(t.gp * t.pts ) As total_points
+from 
+Jaswanthv.nba_players
+CROSS JOIN UNNEST(seasons) t 
+WHERE current_season = 2002 
+GROUP BY
+player_name
+
+-- Optimized way to calculate instead of CROSSJOIN and Group by
+
+SELECT 
+player_name,
+REDUCE(
+seasons,
+0,
+(cumulator, r) -> cumulator + r.pts*r.gp,
+s -> s
+) AS total_points
+from 
+Jaswanthv.nba_players
+WHERE current_season = 2002 
+
+
+CREATE TABLE Jaswanthv.dashboard
+AS
+SELECT
+  player_name,
+  REDUCE(
+  seasons,
+  0,
+  (cumulator, r) -> cumulator + r.gp * r.pts,
+  s -> s)  As total_points
+FROM
+  Jaswanthv.nba_players
+WHERE
+  current_season = 2002
+/*
+ORDER BY
+  player_name
+  */
+
+
+SELECT * from Jaswanthv.dashboard
