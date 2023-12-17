@@ -123,6 +123,8 @@ Great Podcasts
 - [Streaming Audio by confluent](https://developer.confluent.io/podcast/)
 - [The Data Scientist Show](https://podcasts.apple.com/us/podcast/the-data-scientist-show/id1584430381)
 - [MLOps.community](https://podcast.mlops.community/)
+- [Monday Morning Data Chat](https://open.spotify.com/show/3Km3lBNzJpc1nOTJUtbtMh)
+- [The Data Chief](https://www.thoughtspot.com/data-chief/podcast)
 
 
 Newsletters:
