@@ -101,6 +101,8 @@ Great YouTube Channels:
 - [Kahan Data Solutions](https://www.youtube.com/@KahanDataSolutions)
 - [Ankit Bansal](https://youtube.com/@ankitbansal6)
 - [TECHTFQ by Thoufiq](https://www.youtube.com/@techTFQ)
+- [AnalytixCloud]
+  (https://youtube.com/@AnalytixCloud?si=Syd2FdIiwMq93QJk)
 
 Great Podcasts
 
