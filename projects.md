@@ -1,6 +1,5 @@
 # Free projects you could work on
 
-
 - [End-to-end Uber Data engineering project with BigQuery](https://www.youtube.com/watch?v=WpQECq5Hx9g)
 - Build a pipeline with LLMs
   - [Lecture](https://www.dataengineer.io/course/large-language-models-day-1-lecture)
