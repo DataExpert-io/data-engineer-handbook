@@ -73,6 +73,7 @@ Data Engineering blogs of companies:
 - [Microsoft Fabric Blog](https://blog.fabric.microsoft.com/)
 - [Oracle](https://blogs.oracle.com/datawarehousing/)
 - [Meta](https://engineering.fb.com/category/data-infrastructure/)
+- [Onehouse](https://www.onehouse.ai/blog)
   
 
 Data Engineering Whitepapers:
@@ -80,6 +81,7 @@ Data Engineering Whitepapers:
 - [Lakehouse:A New Generation of Open Platforms that Unify Data Warehousing and Advanced Analytics](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf)
 - [Big Data Quality: A Data Quality Profiling Model](https://link.springer.com/chapter/10.1007/978-3-030-23381-5_5)
 - [The Data Lakehouse: Data Warehousing and More](https://arxiv.org/abs/2310.08697)
+- [Building a Universal Data Lakehouse](https://www.onehouse.ai/whitepaper/onehouse-universal-data-lakehouse-whitepaper)
 
   
 Great YouTube Channels:
