@@ -170,6 +170,7 @@ LinkedIn
 - [Marc Lamberti](https://www.linkedin.com/in/marclamberti)
 - [Simon Whiteley](https://www.linkedin.com/in/simon-whiteley-uk/)
 - [Dipankar Mazumdar](https://www.linkedin.com/in/dipankar-mazumdar/)
+- [Ankit Bansal](https://www.linkedin.com/in/ankitbansal6/)
 
 Twitter / X 
 
