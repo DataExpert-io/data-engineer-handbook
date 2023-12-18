@@ -23,6 +23,7 @@ Great books:
 - [Deciphering Data Architectures](https://www.oreilly.com/library/view/deciphering-data-architectures/9781098150754/)
 - [97 Things Every Data Engineer Should Know: Collective Wisdom from the Experts](https://www.amazon.com/Things-Every-Data-Engineer-Should/dp/1492062413)
 - [Data Governance: The Definitive Guide](https://www.oreilly.com/library/view/data-governance-the/9781492063483/)
+- [Trino: The Definitive Guide](https://trino.io/trino-the-definitive-guide.html)
 - [Delta Lake: The Definitive Guide](https://www.oreilly.com/library/view/delta-lake-the/9781098151935/)
 - [Hadoop: The Definitive Guide](https://www.oreilly.com/library/view/hadoop-the-definitive/9781491901687/)
 - [Modern Data Engineering with Apache Spark: A Hands-On Guide for Building Mission-Critical Streaming Applications](https://www.amazon.com/Modern-Engineering-Apache-Spark-Hands/dp/1484274512)
