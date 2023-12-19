@@ -46,23 +46,33 @@ Communities:
 
 Companies:
 
-- [Tabular](https://www.tabular.io)
-- [Starburst](https://www.starburst.io)
-- [Preset](https://www.preset.io)
-- [Astronomer](https://www.astronomer.io)
-- [Mage](https://www.mage.ai)
-- [Dagster](https://www.dagster.io)
-- [Prefect](https://www.prefect.io)
-- [AlgoExpert](https://www.algoexpert.io)
-- [ByteByteGo](https://www.bytebytego.com)
-- [Databricks](https://www.databricks.com/company/about-us)
-- [Spark](https://spark.apache.org/)
-- [dbt](https://www.getdbt.com/)
-- [Cube](https://cube.dev)
-- [Airbyte](https://airbyte.com)
-- [Microsoft](https://www.microsoft.com)
-- [Snowflake](https://www.snowflake.com/en/)
-- [Onehouse](https://www.onehouse.ai)
+- Orchestration
+  - [Mage](https://www.mage.ai)
+  - [Astronomer](https://www.astronomer.io)
+  - [Prefect](https://www.prefect.io)
+  - [Dagster](https://www.dagster.io)
+  - [Airbyte](https://airbyte.com)
+- Data Lake / Cloud
+  - [Tabular](https://www.tabular.io)
+  - [Microsoft](https://www.microsoft.com)
+  - [Databricks](https://www.databricks.com/company/about-us)
+  - [Onehouse](https://www.onehouse.ai)
+- Data Warehouse
+  - [Snowflake](https://www.snowflake.com/en/)
+- Data Quality
+  - [dbt](https://www.getdbt.com/)
+  - [Gable](https://www.gable.ai)
+- Education Companies
+  - [DataEngineer.io](https://www.dataengineer.io)
+  - [LearnDataEngineering.com](https://www.learndataengineering.com)
+  - [AlgoExpert](https://www.algoexpert.io)
+  - [ByteByteGo](https://www.bytebytego.com)
+- Analytics / Visualization
+  - [Preset](https://www.preset.io)
+  - [Starburst](https://www.starburst.io)
+- Data Integration
+  - [Cube](https://cube.dev)
+  - [Fivetran](https://www.fivetran.com)
 
 Data Engineering blogs of companies:
 
@@ -89,23 +99,26 @@ Data Engineering Whitepapers:
 
 Great YouTube Channels:
 
-- [Data with Zach](https://www.youtube.com/c/datawithzach)
-- [Seattle Data Guy](https://www.youtube.com/c/SeattleDataGuy)
-- [TrendyTech](https://www.youtube.com/c/TrendytechInsights)
-- [E-learning Bridge](https://www.youtube.com/@shashank_mishra)
-- [Darshil Parmar](https://www.youtube.com/@DarshilParmar)
-- [Andreas Kretz](https://www.youtube.com/c/andreaskayy)
-- [ByteByteGo](https://www.youtube.com/c/ByteByteGo)
-- [The Ravit Show](https://youtube.com/@theravitshow)
-- [Azure Lib](https://www.youtube.com/@azurelib-academy)
-- [Eric Roby](https://www.youtube.com/@codingwithroby)
-- [Guy in a Cube](https://www.youtube.com/@GuyInACube)
-- [Advancing Analytics](https://www.youtube.com/@AdvancingAnalytics)
-- [Adam Marczak](https://www.youtube.com/@AdamMarczakYT)
-- [nullQueries](https://www.youtube.com/@nullQueries)
-- [Kahan Data Solutions](https://www.youtube.com/@KahanDataSolutions)
-- [Ankit Bansal](https://youtube.com/@ankitbansal6)
-- [TECHTFQ by Thoufiq](https://www.youtube.com/@techTFQ)
+- 100k+ subscribers
+  - [E-learning Bridge](https://www.youtube.com/@shashank_mishra)
+  - [TrendyTech](https://www.youtube.com/c/TrendytechInsights)
+  - [Darshil Parmar](https://www.youtube.com/@DarshilParmar)
+  - [Andreas Kretz](https://www.youtube.com/c/andreaskayy)
+  - [ByteByteGo](https://www.youtube.com/c/ByteByteGo)
+  - [The Ravit Show](https://youtube.com/@theravitshow)
+  - [Guy in a Cube](https://www.youtube.com/@GuyInACube)
+  - [Adam Marczak](https://www.youtube.com/@AdamMarczakYT)
+  - [nullQueries](https://www.youtube.com/@nullQueries)
+  - [TECHTFQ by Thoufiq](https://www.youtube.com/@techTFQ)
+- 10k+ subscribers
+  - [Data with Zach](https://www.youtube.com/c/datawithzach)
+  - [Seattle Data Guy](https://www.youtube.com/c/SeattleDataGuy)
+  - [Azure Lib](https://www.youtube.com/@azurelib-academy)
+  - [Advancing Analytics](https://www.youtube.com/@AdvancingAnalytics)
+  - [Kahan Data Solutions](https://www.youtube.com/@KahanDataSolutions)
+  - [Ankit Bansal](https://youtube.com/@ankitbansal6)
+- 1k+ subscribers
+  - [Eric Roby](https://www.youtube.com/@codingwithroby)
 
 Great Podcasts
 
@@ -155,26 +168,32 @@ Newsletters:
 
 LinkedIn
 
-- [Zach Wilson](https://www.linkedin.com/in/eczachly)
-- [Ben Rogojan](https://www.linkedin.com/in/benjaminrogojan)
-- [Joe Reis](https://www.linkedin.com/in/josephreis)
-- [Sumit Mittal](https://www.linkedin.com/in/bigdatabysumit/)
-- [Shashank Mishra](https://www.linkedin.com/in/shashank219/)
-- [Darshil Parmar](https://www.linkedin.com/in/darshil-parmar/)
-- [Joseph Machado](https://www.linkedin.com/in/josephmachado1991/)
-- [Chip Huyen](https://www.linkedin.com/in/chiphuyen/)
-- [Alex Xu](https://www.linkedin.com/in/alexxubyte)
-- [Deepak Goyal](https://www.linkedin.com/in/deepak-goyal-93805a17/)
-- [Eric Roby](https://www.linkedin.com/in/codingwithroby/)
-- [Andreas Kretz](https://www.linkedin.com/in/andreas-kretz)
-- [Tobias Macey](https://www.linkedin.com/in/tmacey)
-- [Shruti Mantri](https://www.linkedin.com/in/shruti-mantri-88527a67/)
-- [Hugo Lu](https://www.linkedin.com/in/hugo-lu-confirmed/)
-- [Daniel Ciocirlan](https://www.linkedin.com/in/danielciocirlan)
-- [Marc Lamberti](https://www.linkedin.com/in/marclamberti)
-- [Simon Whiteley](https://www.linkedin.com/in/simon-whiteley-uk/)
-- [Dipankar Mazumdar](https://www.linkedin.com/in/dipankar-mazumdar/)
-- [Ankit Bansal](https://www.linkedin.com/in/ankitbansal6/)
+
+- 100k+ Followers
+  - [Zach Wilson](https://www.linkedin.com/in/eczachly)
+  - [Ben Rogojan](https://www.linkedin.com/in/benjaminrogojan)
+  - [Sumit Mittal](https://www.linkedin.com/in/bigdatabysumit/)
+  - [Shashank Mishra](https://www.linkedin.com/in/shashank219/)
+  - [Chip Huyen](https://www.linkedin.com/in/chiphuyen/)
+  - [Alex Xu](https://www.linkedin.com/in/alexxubyte)
+  - [Deepak Goyal](https://www.linkedin.com/in/deepak-goyal-93805a17/)
+  - [Andreas Kretz](https://www.linkedin.com/in/andreas-kretz)
+- 50k+ Followers
+  - [Joe Reis](https://www.linkedin.com/in/josephreis)
+  - [Darshil Parmar](https://www.linkedin.com/in/darshil-parmar/)
+  - [Ankit Bansal](https://www.linkedin.com/in/ankitbansal6/)
+  - [Marc Lamberti](https://www.linkedin.com/in/marclamberti)
+- 10k+ Followers
+  - [Joseph Machado](https://www.linkedin.com/in/josephmachado1991/)
+  - [Eric Roby](https://www.linkedin.com/in/codingwithroby/)
+  - [Simon Whiteley](https://www.linkedin.com/in/simon-whiteley-uk/)
+- 5k+ Followers
+  - [Dipankar Mazumdar](https://www.linkedin.com/in/dipankar-mazumdar/)
+  - [Daniel Ciocirlan](https://www.linkedin.com/in/danielciocirlan)
+  - [Hugo Lu](https://www.linkedin.com/in/hugo-lu-confirmed/)
+  - [Tobias Macey](https://www.linkedin.com/in/tmacey)
+- 1k+ Followers
+  - [Shruti Mantri](https://www.linkedin.com/in/shruti-mantri-88527a67/)
 
 Twitter / X
 
