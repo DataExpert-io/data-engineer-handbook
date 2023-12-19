@@ -23,6 +23,7 @@ Great books:
 - [Deciphering Data Architectures](https://www.oreilly.com/library/view/deciphering-data-architectures/9781098150754/)
 - [97 Things Every Data Engineer Should Know: Collective Wisdom from the Experts](https://www.amazon.com/Things-Every-Data-Engineer-Should/dp/1492062413)
 - [Data Governance: The Definitive Guide](https://www.oreilly.com/library/view/data-governance-the/9781492063483/)
+- [Trino: The Definitive Guide](https://trino.io/trino-the-definitive-guide.html)
 - [Delta Lake: The Definitive Guide](https://www.oreilly.com/library/view/delta-lake-the/9781098151935/)
 - [Hadoop: The Definitive Guide](https://www.oreilly.com/library/view/hadoop-the-definitive/9781491901687/)
 - [Modern Data Engineering with Apache Spark: A Hands-On Guide for Building Mission-Critical Streaming Applications](https://www.amazon.com/Modern-Engineering-Apache-Spark-Hands/dp/1484274512)
@@ -73,6 +74,7 @@ Data Engineering blogs of companies:
 - [Microsoft Fabric Blog](https://blog.fabric.microsoft.com/)
 - [Oracle](https://blogs.oracle.com/datawarehousing/)
 - [Meta](https://engineering.fb.com/category/data-infrastructure/)
+- [Onehouse](https://www.onehouse.ai/blog)
   
 
 Data Engineering Whitepapers:
@@ -82,6 +84,7 @@ Data Engineering Whitepapers:
 - [The Data Lakehouse: Data Warehousing and More](https://arxiv.org/abs/2310.08697)
 - [Spark: Cluster Computing with Working Sets](https://dl.acm.org/doi/10.5555/1863103.1863113)
 - [The Google File System](https://research.google/pubs/the-google-file-system/)
+- [Building a Universal Data Lakehouse](https://www.onehouse.ai/whitepaper/onehouse-universal-data-lakehouse-whitepaper)
 
   
 Great YouTube Channels:
