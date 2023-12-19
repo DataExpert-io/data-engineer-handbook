@@ -1,4 +1,5 @@
 # The Data Engineering Handbook
+
 This repo has all the resources you need to become an amazing data engineer!
 
 Make sure to check out the [projects](projects.md) section for more hands-on examples!
@@ -28,8 +29,8 @@ Great books:
 - [Hadoop: The Definitive Guide](https://www.oreilly.com/library/view/hadoop-the-definitive/9781491901687/)
 - [Modern Data Engineering with Apache Spark: A Hands-On Guide for Building Mission-Critical Streaming Applications](https://www.amazon.com/Modern-Engineering-Apache-Spark-Hands/dp/1484274512)
 - [Data Engineering with dbt: A practical guide to building a dependable data platform with SQL](https://www.amazon.com/Data-Engineering-dbt-cloud-based-dependable-ebook/dp/B0C4LL19G7)
+- [Data Engineering with AWS](https://www.oreilly.com/library/view/data-engineering-with/9781804614426/)
   
-
 Communities:
 
 - [Seattle Data Guy Discord](https://discord.gg/ah95MZKkFF)
@@ -63,8 +64,8 @@ Companies:
 - [Snowflake](https://www.snowflake.com/en/)
 - [Onehouse](https://www.onehouse.ai)
 
-
 Data Engineering blogs of companies:
+
 - [Netflix](https://netflixtechblog.com/tagged/big-data)
 - [Uber](https://www.uber.com/blog/houston/data/?uclick_id=b2f43229-f3f4-4bae-bd5d-10a05db2f70c)
 - [Databricks](https://www.databricks.com/blog/category/engineering/data-engineering)
@@ -76,8 +77,8 @@ Data Engineering blogs of companies:
 - [Meta](https://engineering.fb.com/category/data-infrastructure/)
 - [Onehouse](https://www.onehouse.ai/blog)
   
-
 Data Engineering Whitepapers:
+
 - [A Five-Layered Business Intelligence Architecture](https://ibimapublishing.com/articles/CIBIMA/2011/695619/695619.pdf)
 - [Lakehouse:A New Generation of Open Platforms that Unify Data Warehousing and Advanced Analytics](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf)
 - [Big Data Quality: A Data Quality Profiling Model](https://link.springer.com/chapter/10.1007/978-3-030-23381-5_5)
@@ -86,7 +87,6 @@ Data Engineering Whitepapers:
 - [The Google File System](https://research.google/pubs/the-google-file-system/)
 - [Building a Universal Data Lakehouse](https://www.onehouse.ai/whitepaper/onehouse-universal-data-lakehouse-whitepaper)
 
-  
 Great YouTube Channels:
 
 - [Data with Zach](https://www.youtube.com/c/datawithzach)
@@ -124,13 +124,12 @@ Great Podcasts
 - [Data Brew by Databricks](https://www.databricks.com/discover/data-brew)
 - [The Data Cloud Podcast by Snowflake](https://rise-of-the-data-cloud.simplecast.com/)
 - [What's New in data](https://www.striim.com/podcast/)
-- [Open||Source||Data by Datastax](https://www.datastax.com/resources/podcast/open-source-data) 
+- [Open||Source||Data by Datastax](https://www.datastax.com/resources/podcast/open-source-data)
 - [Streaming Audio by confluent](https://developer.confluent.io/podcast/)
 - [The Data Scientist Show](https://podcasts.apple.com/us/podcast/the-data-scientist-show/id1584430381)
 - [MLOps.community](https://podcast.mlops.community/)
 - [Monday Morning Data Chat](https://open.spotify.com/show/3Km3lBNzJpc1nOTJUtbtMh)
 - [The Data Chief](https://www.thoughtspot.com/data-chief/podcast)
-
 
 Newsletters:
 
@@ -177,7 +176,7 @@ LinkedIn
 - [Dipankar Mazumdar](https://www.linkedin.com/in/dipankar-mazumdar/)
 - [Ankit Bansal](https://www.linkedin.com/in/ankitbansal6/)
 
-Twitter / X 
+Twitter / X
 
 - [Zach Wilson](https://www.twitter.com/EcZachly)
 - [Seattle Data Guy](https://www.twitter.com/SeattleDataGuy)
@@ -195,20 +194,19 @@ Instagram
 
 - [Zach Wilson](https://www.instagram.com/eczachly)
 - [Andreas Kretz](https://www.instagram.com/learndataengineering)
-- [Seattle Data Guy](https://www.instagram.com/seattledataguy) 
+- [Seattle Data Guy](https://www.instagram.com/seattledataguy)
 
 TikTok
 
 - [Zach Wilson](https://www.tiktok.com/@eczachly)
 - [Alex The Analyst](https://www.tiktok.com/@alex_the_analyst)
 
-Design Patterns 
+Design Patterns
 
 - [Cumulative Table Design](https://www.github.com/EcZachly/cumulative-table-design)
 - [Microbatch Deduplication](https://www.github.com/EcZachly/microbatch-hourly-deduped-tutorial)
 - [The Little Book of Pipelines](https://www.github.com/EcZachly/little-book-of-pipelines)
 - [Data Developer Platform](https://datadeveloperplatform.org/architecture/)
-
 
 Courses / Academies
 
