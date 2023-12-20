@@ -169,7 +169,6 @@ Newsletters:
 
 LinkedIn
 
-
 - 100k+ Followers
   - [Zach Wilson](https://www.linkedin.com/in/eczachly)
   - [Ben Rogojan](https://www.linkedin.com/in/benjaminrogojan)
