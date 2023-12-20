@@ -43,6 +43,7 @@ Communities:
 - [r/MicrosoftFabric](https://www.reddit.com/r/MicrosoftFabric/)
 - [Data Talks Club Slack](https://datatalks.club/slack)
 - [SylphAI for data professional matchmaking](https://www.sylphai.com/)
+- [Data Engineering Wiki](https://dataengineering.wiki/)
 
 Companies:
 
@@ -167,7 +168,6 @@ Newsletters:
 - [Modern Data 101](https://moderndata101.substack.com/)
 
 LinkedIn
-
 
 - 100k+ Followers
   - [Zach Wilson](https://www.linkedin.com/in/eczachly)
