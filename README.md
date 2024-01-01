@@ -30,6 +30,8 @@ Great books:
 - [Modern Data Engineering with Apache Spark: A Hands-On Guide for Building Mission-Critical Streaming Applications](https://www.amazon.com/Modern-Engineering-Apache-Spark-Hands/dp/1484274512)
 - [Data Engineering with dbt: A practical guide to building a dependable data platform with SQL](https://www.amazon.com/Data-Engineering-dbt-cloud-based-dependable-ebook/dp/B0C4LL19G7)
 - [Data Engineering with AWS](https://www.oreilly.com/library/view/data-engineering-with/9781804614426/)
+- [Practical DataOps: Delivering Agile Date Science at Scale](https://www.amazon.com/Practical-DataOps-Delivering-Agile-Science/dp/1484251032)
+- [Data Engineering Design Patterns](https://www.dedp.online/about-this-book.html)
   
 Communities:
 
