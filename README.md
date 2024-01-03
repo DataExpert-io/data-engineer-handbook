@@ -65,6 +65,7 @@ Companies:
 - Data Quality
   - [dbt](https://www.getdbt.com/)
   - [Gable](https://www.gable.ai)
+  - [Great Expectations](https://www.greatexpectations.io)
 - Education Companies
   - [DataEngineer.io](https://www.dataengineer.io)
   - [LearnDataEngineering.com](https://www.learndataengineering.com)
@@ -76,6 +77,7 @@ Companies:
 - Data Integration
   - [Cube](https://cube.dev)
   - [Fivetran](https://www.fivetran.com)
+  - [Airbyte](https://airbyte.io)
 
 Data Engineering blogs of companies:
 
