@@ -62,9 +62,11 @@ Companies:
   - [Onehouse](https://www.onehouse.ai)
 - Data Warehouse
   - [Snowflake](https://www.snowflake.com/en/)
+  - [Firebolt](https://www.firebolt.io/)
 - Data Quality
   - [dbt](https://www.getdbt.com/)
   - [Gable](https://www.gable.ai)
+  - [Great Expectations](https://greatexpectations.io/)
 - Education Companies
   - [DataEngineer.io](https://www.dataengineer.io)
   - [LearnDataEngineering.com](https://www.learndataengineering.com)
@@ -76,6 +78,11 @@ Companies:
 - Data Integration
   - [Cube](https://cube.dev)
   - [Fivetran](https://www.fivetran.com)
+- Modern OLAP
+  - [Apache Druid](https://druid.apache.org/)
+  - [ClickHouse](https://clickhouse.com/)
+  - [Apache Pinot](https://pinot.apache.org/)
+  - [Apache Kylin](https://kylin.apache.org/)
 
 Data Engineering blogs of companies:
 
@@ -168,6 +175,7 @@ Newsletters:
 - [Blef.fr Data News](https://www.blef.fr/blog/)
 - [All Hands on Data](https://allhandsondata.substack.com/)
 - [Modern Data 101](https://moderndata101.substack.com/)
+- [SELECT Insights](https://newsletter.ssp.sh/)
 
 LinkedIn
 
@@ -189,6 +197,7 @@ LinkedIn
   - [Joseph Machado](https://www.linkedin.com/in/josephmachado1991/)
   - [Eric Roby](https://www.linkedin.com/in/codingwithroby/)
   - [Simon Whiteley](https://www.linkedin.com/in/simon-whiteley-uk/)
+  - [Simon Späti](https://www.linkedin.com/in/sspaeti/)
 - 5k+ Followers
   - [Dipankar Mazumdar](https://www.linkedin.com/in/dipankar-mazumdar/)
   - [Daniel Ciocirlan](https://www.linkedin.com/in/danielciocirlan)
@@ -210,6 +219,7 @@ Twitter / X
 - [Dipankar Mazumdar](https://twitter.com/Dipankartnt)
 - [Start Data Engineering](https://twitter.com/startdataeng)
 - [Data Cyborg](https://twitter.com/data_cyborg)
+- [Simon Späti](https://twitter.com/sspaeti)
   
 Instagram
 
