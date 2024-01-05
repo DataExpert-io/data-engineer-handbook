@@ -177,6 +177,15 @@ Newsletters:
 - [Modern Data 101](https://moderndata101.substack.com/)
 - [SELECT Insights](https://newsletter.ssp.sh/)
 
+Glossaries:
+- [Simon Späti's Data Engineering Brain](https://www.ssp.sh/brain/data-engineering/)
+- [Airbyte Data Glossary](https://glossary.airbyte.com/)
+- [Data Engineering Wiki by Reddit](https://dataengineering.wiki/Index)
+- [Seconda Glossary](https://www.secoda.co/glossary/) 
+- [Glossary Databricks](https://www.databricks.com/glossary)
+- [Airtable Glossary](https://airtable.com/shrGh8BqZbkfkbrfk/tbluZ3ayLHC3CKsDb)
+- [Data Engineering Glossary by Dagster](https://dagster.io/glossary)
+
 LinkedIn
 
 - 100k+ Followers
