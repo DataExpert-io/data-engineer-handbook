@@ -31,7 +31,7 @@ Great books:
 - [Data Engineering with dbt: A practical guide to building a dependable data platform with SQL](https://www.amazon.com/Data-Engineering-dbt-cloud-based-dependable-ebook/dp/B0C4LL19G7)
 - [Data Engineering with AWS](https://www.oreilly.com/library/view/data-engineering-with/9781804614426/)
 - [Practical DataOps: Delivering Agile Date Science at Scale](https://www.amazon.com/Practical-DataOps-Delivering-Agile-Science/dp/1484251032)
-- [Data Engineering Design Patterns](https://www.dedp.online/about-this-book.html)
+- [Data Engineering Design Patterns](https://www.dedp.online/)
   
 Communities:
 
@@ -62,6 +62,7 @@ Companies:
   - [Onehouse](https://www.onehouse.ai)
 - Data Warehouse
   - [Snowflake](https://www.snowflake.com/en/)
+  - [Firebolt](https://www.firebolt.io/)
 - Data Quality
   - [dbt](https://www.getdbt.com/)
   - [Gable](https://www.gable.ai)
@@ -78,6 +79,11 @@ Companies:
   - [Cube](https://cube.dev)
   - [Fivetran](https://www.fivetran.com)
   - [Airbyte](https://airbyte.io)
+- Modern OLAP
+  - [Apache Druid](https://druid.apache.org/)
+  - [ClickHouse](https://clickhouse.com/)
+  - [Apache Pinot](https://pinot.apache.org/)
+  - [Apache Kylin](https://kylin.apache.org/)
 
 Data Engineering blogs of companies:
 
@@ -170,6 +176,16 @@ Newsletters:
 - [Blef.fr Data News](https://www.blef.fr/blog/)
 - [All Hands on Data](https://allhandsondata.substack.com/)
 - [Modern Data 101](https://moderndata101.substack.com/)
+- [SELECT Insights](https://newsletter.ssp.sh/)
+
+Glossaries:
+- [Data Engineering Vault](https://www.ssp.sh/brain/data-engineering/)
+- [Airbyte Data Glossary](https://glossary.airbyte.com/)
+- [Data Engineering Wiki by Reddit](https://dataengineering.wiki/Index)
+- [Seconda Glossary](https://www.secoda.co/glossary/) 
+- [Glossary Databricks](https://www.databricks.com/glossary)
+- [Airtable Glossary](https://airtable.com/shrGh8BqZbkfkbrfk/tbluZ3ayLHC3CKsDb)
+- [Data Engineering Glossary by Dagster](https://dagster.io/glossary)
 
 LinkedIn
 
@@ -191,6 +207,7 @@ LinkedIn
   - [Joseph Machado](https://www.linkedin.com/in/josephmachado1991/)
   - [Eric Roby](https://www.linkedin.com/in/codingwithroby/)
   - [Simon Whiteley](https://www.linkedin.com/in/simon-whiteley-uk/)
+  - [Simon Späti](https://www.linkedin.com/in/sspaeti/)
 - 5k+ Followers
   - [Dipankar Mazumdar](https://www.linkedin.com/in/dipankar-mazumdar/)
   - [Daniel Ciocirlan](https://www.linkedin.com/in/danielciocirlan)
@@ -212,6 +229,7 @@ Twitter / X
 - [Dipankar Mazumdar](https://twitter.com/Dipankartnt)
 - [Start Data Engineering](https://twitter.com/startdataeng)
 - [Data Cyborg](https://twitter.com/data_cyborg)
+- [Simon Späti](https://twitter.com/sspaeti)
   
 Instagram
 
