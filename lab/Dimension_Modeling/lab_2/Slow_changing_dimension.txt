@@ -1,0 +1,240 @@
+CREATE TABLE Jaswanthv.nba_player_scd (
+player_name VARCHAR,
+is_active BOOLEAN,
+start_season INTEGER,
+end_season INTEGER,
+current_season INTEGER
+)
+WITH
+(
+  FORMAT = 'PARQUET',
+  partitioning = Array['current_season']
+)
+
+
+-- Query to find previous status using Windows funcion
+SELECT 
+player_name,
+is_active,
+LAG(is_active,1) OVER(PARTITION BY player_name ORDER BY current_season) AS is_active_last_season,
+current_season from Jaswanthv.nba_players
+
+SELECT 
+player_name,
+CASE
+ WHEN is_active THEN 1
+ ELSE 0
+END AS is_active,
+CASE
+  WHEN LAG(is_active,1) OVER(PARTITION BY player_name ORDER BY current_season) THEN 1
+  ELSE 0
+END AS is_active_last_season,
+current_season from Jaswanthv.nba_players
+
+With Lagged As
+(
+SELECT 
+player_name,
+CASE
+ WHEN is_active THEN 1
+ ELSE 0
+END AS is_active,
+CASE
+  WHEN LAG(is_active,1) OVER(PARTITION BY player_name ORDER BY current_season) THEN 1
+  ELSE 0
+END AS is_active_last_season,
+current_season from Jaswanthv.nba_players
+)
+Select *,
+CASE
+  When is_active <> is_active_last_season THEN 1
+  ELSE 0
+END As did_change
+FROM Lagged
+
+-- Logic to identfy when the status changed
+
+With Lagged As
+(
+SELECT 
+player_name,
+CASE
+ WHEN is_active THEN 1
+ ELSE 0
+END AS is_active,
+CASE
+  WHEN LAG(is_active,1) OVER(PARTITION BY player_name ORDER BY current_season) THEN 1
+  ELSE 0
+END AS is_active_last_season,
+current_season from Jaswanthv.nba_players
+)
+Select *,SUM(
+CASE
+  When is_active <> is_active_last_season THEN 1
+  ELSE 0
+END) OVER (PARTITION BY player_name ORDER BY current_season )As streak_identifier
+FROM Lagged
+
+-- SCD logic to identify change in cumulative design
+
+With Lagged As
+(
+SELECT 
+player_name,
+CASE
+ WHEN is_active THEN 1
+ ELSE 0
+END AS is_active,
+CASE
+  WHEN LAG(is_active,1) OVER(PARTITION BY player_name ORDER BY current_season) THEN 1
+  ELSE 0
+END AS is_active_last_season,
+current_season from Jaswanthv.nba_players
+),
+Streaked As (
+Select *,SUM(
+CASE
+  When is_active <> is_active_last_season THEN 1
+  ELSE 0
+END) OVER (PARTITION BY player_name ORDER BY current_season )As streak_identifier
+FROM Lagged
+)
+Select
+player_name,
+streak_identifier,
+MAX(is_active) AS is_active,
+MIN(current_season) AS start_season,
+MAX(current_season) As end_season
+FROM
+Streaked
+GROUP BY
+player_name,
+streak_identifier
+
+-- Query to get data till a particular timeframe
+With Lagged As
+(
+SELECT 
+player_name,
+CASE
+ WHEN is_active THEN 1
+ ELSE 0
+END AS is_active,
+CASE
+  WHEN LAG(is_active,1) OVER(PARTITION BY player_name ORDER BY current_season) THEN 1
+  ELSE 0
+END AS is_active_last_season,
+current_season from Jaswanthv.nba_players
+Where current_season <= 2001
+),
+Streaked As (
+Select *,SUM(
+CASE
+  When is_active <> is_active_last_season THEN 1
+  ELSE 0
+END) OVER (PARTITION BY player_name ORDER BY current_season )As streak_identifier
+FROM Lagged
+)
+Select
+player_name,
+streak_identifier,
+MAX(is_active) AS is_active,
+MIN(current_season) AS start_season,
+MAX(current_season) As end_season,
+2001 As current_season
+FROM
+Streaked
+GROUP BY
+player_name,
+streak_identifier
+
+-- Onetime load query
+Insert into Jaswanthv.nba_player_scd
+With Lagged As
+(
+SELECT 
+player_name,
+CASE
+ WHEN is_active THEN 1
+ ELSE 0
+END AS is_active,
+CASE
+  WHEN LAG(is_active,1) OVER(PARTITION BY player_name ORDER BY current_season) THEN 1
+  ELSE 0
+END AS is_active_last_season,
+current_season from Jaswanthv.nba_players
+Where current_season <= 2001
+),
+Streaked As (
+Select *,SUM(
+CASE
+  When is_active <> is_active_last_season THEN 1
+  ELSE 0
+END) OVER (PARTITION BY player_name ORDER BY current_season )As streak_identifier
+FROM Lagged
+)
+Select
+player_name,
+--streak_identifier,
+MAX(is_active) = 1 AS is_active,
+MIN(current_season) AS start_season,
+MAX(current_season) As end_season,
+2001 As current_season
+FROM
+Streaked
+GROUP BY
+player_name,
+streak_identifier
+
+-- Incremental Load query
+INSERT into Jaswanthv.nba_player_scd
+With last_season_scd AS (
+Select * from Jaswanthv.nba_player_scd where current_season = 2001
+),
+current_season_scd As
+(Select * from Jaswanthv.nba_players
+Where current_season = 2002
+),
+combined As (
+Select 
+COALESCE(ls.player_name, cs.player_name) AS player_name,
+COALESCE(ls.start_season, cs.current_season) As start_season,
+COALESCE(ls.end_season, cs.current_season) AS end_season,
+CASE
+ WHEN ls.is_active <> cs.is_active Then 1
+ WHEN ls.is_active = cs.is_active THEN 0
+END As did_change,
+ls.is_active As is_active_last_season,
+cs.is_active As is_active_this_season,
+2002 As current_season
+from last_season_scd ls
+Full Outer JOIN current_season_scd cs on ls.player_name = cs.player_name And ls.end_season + 1 = cs.current_season
+),
+changes As
+(
+Select 
+player_name,
+current_season,
+CASE
+  WHEN did_change = 0 Then ARRAY[
+  CAST(ROW (is_active_last_season,start_season,end_season + 1) AS ROW (is_active BOOLEAN,start_season INTEGER,end_season INTEGER))
+    ]
+  WHEN did_change = 1 THEN ARRAY[
+      CAST(ROW (is_active_last_season, start_season, end_season) AS ROW (is_active BOOLEAN,start_season INTEGER,end_season INTEGER)),
+      CAST(ROW (is_active_this_season,current_season,current_season) AS ROW (is_active BOOLEAN,start_season INTEGER,end_season INTEGER))
+    ]
+  WHEN did_change IS NULL THEN ARRAY[
+      CAST(ROW (COALESCE(is_active_last_season, is_active_this_season),start_season,end_season) AS ROW (is_active BOOLEAN,start_season INTEGER,end_season INTEGER))
+    ]
+  END As change_array
+FROM
+  combined
+  )
+  Select 
+  player_name, 
+  arr.is_active,
+  arr.start_season,
+  arr.end_season,
+  current_season
+  from changes
+  CROSS JOIN UNNEST (change_array) As arr
