@@ -1,0 +1,214 @@
+Select
+'pre_aggregated',
+SUM(player_count)
+FROM
+(
+SELECT team_abbreviation,
+COUNT(DISTINCT player_name) As player_count
+ FROM bootcamp.nba_game_details 
+ GROUP BY
+ team_abbreviation
+ )
+ UNION ALL
+ Select
+ 'count distinct',
+ COUNT(DISTINCT player_name) 
+ from 
+ bootcamp.nba_game_details 
+
+ -- Create graph vertices table
+ CREATE TABLE
+Jaswanthv.nba_graph_vertices (
+identifier VARCHAR,
+TYPE VARCHAR,
+PROPERTIES MAP(VARCHAR, VARCHAR))
+WITH
+(FORMAT = 'PARQUET', partitioning = ARRAY['Type'])
+
+-- Insert 'player' type data
+Insert into Jaswanthv.nba_graph_vertices
+With aggregated As
+(
+Select
+player_name,
+count(1) As number_of_seasons,
+MAX(country) As country,
+MAX(pts) As most_points_in_a_season
+FROM
+bootcamp.nba_player_seasons
+GROUP BY
+  player_name
+  )
+  Select player_name As identifier,
+  'player' As TYPE,
+  MAP(
+   ARRAY[
+         'number_of_seasons',
+         'country',
+         'most_points_in_a_season'],
+   ARRAY[
+         CAST(number_of_seasons As VARCHAR),
+         country,
+         CAST(most_points_in_a_season AS VARCHAR)
+         ]
+       ) As PROPERTIES
+   from aggregated
+
+-- Insert 'team' type data
+Insert into Jaswanthv.nba_graph_vertices
+WITH
+  aggregated AS (
+    SELECT
+      team_id,
+      'team' AS TYPE,
+      team_abbreviation
+    FROM
+      bootcamp.nba_game_details
+    GROUP BY
+      team_id,
+      team_abbreviation
+  )
+SELECT
+  CAST(team_id AS VARCHAR) AS identifier,
+  TYPE,
+  MAP(
+    ARRAY['team_abbreviation'],
+    ARRAY[team_abbreviation]
+  )
+FROM
+  aggregated
+
+-- Create Edges table
+
+CREATE TABLE Jaswanthv.nba_player_edges
+(
+subject_identifier VARCHAR,
+subject_type VARCHAR,
+object_identifier VARCHAR,
+object_type VARCHAR,
+edge_type VARCHAR,
+PROPERTIES MAP(VARCHAR,VARCHAR)
+)
+WITH
+(
+FORMAT = 'PARQUET',
+partitioning = ARRAY['edge_type','subject_type','object_type']
+)
+
+
+-- Insert data into Edges
+INSERT into Jaswanthv.nba_player_edges
+Select
+player_name As subject_identifier,
+'player' As subject_type,
+CAST(team_id AS VARCHAR) AS object_identifier,
+'team' AS object_type,
+'plays_on' As edge_type,
+MAP(
+ARRAY['number_of_games','number_of_points'],
+ARRAY[CAST(COUNT(1) AS VARCHAR),CAST(SUM(pts) AS VARCHAR)]
+) As PROPERTIES
+FROM
+bootcamp.nba_game_details
+GROUP BY
+player_name,
+team_id
+
+-- MURMUR function to encode data (example)
+SELECT
+  MURMUR3(CAST(player_name AS VARBINARY)) AS subject_identifier,
+  'player' AS subject_type,
+  CAST(team_id AS VARCHAR) AS object_identifier,
+  'team' AS object_type,
+  'plays_on' AS edge_type
+FROM
+  bootcamp.nba_game_details
+GROUP BY
+  player_name,
+  team_id
+
+  -- Sample Analysis
+  -- Query to get players who made more than 1000 points 
+
+SELECT
+  subject_identifier,
+  COUNT(1)
+FROM
+  Jaswanthv.nba_player_edges
+  where edge_type = 'plays_on' and
+  CAST(PROPERTIES['number_of_points'] AS DOUBLE) > 1000
+GROUP BY
+  subject_identifier
+
+-- Insert data into edges for relation between subject and object identifiers
+
+INSERT INTO
+  Jaswanthv.nba_player_edges
+WITH
+  aggregated AS (
+    SELECT
+      ng1.player_name AS subject_identifier,
+      ng2.player_name AS object_identifier,
+      CASE
+        WHEN ng1.team_id = ng2.team_id THEN 'plays_with'
+        ELSE 'plays_against'
+      END AS edge_type,
+      CAST(COUNT(1) AS VARCHAR) AS number_of_games,
+      CAST(SUM(ng1.pts) AS VARCHAR) AS subject_points,
+      CAST(SUM(ng2.pts) AS VARCHAR) AS object_points
+    FROM
+      bootcamp.nba_game_details ng1
+      JOIN bootcamp.nba_game_details ng2 ON ng1.player_name > ng2.player_name
+      AND ng1.game_id = ng2.game_id
+    GROUP BY
+      1,
+      2,
+      3
+  )
+SELECT
+  subject_identifier,
+  'player' AS subject_type,
+  object_identifier,
+  'player' AS object_type,
+  edge_type,
+  MAP(
+    ARRAY[
+      'number_of_games',
+      'subject_points',
+      'object_points'
+    ],
+    ARRAY[number_of_games, subject_points, object_points]
+  )
+FROM
+  aggregated
+
+  -- Analysis
+  -- Query to get 'Subject_Points' and Object relationship
+  SELECT
+  subject_identifier,
+  object_identifier,
+  edge_type,
+  CAST(PROPERTIES['subject_points'] AS DOUBLE)
+FROM
+  Jaswanthv.nba_player_edges
+WHERE
+  edge_type IN ('plays_with', 'plays_against')
+ORDER BY
+  CAST(PROPERTIES['subject_points'] AS DOUBLE) DESC
+LIMIT
+  100
+
+  -- Query for a particular subject/object and their relationship
+
+SELECT
+  subject_identifier,
+  object_identifier,
+  edge_type
+FROM
+  Jaswanthv.nba_player_edges
+WHERE
+  subject_identifier = 'LeBron James'
+  OR object_identifier = 'LeBron James'
+LIMIT
+  100
+
