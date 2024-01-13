@@ -177,6 +177,7 @@ Newsletters:
 - [All Hands on Data](https://allhandsondata.substack.com/)
 - [Modern Data 101](https://moderndata101.substack.com/)
 - [SELECT Insights](https://newsletter.ssp.sh/)
+- [Interesting Data Gigs](https://newsletter.interestinggigs.com)
 
 Glossaries:
 - [Data Engineering Vault](https://www.ssp.sh/brain/data-engineering/)
@@ -213,6 +214,7 @@ LinkedIn
   - [Daniel Ciocirlan](https://www.linkedin.com/in/danielciocirlan)
   - [Hugo Lu](https://www.linkedin.com/in/hugo-lu-confirmed/)
   - [Tobias Macey](https://www.linkedin.com/in/tmacey)
+  - [Marcos Ortiz](https://www.linkedin.com/in/mlortiz)
 - 1k+ Followers
   - [Shruti Mantri](https://www.linkedin.com/in/shruti-mantri-88527a67/)
 
@@ -230,6 +232,7 @@ Twitter / X
 - [Start Data Engineering](https://twitter.com/startdataeng)
 - [Data Cyborg](https://twitter.com/data_cyborg)
 - [Simon Späti](https://twitter.com/sspaeti)
+- [Marcos Ortiz](https://twitter.com/marcosluis2186)
   
 Instagram
 
@@ -241,6 +244,7 @@ TikTok
 
 - [Zach Wilson](https://www.tiktok.com/@eczachly)
 - [Alex The Analyst](https://www.tiktok.com/@alex_the_analyst)
+- [Marcos Ortiz](https://www.tiktok.com/@marcosluis2186)
 
 Design Patterns
 
