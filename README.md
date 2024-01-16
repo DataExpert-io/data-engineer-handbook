@@ -79,6 +79,7 @@ Companies:
   - [Cube](https://cube.dev)
   - [Fivetran](https://www.fivetran.com)
   - [Airbyte](https://airbyte.io)
+  - [dlt](https://dlthub.com/)
 - Modern OLAP
   - [Apache Druid](https://druid.apache.org/)
   - [ClickHouse](https://clickhouse.com/)
