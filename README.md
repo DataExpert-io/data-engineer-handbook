@@ -32,6 +32,7 @@ Great books:
 - [Data Engineering with AWS](https://www.oreilly.com/library/view/data-engineering-with/9781804614426/)
 - [Practical DataOps: Delivering Agile Date Science at Scale](https://www.amazon.com/Practical-DataOps-Delivering-Agile-Science/dp/1484251032)
 - [Data Engineering Design Patterns](https://www.dedp.online/)
+- [Snowflake Data Engineering](https://www.manning.com/books/snowflake-data-engineering)
   
 Communities:
 
