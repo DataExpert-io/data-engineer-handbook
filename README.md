@@ -68,6 +68,7 @@ Companies:
   - [dbt](https://www.getdbt.com/)
   - [Gable](https://www.gable.ai)
   - [Great Expectations](https://www.greatexpectations.io)
+  - [Streamdal](https://streamdal.com)
 - Education Companies
   - [DataEngineer.io](https://www.dataengineer.io)
   - [LearnDataEngineering.com](https://www.learndataengineering.com)
