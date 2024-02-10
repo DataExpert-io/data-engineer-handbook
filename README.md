@@ -281,3 +281,4 @@ Conferences
 - [Trino Summit - December 13-14, 2023 - Virtual](https://www.starburst.io/info/trinosummit2023/)
 - [Data Universe - April 10-11, 2024 - New York City](https://www.datauniverseevent.com/)
 - [Data Nova @ Data Universe - April 10-11, 2024 - New York City](https://www.starburst.io/datanova/)
+- [DataTune Conference - March 8-9, 2024 - Nashville, TN](https://www.datatuneconf.com/)
