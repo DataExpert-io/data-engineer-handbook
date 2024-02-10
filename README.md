@@ -33,6 +33,7 @@ Great books:
 - [Practical DataOps: Delivering Agile Date Science at Scale](https://www.amazon.com/Practical-DataOps-Delivering-Agile-Science/dp/1484251032)
 - [Data Engineering Design Patterns](https://www.dedp.online/)
 - [Snowflake Data Engineering](https://www.manning.com/books/snowflake-data-engineering)
+- [Unlocking dbt](https://www.amazon.com/Unlocking-dbt-Design-Transformations-Warehouse/dp/1484296990/)
   
 Communities:
 
