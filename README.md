@@ -132,6 +132,7 @@ Great YouTube Channels:
   - [Advancing Analytics](https://www.youtube.com/@AdvancingAnalytics)
   - [Kahan Data Solutions](https://www.youtube.com/@KahanDataSolutions)
   - [Ankit Bansal](https://youtube.com/@ankitbansal6)
+  - [Mr. K Talks Tech](https://www.youtube.com/channel/UCzdOan4AmF65PmLLks8Lmww)
 - 1k+ subscribers
   - [Eric Roby](https://www.youtube.com/@codingwithroby)
 
