@@ -57,6 +57,7 @@ Companies:
   - [Prefect](https://www.prefect.io)
   - [Dagster](https://www.dagster.io)
   - [Airbyte](https://airbyte.com)
+  - [Shipyard](https://www.shipyardapp.com/)
 - Data Lake / Cloud
   - [Tabular](https://www.tabular.io)
   - [Microsoft](https://www.microsoft.com)
@@ -70,6 +71,7 @@ Companies:
   - [Gable](https://www.gable.ai)
   - [Great Expectations](https://www.greatexpectations.io)
   - [Streamdal](https://streamdal.com)
+  - [Coalesce](https://coalesce.io/)
 - Education Companies
   - [DataEngineer.io](https://www.dataengineer.io)
   - [LearnDataEngineering.com](https://www.learndataengineering.com)
