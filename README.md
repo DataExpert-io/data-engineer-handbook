@@ -62,6 +62,7 @@ Companies:
   - [Microsoft](https://www.microsoft.com)
   - [Databricks](https://www.databricks.com/company/about-us)
   - [Onehouse](https://www.onehouse.ai)
+  - [Delta Lake](https://delta.io/)
 - Data Warehouse
   - [Snowflake](https://www.snowflake.com/en/)
   - [Firebolt](https://www.firebolt.io/)
@@ -71,6 +72,7 @@ Companies:
   - [Great Expectations](https://www.greatexpectations.io)
   - [Streamdal](https://streamdal.com)
   - [Coalesce](https://coalesce.io/)
+  - [Soda](https://www.soda.io/)
 - Education Companies
   - [DataEngineer.io](https://www.dataengineer.io)
   - [LearnDataEngineering.com](https://www.learndataengineering.com)
@@ -79,6 +81,7 @@ Companies:
 - Analytics / Visualization
   - [Preset](https://www.preset.io)
   - [Starburst](https://www.starburst.io)
+  - [Metabase](https://www.metabase.com/)
 - Data Integration
   - [Cube](https://cube.dev)
   - [Fivetran](https://www.fivetran.com)
