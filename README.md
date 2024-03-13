@@ -74,7 +74,7 @@ Companies:
   - [Coalesce](https://coalesce.io/)
   - [Soda](https://www.soda.io/)
 - Education Companies
-  - [DataEngineer.io](https://www.dataengineer.io)
+  - [DataExpert.io](https://www.dataexpert.io)
   - [LearnDataEngineering.com](https://www.learndataengineering.com)
   - [AlgoExpert](https://www.algoexpert.io)
   - [ByteByteGo](https://www.bytebytego.com)
@@ -264,7 +264,7 @@ Design Patterns
 
 Courses / Academies
 
-- [DataEngineer.io Bootcamp/course](https://www.dataengineer.io) use code **HANDBOOK10** for a discount!
+- [DataExpert.io course](https://www.dataexpert.io) use code **HANDBOOK10** for a discount!
 - [LearnDataEngineering.com](https://www.learndataengineering.com)
 - [Technical Freelancer Academy](https://www.technicalfreelanceracademy.com/) Use code **zwtech** for a discount!
 - [IBM Data Engineering for Everyone](https://www.edx.org/learn/data-engineering/ibm-data-engineering-basics-for-everyone)
