@@ -57,6 +57,7 @@ Companies:
   - [Dagster](https://www.dagster.io)
   - [Airbyte](https://airbyte.com)
   - [Shipyard](https://www.shipyardapp.com/)
+  - [Hamilton](https://github.com/dagworks-inc/hamilton)
 - Data Lake / Cloud
   - [Tabular](https://www.tabular.io)
   - [Microsoft](https://www.microsoft.com)
