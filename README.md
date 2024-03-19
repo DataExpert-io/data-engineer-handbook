@@ -34,7 +34,7 @@ Great books:
 - [Data Engineering Design Patterns](https://www.dedp.online/)
 - [Snowflake Data Engineering](https://www.manning.com/books/snowflake-data-engineering)
 - [Unlocking dbt](https://www.amazon.com/Unlocking-dbt-Design-Transformations-Warehouse/dp/1484296990/)
-  
+
 Communities:
 
 - [Seattle Data Guy Discord](https://discord.gg/ah95MZKkFF)
@@ -106,7 +106,7 @@ Data Engineering blogs of companies:
 - [Oracle](https://blogs.oracle.com/datawarehousing/)
 - [Meta](https://engineering.fb.com/category/data-infrastructure/)
 - [Onehouse](https://www.onehouse.ai/blog)
-  
+
 Data Engineering Whitepapers:
 
 - [A Five-Layered Business Intelligence Architecture](https://ibimapublishing.com/articles/CIBIMA/2011/695619/695619.pdf)
@@ -193,7 +193,7 @@ Glossaries:
 - [Data Engineering Vault](https://www.ssp.sh/brain/data-engineering/)
 - [Airbyte Data Glossary](https://glossary.airbyte.com/)
 - [Data Engineering Wiki by Reddit](https://dataengineering.wiki/Index)
-- [Seconda Glossary](https://www.secoda.co/glossary/) 
+- [Seconda Glossary](https://www.secoda.co/glossary/)
 - [Glossary Databricks](https://www.databricks.com/glossary)
 - [Airtable Glossary](https://airtable.com/shrGh8BqZbkfkbrfk/tbluZ3ayLHC3CKsDb)
 - [Data Engineering Glossary by Dagster](https://dagster.io/glossary)
@@ -227,6 +227,7 @@ LinkedIn
   - [Marcos Ortiz](https://www.linkedin.com/in/mlortiz)
 - 1k+ Followers
   - [Shruti Mantri](https://www.linkedin.com/in/shruti-mantri-88527a67/)
+  - [Volker Janz](https://www.linkedin.com/in/vjanz/)
 
 Twitter / X
 
@@ -243,7 +244,7 @@ Twitter / X
 - [Data Cyborg](https://twitter.com/data_cyborg)
 - [Simon Späti](https://twitter.com/sspaeti)
 - [Marcos Ortiz](https://twitter.com/marcosluis2186)
-  
+
 Instagram
 
 - [Zach Wilson](https://www.instagram.com/eczachly)
