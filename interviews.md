@@ -3,18 +3,19 @@
 This is a list of resources you can rely on for great interview prep advice!
 
 - The Data Structures and Algorithms Interview
-  - [DataEngineer.io DSA Interview Video](https://www.dataengineer.io/course/the-data-structures-and-algorithms-interview)
-  - [DataEngineer.io DSA Interview Blog Post](https://blog.dataengineer.io/p/the-hard-truth-about-data-engineering)
+  - [DataExpert.io DSA Interview Video](https://www.dataexpert.io/course/the-data-structures-and-algorithms-interview)
+  - [DataExpert.io DSA Interview Blog Post](https://blog.dataengineer.io/p/the-hard-truth-about-data-engineering)
 
 - The SQL Interview
-  - [DataEngineer.io SQL Interview Video](https://www.dataengineer.io/course/the-sql-interview)
-  - [DataEngineer.io SQL Interview Blog Post](https://blog.dataengineer.io/p/how-to-pass-data-engineering-sql)
+  - [DataExpert.io SQL Interview Video](https://www.dataexpert.io/course/the-sql-interview)
+  - [DataExpert.io SQL Interview Blog Post](https://blog.dataengineer.io/p/how-to-pass-data-engineering-sql)
+  - [50+ SQL Questions to try for free](https://www.dataexpert.io/question)
   - [100+ SQL FAANG SQL Interview Questions](https://datalemur.com/sql-interview-questions)
 
 - The Data Modeling Interview
-  - [DataEngineer.io Data Modeling Interview Video](https://www.dataengineer.io/course/the-data-modeling-interview)
-  - [DataEngineer.io Data Modeling Interview Blog Post](https://blog.dataengineer.io/p/how-to-pass-the-data-modeling-round)
+  - [DataExpert.io Data Modeling Interview Video](https://www.dataexpert.io/course/the-data-modeling-interview)
+  - [DataExpert.io Data Modeling Interview Blog Post](https://blog.dataengineer.io/p/how-to-pass-the-data-modeling-round)
 
 - The Data Architecture Interview
-  - [DataEngineer.io Data Architecture Interview Video](https://dataengineer.io/course/the-data-architecture-interview)
-  - [DataEngineer.io Data Architecture Interview Blog Post](https://blog.dataengineer.io/p/how-to-pass-the-data-architecture)
+  - [DataExpert.io Data Architecture Interview Video](https://dataexpert.io/course/the-data-architecture-interview)
+  - [DataExpert.io Data Architecture Interview Blog Post](https://blog.dataengineer.io/p/how-to-pass-the-data-architecture)
