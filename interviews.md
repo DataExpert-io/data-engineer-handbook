@@ -9,7 +9,7 @@ This is a list of resources you can rely on for great interview prep advice!
 - The SQL Interview
   - [DataExpert.io SQL Interview Video](https://www.dataexpert.io/course/the-sql-interview)
   - [DataExpert.io SQL Interview Blog Post](https://blog.dataengineer.io/p/how-to-pass-data-engineering-sql)
-  - [50+ SQL Questions to try for free](https://www.dataexpert.io/question)
+  - [50+ Data Lake SQL questions to try for free](https://www.dataexpert.io/questions)
   - [100+ SQL FAANG SQL Interview Questions](https://datalemur.com/sql-interview-questions)
 
 - The Data Modeling Interview
