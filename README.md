@@ -215,6 +215,7 @@ LinkedIn
   - [Ankit Bansal](https://www.linkedin.com/in/ankitbansal6/)
   - [Marc Lamberti](https://www.linkedin.com/in/marclamberti)
 - 10k+ Followers
+  - [Li Yin](https://www.linkedin.com/in/li-yin-ai/)
   - [Joseph Machado](https://www.linkedin.com/in/josephmachado1991/)
   - [Eric Roby](https://www.linkedin.com/in/codingwithroby/)
   - [Simon Whiteley](https://www.linkedin.com/in/simon-whiteley-uk/)
