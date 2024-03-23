@@ -74,6 +74,7 @@ Companies:
   - [Streamdal](https://streamdal.com)
   - [Coalesce](https://coalesce.io/)
   - [Soda](https://www.soda.io/)
+  - [DQOps](https://dqops.com/)
 - Education Companies
   - [DataExpert.io](https://www.dataexpert.io)
   - [LearnDataEngineering.com](https://www.learndataengineering.com)
