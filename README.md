@@ -88,6 +88,7 @@ Companies:
   - [Fivetran](https://www.fivetran.com)
   - [Airbyte](https://airbyte.io)
   - [dlt](https://dlthub.com/)
+  - [Sling](https://slingdata.io/)
 - Modern OLAP
   - [Apache Druid](https://druid.apache.org/)
   - [ClickHouse](https://clickhouse.com/)
