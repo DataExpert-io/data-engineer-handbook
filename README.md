@@ -58,7 +58,6 @@ Companies:
   - [Airbyte](https://airbyte.com)
   - [Shipyard](https://www.shipyardapp.com/)
   - [Hamilton](https://github.com/dagworks-inc/hamilton)
-  - [Meltano](https://meltano.com/)
 - Data Lake / Cloud
   - [Tabular](https://www.tabular.io)
   - [Microsoft](https://www.microsoft.com)
@@ -91,6 +90,7 @@ Companies:
   - [Airbyte](https://airbyte.io)
   - [dlt](https://dlthub.com/)
   - [Sling](https://slingdata.io/)
+  - [Meltano](https://meltano.com/)
 - Modern OLAP
   - [Apache Druid](https://druid.apache.org/)
   - [ClickHouse](https://clickhouse.com/)
