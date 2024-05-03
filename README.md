@@ -58,6 +58,7 @@ Companies:
   - [Airbyte](https://airbyte.com)
   - [Shipyard](https://www.shipyardapp.com/)
   - [Hamilton](https://github.com/dagworks-inc/hamilton)
+  - [Meltano](https://meltano.com/)
 - Data Lake / Cloud
   - [Tabular](https://www.tabular.io)
   - [Microsoft](https://www.microsoft.com)
