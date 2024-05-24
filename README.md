@@ -190,6 +190,7 @@ Newsletters:
 - [Modern Data 101](https://moderndata101.substack.com/)
 - [SELECT Insights](https://newsletter.ssp.sh/)
 - [Interesting Data Gigs](https://newsletter.interestinggigs.com)
+- [Ju Data Engineering Weekly](https://juhache.substack.com/)
 
 Glossaries:
 - [Data Engineering Vault](https://www.ssp.sh/brain/data-engineering/)
@@ -228,6 +229,7 @@ LinkedIn
   - [Hugo Lu](https://www.linkedin.com/in/hugo-lu-confirmed/)
   - [Tobias Macey](https://www.linkedin.com/in/tmacey)
   - [Marcos Ortiz](https://www.linkedin.com/in/mlortiz)
+  - [Julien Hurault](https://www.linkedin.com/in/julienhuraultanalytics/)
 - 1k+ Followers
   - [Shruti Mantri](https://www.linkedin.com/in/shruti-mantri-88527a67/)
   - [Volker Janz](https://www.linkedin.com/in/vjanz/)
