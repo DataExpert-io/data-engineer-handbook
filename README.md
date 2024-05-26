@@ -40,7 +40,7 @@ Communities:
 - [Seattle Data Guy Discord](https://discord.gg/ah95MZKkFF)
 - [EcZachly Data Engineering Discord](https://discord.gg/JGumAXncAK)
 - [Chip Huyen MLOps Discord](https://discord.gg/dzh728c5t3)
-- [Data Engineer Things Slack](https://dataengineerthings.slack.com/join/shared_invite/zt-27gp9ayz4-hRq5h1ElxVZf2rRqjEwKHQ#/shared-invite/email)
+- [Data Engineer Things Community](https://www.dataengineerthings.org/aboutus/)
 - [DBT Community](https://www.getdbt.com/community/join-the-community/)
 - [r/dataengineering](https://www.reddit.com/r/dataengineering)
 - [Microsoft Fabric Community](https://community.fabric.microsoft.com/)
