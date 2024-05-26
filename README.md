@@ -90,6 +90,7 @@ Companies:
   - [Airbyte](https://airbyte.io)
   - [dlt](https://dlthub.com/)
   - [Sling](https://slingdata.io/)
+  - [Meltano](https://meltano.com/)
 - Modern OLAP
   - [Apache Druid](https://druid.apache.org/)
   - [ClickHouse](https://clickhouse.com/)
