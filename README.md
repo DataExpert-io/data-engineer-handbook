@@ -34,6 +34,7 @@ Great books:
 - [Data Engineering Design Patterns](https://www.dedp.online/)
 - [Snowflake Data Engineering](https://www.manning.com/books/snowflake-data-engineering)
 - [Unlocking dbt](https://www.amazon.com/Unlocking-dbt-Design-Transformations-Warehouse/dp/1484296990/)
+- [Learning Spark, Second Edition](https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf)
 
 Communities:
 
@@ -281,6 +282,7 @@ Courses / Academies
 - [Udemy Courses from Shruti Mantri](https://www.udemy.com/user/shruti-mantri-5/)
 - [Rock the JVM](https://rockthejvm.com/) teaches Spark (in Scala), Flink and others
 - [Data Engineering Zoomcamp by DataTalksClub](https://dezoomcamp.streamlit.app/)
+- [Efficient Data Processing in Spark](https://josephmachado.podia.com/efficient-data-processing-in-spark)
 
 Certifications Courses
 
