@@ -283,6 +283,7 @@ Courses / Academies
 - [Rock the JVM](https://rockthejvm.com/) teaches Spark (in Scala), Flink and others
 - [Data Engineering Zoomcamp by DataTalksClub](https://dezoomcamp.streamlit.app/)
 - [Efficient Data Processing in Spark](https://josephmachado.podia.com/efficient-data-processing-in-spark)
+- [Scaler](https://www.scaler.com/)
 
 Certifications Courses
 
