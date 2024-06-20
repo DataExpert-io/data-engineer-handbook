@@ -51,13 +51,13 @@ Communities:
 
 Companies:
 
-- Orchestration
-  - [Kestra](https://kestra.io/)   
+- Orchestration  
   - [Mage](https://www.mage.ai)
   - [Astronomer](https://www.astronomer.io)
   - [Prefect](https://www.prefect.io)
   - [Dagster](https://www.dagster.io)
   - [Airbyte](https://airbyte.com)
+  - [Kestra](https://kestra.io/) 
   - [Shipyard](https://www.shipyardapp.com/)
   - [Hamilton](https://github.com/dagworks-inc/hamilton)
 - Data Lake / Cloud
