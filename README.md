@@ -282,7 +282,7 @@ Courses / Academies
 - [DataCamp](https://www.datacamp.com/)
 - [Udemy Courses from Shruti Mantri](https://www.udemy.com/user/shruti-mantri-5/)
 - [Rock the JVM](https://rockthejvm.com/) teaches Spark (in Scala), Flink and others
-- [Data Engineering Zoomcamp by DataTalksClub](https://dezoomcamp.streamlit.app/)
+- [Data Engineering Zoomcamp by DataTalksClub](https://datatalks.club/)
 - [Efficient Data Processing in Spark](https://josephmachado.podia.com/efficient-data-processing-in-spark)
 - [Scaler](https://www.scaler.com/)
 
