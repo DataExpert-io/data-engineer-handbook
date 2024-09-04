@@ -86,6 +86,10 @@ Companies:
   - [Preset](https://www.preset.io)
   - [Starburst](https://www.starburst.io)
   - [Metabase](https://www.metabase.com/)
+  - [Looker Studio](https://lookerstudio.google.com/overview)
+  - [Tableau](https://www.tableau.com/)
+  - [Power BI](https://powerbi.microsoft.com/)
+  - [Apache Superset](https://superset.apache.org/)
 - Data Integration
   - [Cube](https://cube.dev)
   - [Fivetran](https://www.fivetran.com)
