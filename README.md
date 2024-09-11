@@ -104,7 +104,7 @@ Companies:
   - [Apache Pinot](https://pinot.apache.org/)
   - [Apache Kylin](https://kylin.apache.org/)
 - LLM application library
-  - [AdalFlow: The "PyTorch" library to build, evaluate and auto-optimize any LLM tasks](https://github.com/SylphAI-Inc/AdalFlow)
+  - [AdalFlow](https://github.com/SylphAI-Inc/AdalFlow)
 
 Data Engineering blogs of companies:
 
