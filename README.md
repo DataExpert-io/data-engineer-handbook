@@ -40,6 +40,7 @@ Communities:
 
 - [Seattle Data Guy Discord](https://discord.gg/ah95MZKkFF)
 - [EcZachly Data Engineering Discord](https://discord.gg/JGumAXncAK)
+- [AdalFlow Discrod (LLM Library)](https://discord.com/invite/ezzszrRZvT)
 - [Chip Huyen MLOps Discord](https://discord.gg/dzh728c5t3)
 - [Data Engineer Things Community](https://www.dataengineerthings.org/aboutus/)
 - [DBT Community](https://www.getdbt.com/community/join-the-community/)
@@ -102,6 +103,8 @@ Companies:
   - [ClickHouse](https://clickhouse.com/)
   - [Apache Pinot](https://pinot.apache.org/)
   - [Apache Kylin](https://kylin.apache.org/)
+- LLM application library
+  - [AdalFlow](https://github.com/SylphAI-Inc/AdalFlow)
 
 Data Engineering blogs of companies:
 
