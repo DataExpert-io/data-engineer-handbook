@@ -102,6 +102,7 @@ Companies:
   - [ClickHouse](https://clickhouse.com/)
   - [Apache Pinot](https://pinot.apache.org/)
   - [Apache Kylin](https://kylin.apache.org/)
+  - [DuckDB](https://duckdb.org/)
 
 Data Engineering blogs of companies:
 
