@@ -129,6 +129,8 @@ Data Engineering Whitepapers:
 - [Spark: Cluster Computing with Working Sets](https://dl.acm.org/doi/10.5555/1863103.1863113)
 - [The Google File System](https://research.google/pubs/the-google-file-system/)
 - [Building a Universal Data Lakehouse](https://www.onehouse.ai/whitepaper/onehouse-universal-data-lakehouse-whitepaper)
+- [XTable in Action: Seamless Interoperability in Data Lakes](https://arxiv.org/abs/2401.09621)
+- [MapReduce: Simplified Data Processing on Large Clusters](https://research.google/pubs/mapreduce-simplified-data-processing-on-large-clusters/)
 
 Great YouTube Channels:
 
