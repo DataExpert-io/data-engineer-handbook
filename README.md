@@ -103,6 +103,7 @@ Companies:
   - [ClickHouse](https://clickhouse.com/)
   - [Apache Pinot](https://pinot.apache.org/)
   - [Apache Kylin](https://kylin.apache.org/)
+  - [DuckDB](https://duckdb.org/)
 - LLM application library
   - [AdalFlow](https://github.com/SylphAI-Inc/AdalFlow)
 
