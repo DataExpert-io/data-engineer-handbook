@@ -201,6 +201,7 @@ Newsletters:
 - [SELECT Insights](https://newsletter.ssp.sh/)
 - [Interesting Data Gigs](https://newsletter.interestinggigs.com)
 - [Ju Data Engineering Weekly](https://juhache.substack.com/)
+- [From An Engineer Sight](https://fromanengineersight.substack.com/)
 
 Glossaries:
 - [Data Engineering Vault](https://www.ssp.sh/brain/data-engineering/)
@@ -243,6 +244,7 @@ LinkedIn
 - 1k+ Followers
   - [Shruti Mantri](https://www.linkedin.com/in/shruti-mantri-88527a67/)
   - [Volker Janz](https://www.linkedin.com/in/vjanz/)
+  - [Benoit Pimpaud)(https://www.linkedin.com/in/pimpaudben/)
 
 Twitter / X
 
