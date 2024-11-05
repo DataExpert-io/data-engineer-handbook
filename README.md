@@ -92,6 +92,11 @@ Top must-join communities for ML:
   - [AdalFlow](https://github.com/SylphAI-Inc/AdalFlow)
   - [LangChain](https://github.com/langchain-ai/langchain)
   - [LlamaIndex](https://github.com/run-llama/llama_index)
+- Real-Time Data
+  - [Aggregations.io](https://aggregations.io)
+  - [Responsive](https://www.responsive.dev/)
+  - [RisingWave](https://risingwave.com/)
+
 
 ### Data Engineering blogs of companies:
 
