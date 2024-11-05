@@ -108,7 +108,7 @@ Companies:
   - [AdalFlow](https://github.com/SylphAI-Inc/AdalFlow)
 - Real Time Data
   - [Aggregations.io](https://aggregations.io)
-  - [Responsive.dev](https://www.responsive.dev/)
+  - [Responsive](https://www.responsive.dev/)
   - [RisingWave](https://risingwave.com/)
 
 Data Engineering blogs of companies:
