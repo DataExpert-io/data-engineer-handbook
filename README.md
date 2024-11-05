@@ -267,6 +267,7 @@ Top must follow newsletters for data engineering:
 - [Data Engineering Zoomcamp by DataTalksClub](https://datatalks.club/)
 - [Efficient Data Processing in Spark](https://josephmachado.podia.com/efficient-data-processing-in-spark)
 - [Scaler](https://www.scaler.com/)
+- [DataTeams - Data Engingeer hiring platform](https://www.datateams.ai/)
 
 ### Certifications Courses
 
