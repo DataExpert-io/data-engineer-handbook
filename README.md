@@ -77,7 +77,7 @@ Companies:
   - [Streamdal](https://streamdal.com)
   - [Coalesce](https://coalesce.io/)
   - [Soda](https://www.soda.io/)
-  - [DQOps](https://dqops.com/)
+  - [DQOps](https://dqops.com/)  
 - Education Companies
   - [DataExpert.io](https://www.dataexpert.io)
   - [LearnDataEngineering.com](https://www.learndataengineering.com)
@@ -106,6 +106,10 @@ Companies:
   - [DuckDB](https://duckdb.org/)
 - LLM application library
   - [AdalFlow](https://github.com/SylphAI-Inc/AdalFlow)
+- Real Time Data
+  - [Aggregations.io](https://aggregations.io)
+  - [Responsive.dev](https://www.responsive.dev/)
+  - [RisingWave](https://risingwave.com/)
 
 Data Engineering blogs of companies:
 
