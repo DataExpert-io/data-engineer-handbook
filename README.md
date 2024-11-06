@@ -185,6 +185,7 @@ Top must-join communities for ML:
 - 10k+ followers
   - [Zach Wilson](https://www.twitter.com/EcZachly)
   - [Seattle Data Guy](https://www.twitter.com/SeattleDataGuy)
+  - [Daniel Blanco](https://www.twitter.com/DanielBlancoSWE)
 - 5k+ followers
   - [Sumit Mittal](https://www.twitter.com/bigdatasumit)
   - [Joseph Machado](https://twitter.com/startdataeng)
@@ -268,6 +269,7 @@ Top must follow newsletters for data engineering:
 - [Efficient Data Processing in Spark](https://josephmachado.podia.com/efficient-data-processing-in-spark)
 - [Scaler](https://www.scaler.com/)
 - [DataTeams - Data Engingeer hiring platform](https://www.datateams.ai/)
+- [Udemy Courses from Daniel Blanco](https://danielblanco.dev/links)
 
 ### Certifications Courses
 
