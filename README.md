@@ -138,6 +138,7 @@ Top must-join communities for ML:
   - [Adam Marczak](https://www.youtube.com/@AdamMarczakYT)
   - [nullQueries](https://www.youtube.com/@nullQueries)
   - [TECHTFQ by Thoufiq](https://www.youtube.com/@techTFQ)
+  - [SQLBI](https://www.youtube.com/@SQLBI)
 - 10k+ subscribers
   - [Data with Zach](https://www.youtube.com/c/datawithzach)
   - [Azure Lib](https://www.youtube.com/@azurelib-academy)
@@ -163,6 +164,7 @@ Top must-join communities for ML:
   - [Darshil Parmar](https://www.linkedin.com/in/darshil-parmar/)
   - [Ankit Bansal](https://www.linkedin.com/in/ankitbansal6/)
   - [Marc Lamberti](https://www.linkedin.com/in/marclamberti)
+  - [Marco Russo](https://www.linkedin.com/in/sqlbi)
 - 10k+ Followers
   - [Li Yin](https://www.linkedin.com/in/li-yin-ai/)
   - [Joseph Machado](https://www.linkedin.com/in/josephmachado1991/)
@@ -185,6 +187,7 @@ Top must-join communities for ML:
 - 10k+ followers
   - [Zach Wilson](https://www.twitter.com/EcZachly)
   - [Seattle Data Guy](https://www.twitter.com/SeattleDataGuy)
+  - [Marco Russo](https://x.com/marcorus)
 - 5k+ followers
   - [Sumit Mittal](https://www.twitter.com/bigdatasumit)
   - [Joseph Machado](https://twitter.com/startdataeng)
