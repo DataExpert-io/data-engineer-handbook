@@ -25,4 +25,7 @@
 - [Unlocking dbt](https://www.amazon.com/Unlocking-dbt-Design-Transformations-Warehouse/dp/1484296990/)
 - [Learning Spark, Second Edition](https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf)
 - [Pandas Cookbook, Third Edition](https://www.amazon.com/Pandas-Cookbook-Practical-scientific-exploratory/dp/1836205872)
+- [Data Pipelines Pocket Reference](https://www.oreilly.com/library/view/data-pipelines-pocket/9781492087823/)
+- [Stream Processing with Apache Flink](https://www.oreilly.com/library/view/stream-processing-with/9781491974285/)
+- [Apache Iceberg The Definitive Guide](https://www.oreilly.com/library/view/apache-iceberg-the/9781098148614/)
 
