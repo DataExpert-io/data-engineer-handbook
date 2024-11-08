@@ -88,6 +88,7 @@ Top must-join communities for ML:
   - [Apache Pinot](https://pinot.apache.org/)
   - [Apache Kylin](https://kylin.apache.org/)
   - [DuckDB](https://duckdb.org/)
+  - [QuestDB](https://questdb.io/)
 - LLM application library
   - [AdalFlow](https://github.com/SylphAI-Inc/AdalFlow)
   - [LangChain](https://github.com/langchain-ai/langchain)
