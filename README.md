@@ -62,6 +62,7 @@ Top must-join communities for ML:
   - [Coalesce](https://coalesce.io/)
   - [Soda](https://www.soda.io/)
   - [DQOps](https://dqops.com/)
+  - [HEDDA.IO](https://hedda.io)
 - Education Companies
   - [DataExpert.io](https://www.dataexpert.io)
   - [LearnDataEngineering.com](https://www.learndataengineering.com)
