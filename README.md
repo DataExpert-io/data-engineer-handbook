@@ -57,7 +57,7 @@ Companies:
   - [Astronomer](https://www.astronomer.io)
   - [Prefect](https://www.prefect.io)
   - [Dagster](https://www.dagster.io)
-  - [Airbyte](https://airbyte.com)
+  - [Airflow](https://airflow.apache.org/)
   - [Kestra](https://kestra.io/) 
   - [Shipyard](https://www.shipyardapp.com/)
   - [Hamilton](https://github.com/dagworks-inc/hamilton)
