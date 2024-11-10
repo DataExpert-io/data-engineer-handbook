@@ -6,6 +6,11 @@ This repo has all the resources you need to become an amazing data engineer!
 
 If you are new to data engineering, start by following this [2024 breaking into data engineering roadmap](https://blog.dataengineer.io/p/the-2024-breaking-into-data-engineering)
 
+If you are here for the [6-week free YouTube boot camp](https://youtu.be/myhe0LXpCeo) you can check out
+- [introduction](bootcamp/introduction.md)
+- [software needed](bootcamp/software.md)
+
+
 For more applied learning:
 - Check out the [projects](projects.md) section for more hands-on examples!
 - Check out the [interviews](interviews.md) section for more advice on how to pass data engineering interviews!
