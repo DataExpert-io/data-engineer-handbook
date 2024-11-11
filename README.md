@@ -132,11 +132,8 @@ Top must-join communities for ML:
 
 ## Social Media Accounts
 
-Here's the list of creators: 
-**(You have to have at least 5k followers somewhere to be added!)***
-
-
-Here's the updated table including the number of subscribers or followers for each creator:
+Here's the mostly comprehensive list of data engineering creators: 
+**(You have to have at least 5k followers somewhere to be added!)**
 
 | Name                 | <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" width="50"/><br/> YouTube | <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="50" height="50"/> <br/> LinkedIn | <img src="https://icon2.cleanpng.com/20240402/kzp/transparent-x-logo-woman-black-and-white-photography-street-fa-woman-in-dark-clothing-walking-determinedly660c4b50383a25.14507568.webp" width="50"><br/> X/Twitter | <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" width="50"> <br/> Instagram | <img src="https://icon2.cleanpng.com/20240214/kxl/transparent-tiktok-logo-tiktok-logo-blue-and-pink-lettering-re-retro-style-tiktok-logo-evoking-1950s-1710878265139.webp" width="50"> <br/> TikTok |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
