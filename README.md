@@ -103,6 +103,7 @@ Top must-join communities for ML:
   - [Aggregations.io](https://aggregations.io)
   - [Responsive](https://www.responsive.dev/)
   - [RisingWave](https://risingwave.com/)
+  - [Striim](https://www.striim.com/)
 
 
 ### Data Engineering blogs of companies:
@@ -168,7 +169,8 @@ Here's the mostly comprehensive list of data engineering creators:
 | Alex Freberg         | [Alex The Analyst](https://www.youtube.com/@AlexTheAnalyst)   (100k+)                                                     | [Alex Freberg](https://www.linkedin.com/in/alex-freberg/)  (100k+)                                                                |                                                                                                                                                                                 |                                                                                                               | [@alex_the_analyst](https://www.tiktok.com/@alex_the_analyst) (10k+)                                                                                                                                |
 | Marc Lamberti        |                                                                                                                           | [Marc Lamberti](https://www.linkedin.com/in/marclamberti) (50k+)                                                                  |                                                                                                                                                                                 |                                                                                                               |                                                                                                                                                                                                     |
 | Chip Huyen        |                                                                                                                           | [Chip Huyen](https://www.linkedin.com/in/chiphuyen/) (250k+)                                                                  |                                                                                                                                                                                 |                                                                                                               |                                                                                                                                                                                                     |
-| Alex Merced          | [Alex Merced Data](https://www.youtube.com/@alexmerceddata_)                                                               | [Alex Merced](https://www.linkedin.com/in/alexmerced) (30k+)                                                                       | [@amdatalakehouse](https://www.twitter.com/amdatalakehouse)                                                                                                                             | [@alexmercedcoder](https://www.instagram.com/alexmercedcoder)                                                        | |  
+| Alex Merced          | [Alex Merced Data](https://www.youtube.com/@alexmerceddata_)                                                               | [Alex Merced](https://www.linkedin.com/in/alexmerced) (30k+)                                                                       | [@amdatalakehouse](https://www.twitter.com/amdatalakehouse)                                                                                                                             | [@alexmercedcoder](https://www.instagram.com/alexmercedcoder)                                                        |   
+| John Kutay           | [John Kutay](https://www.youtube.com/watch?v=7K09lxNbF3Q&list=PL1EXPn7cSg91KLnk2P26Fh8OnGrh6eFmx&pp=iAQB)                | [John Kutay](https://www.linkedin.com/in/johnkutay/) (5k+)                                                                                | [@JohnKutay](https://x.com/JohnKutay)                                                                                                                                           |                                                                                                               |                                                                                                                                                                                                     |
 
 ### Great Podcasts
 
@@ -186,7 +188,7 @@ Here's the mostly comprehensive list of data engineering creators:
 - [Datatalks](https://datatalks.club/podcast.html)
 - [Data Brew by Databricks](https://www.databricks.com/discover/data-brew)
 - [The Data Cloud Podcast by Snowflake](https://rise-of-the-data-cloud.simplecast.com/)
-- [What's New in data](https://www.striim.com/podcast/)
+- [What's New in Data](https://www.striim.com/podcast/)
 - [Open||Source||Data by Datastax](https://www.datastax.com/resources/podcast/open-source-data)
 - [Streaming Audio by confluent](https://developer.confluent.io/podcast/)
 - [The Data Scientist Show](https://podcasts.apple.com/us/podcast/the-data-scientist-show/id1584430381)
