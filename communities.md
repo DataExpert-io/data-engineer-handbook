@@ -8,5 +8,6 @@
 - [r/dataengineering](https://www.reddit.com/r/dataengineering)
 - [Microsoft Fabric Community](https://community.fabric.microsoft.com/)
 - [r/MicrosoftFabric](https://www.reddit.com/r/MicrosoftFabric/)
+- [r/databricks](https://www.reddit.com/r/databricks/)
 - [Data Talks Club Slack](https://datatalks.club/slack)
 - [Data Engineering Wiki](https://dataengineering.wiki/)
