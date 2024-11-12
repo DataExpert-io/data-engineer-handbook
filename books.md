@@ -8,6 +8,8 @@
 - [Machine Learning System Design Interview](https://www.amazon.com/Machine-Learning-System-Design-Interview/dp/1736049127)
 - [Streaming Systems](https://www.amazon.com/Streaming-Systems-Where-Large-Scale-Processing/dp/1491983876)
 - [High Performance Spark](https://www.amazon.com/High-Performance-Spark-Practices-Optimizing/dp/1491943203)
+- [Spark: The Definitive Guide](https://www.oreilly.com/library/view/spark-the-definitive/9781491912201/)
+- [Learning Spark](https://www.oreilly.com/library/view/learning-spark/9781449359034/)
 - [Building Evolutionary Architectures, 2nd Edition](https://www.oreilly.com/library/view/building-evolutionary-architectures/9781492097532/)
 - [Data Management at Scale, 2nd Edition](https://www.oreilly.com/library/view/data-management-at/9781098138851/)
 - [Deciphering Data Architectures](https://www.oreilly.com/library/view/deciphering-data-architectures/9781098150754/)
@@ -28,4 +30,3 @@
 - [Data Pipelines Pocket Reference](https://www.oreilly.com/library/view/data-pipelines-pocket/9781492087823/)
 - [Stream Processing with Apache Flink](https://www.oreilly.com/library/view/stream-processing-with/9781491974285/)
 - [Apache Iceberg The Definitive Guide](https://www.oreilly.com/library/view/apache-iceberg-the/9781098148614/)
-
