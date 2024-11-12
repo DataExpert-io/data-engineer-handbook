@@ -1,0 +1,22 @@
+CREATE TABLE public.player_seasons (
+    player_name text NOT NULL,
+    age integer,
+    height text,
+    weight integer,
+    college text,
+    country text,
+    draft_year text,
+    draft_round text,
+    draft_number text,
+    gp real,
+    pts real,
+    reb real,
+    ast real,
+    netrtg real,
+    oreb_pct real,
+    dreb_pct real,
+    usg_pct real,
+    ts_pct real,
+    ast_pct real,
+    season integer NOT NULL
+);

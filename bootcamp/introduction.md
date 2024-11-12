@@ -3,7 +3,9 @@
 This will be six weeks of curricula
 
 - Dimensional Data Modeling
+  - Homework is [here](materials/1-dimensional-data-modeling/homework/homework.md)
 - Fact Data Modeling
+  - Homework is (to be added)
 - Data Quality (analytics)
 - Data Quality (infrastructure)
 - Data impact and visualization (analytics)
