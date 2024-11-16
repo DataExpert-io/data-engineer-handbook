@@ -4,6 +4,7 @@ This repository contains the setup for the data modeling modules in Weeks 1 and 
  
 :wrench: **Tech Stack**
 
+
 - Git
 - Postgres
 - PSQL CLI
