@@ -1,11 +1,11 @@
 CREATE TYPE season_stats AS (
-  season Integer,
-		gp Integer,
-  pts REAL,
-		reb REAL,
-  ast REAL,
-  weight INTEGER
- );
+	season Integer,
+	gp Integer,
+	pts REAL,
+	reb REAL,
+	ast REAL,
+	weight INTEGER
+	);
 
 CREATE TYPE scoring_class AS
      ENUM ('bad', 'average', 'good', 'star');
