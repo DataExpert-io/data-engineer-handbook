@@ -16,16 +16,18 @@ SELECT
         COALESCE(ls.draft_round, ts.draft_round) as draft_round,
         COALESCE(ls.draft_number, ts.draft_number)
             as draft_number,
-        COALESCE(ls.seasons,
+        COALESCE(ls.season_stats,
             ARRAY[]::season_stats[]
             ) || CASE WHEN ts.season IS NOT NULL THEN
                 ARRAY[ROW(
                 ts.season,
+                ts.gp,
                 ts.pts,
                 ts.ast,
-                ts.reb, ts.weight)::season_stats]
+                ts.reb, 
+                ts.weight)::season_stats]
                 ELSE ARRAY[]::season_stats[] END
-            as seasons,
+            as season_stats,
          CASE
              WHEN ts.season IS NOT NULL THEN
                  (CASE WHEN ts.pts > 20 THEN 'star'
@@ -35,7 +37,12 @@ SELECT
              ELSE ls.scoring_class
          END as scoring_class,
          ts.season IS NOT NULL as is_active,
-         1998 AS current_season
+         CASE
+         	WHEN ts.season IS NOT NULL THEN 0
+         ELSE
+         	ls.years_since_last_active + 1
+         END as years_since_last_active,
+         coalesce(ts.season, ls.current_season + 1) AS current_season
 
     FROM last_season ls
     FULL OUTER JOIN this_season ts
