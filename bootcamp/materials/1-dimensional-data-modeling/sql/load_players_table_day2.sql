@@ -26,7 +26,8 @@ WITH years AS (
                             ps.gp,
                             ps.pts,
                             ps.reb,
-                            ps.ast
+                            ps.ast,
+							ps.weight
                         )::season_stats
                 END)
             OVER (PARTITION BY pas.player_name ORDER BY COALESCE(pas.season, ps.season)),
@@ -63,10 +64,11 @@ SELECT
         WHEN (seasons[CARDINALITY(seasons)]::season_stats).pts > 15 THEN 'good'
         WHEN (seasons[CARDINALITY(seasons)]::season_stats).pts > 10 THEN 'average'
         ELSE 'bad'
-    END::scorer_class AS scorer_class,
-    w.season - (seasons[CARDINALITY(seasons)]::season_stats).season as years_since_last_active,
+    END::scoring_class AS scorer_class,
+	(seasons[CARDINALITY(seasons)]::season_stats).season = season AS is_active,
     w.season,
-    (seasons[CARDINALITY(seasons)]::season_stats).season = season AS is_active
+	w.season - (seasons[CARDINALITY(seasons)]::season_stats).season as years_since_last_active
+
 FROM windowed w
 JOIN static s
     ON w.player_name = s.player_name;
