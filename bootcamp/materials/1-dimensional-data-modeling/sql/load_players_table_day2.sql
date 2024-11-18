@@ -63,7 +63,7 @@ SELECT
         WHEN (seasons[CARDINALITY(seasons)]::season_stats).pts > 15 THEN 'good'
         WHEN (seasons[CARDINALITY(seasons)]::season_stats).pts > 10 THEN 'average'
         ELSE 'bad'
-    END::scorer_class AS scorer_class,
+    END::scoring_class AS scoring_class,
     w.season - (seasons[CARDINALITY(seasons)]::season_stats).season as years_since_last_active,
     w.season,
     (seasons[CARDINALITY(seasons)]::season_stats).season = season AS is_active
