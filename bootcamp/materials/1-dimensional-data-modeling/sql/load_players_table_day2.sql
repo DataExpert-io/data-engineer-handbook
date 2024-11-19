@@ -2,18 +2,24 @@ INSERT INTO players
 WITH years AS (
     SELECT *
     FROM GENERATE_SERIES(1996, 2022) AS season
-), p AS (
+),
+
+p AS (
     SELECT
         player_name,
         MIN(season) AS first_season
     FROM player_seasons
     GROUP BY player_name
-), players_and_seasons AS (
+),
+
+players_and_seasons AS (
     SELECT *
     FROM p
-    JOIN years y
+    INNER JOIN years AS y
         ON p.first_season <= y.season
-), windowed AS (
+),
+
+windowed AS (
     SELECT
         pas.player_name,
         pas.season,
@@ -29,15 +35,18 @@ WITH years AS (
                             ps.ast
                         )::season_stats
                 END)
-            OVER (PARTITION BY pas.player_name ORDER BY COALESCE(pas.season, ps.season)),
+                OVER (PARTITION BY pas.player_name ORDER BY COALESCE(pas.season, ps.season)),
             NULL
         ) AS seasons
-    FROM players_and_seasons pas
-    LEFT JOIN player_seasons ps
-        ON pas.player_name = ps.player_name
-        AND pas.season = ps.season
+    FROM players_and_seasons AS pas
+    LEFT JOIN player_seasons AS ps
+        ON
+            pas.player_name = ps.player_name
+            AND pas.season = ps.season
     ORDER BY pas.player_name, pas.season
-), static AS (
+),
+
+static AS (
     SELECT
         player_name,
         MAX(height) AS height,
@@ -49,6 +58,7 @@ WITH years AS (
     FROM player_seasons
     GROUP BY player_name
 )
+
 SELECT
     w.player_name,
     s.height,
@@ -61,12 +71,17 @@ SELECT
     CASE
         WHEN (seasons[CARDINALITY(seasons)]::season_stats).pts > 20 THEN 'star'
         WHEN (seasons[CARDINALITY(seasons)]::season_stats).pts > 15 THEN 'good'
-        WHEN (seasons[CARDINALITY(seasons)]::season_stats).pts > 10 THEN 'average'
+        WHEN
+            (seasons[CARDINALITY(seasons)]::season_stats).pts > 10
+            THEN 'average'
         ELSE 'bad'
     END::scorer_class AS scorer_class,
-    w.season - (seasons[CARDINALITY(seasons)]::season_stats).season as years_since_last_active,
+    w.season
+    - (
+        seasons[CARDINALITY(seasons)]::season_stats
+    ).season AS years_since_last_active,
     w.season,
     (seasons[CARDINALITY(seasons)]::season_stats).season = season AS is_active
-FROM windowed w
-JOIN static s
+FROM windowed AS w
+INNER JOIN static AS s
     ON w.player_name = s.player_name;
