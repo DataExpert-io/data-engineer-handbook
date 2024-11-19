@@ -1,6 +1,6 @@
 services:
   postgres:
-    image: postgres:14
+    image: postgres:15
     restart: on-failure
     container_name: ${DOCKER_CONTAINER}
     env_file:
