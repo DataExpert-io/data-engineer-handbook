@@ -45,9 +45,9 @@ SELECT
                 END)::scoring_class
         ELSE ls.scorer_class
     END AS scorer_class,
+    (current_season - ts.season) AS years_since_last_active,
     ts.season IS NOT NULL AS is_active,
-    1998 AS current_season,
-    (current_season - ts.season) AS years_since_last_active
+    1998 AS current_season
 
 FROM last_season AS ls
 FULL OUTER JOIN this_season AS ts

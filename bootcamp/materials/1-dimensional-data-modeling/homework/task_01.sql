@@ -8,7 +8,7 @@ CREATE TYPE films AS (
 CREATE TYPE quality_class AS ENUM ('star', 'good', 'average', 'bad');
 
 
-CREATE TABLE actors (
+CREATE TABLE IF NOT EXISTS actors (
     actor text,
     actorid text,
     current_year integer,
