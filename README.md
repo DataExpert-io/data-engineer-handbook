@@ -80,6 +80,7 @@ Top must-join communities for ML:
   - [Looker Studio](https://lookerstudio.google.com/overview)
   - [Tableau](https://www.tableau.com/)
   - [Power BI](https://powerbi.microsoft.com/)
+  - [Hex](https://hex.ai/)
   - [Apache Superset](https://superset.apache.org/)
   - [Evidence](https://evidence.dev)
 - Data Integration
