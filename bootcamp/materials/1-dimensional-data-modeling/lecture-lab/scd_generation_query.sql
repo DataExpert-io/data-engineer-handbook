@@ -27,7 +27,7 @@ WITH streak_started AS (
          SELECT
             player_name,
             scoring_class,
-            is_active
+            is_active,
             streak_identifier,
             MIN(current_season) AS start_date,
             MAX(current_season) AS end_date
