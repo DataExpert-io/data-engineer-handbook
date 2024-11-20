@@ -9,8 +9,7 @@ CREATE TYPE scd_type AS (
 
 WITH last_season_scd AS (
     SELECT * FROM players_scd
-    WHERE current_season = 2021
-    AND end_season = 2021
+    WHERE end_season = 2021
 ),
      historical_scd AS (
         SELECT
@@ -20,8 +19,7 @@ WITH last_season_scd AS (
                start_season,
                end_season
         FROM players_scd
-        WHERE current_season = 2021
-        AND end_season < 2021
+        WHERE end_season < 2021
      ),
      this_season_data AS (
          SELECT * FROM players
