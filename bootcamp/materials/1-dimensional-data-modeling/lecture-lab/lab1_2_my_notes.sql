@@ -25,8 +25,7 @@ INSERT into players WITH yesterday AS (
         FROM player_seasons
         WHERE season = 1996
     )
-SELECT -- we don't need to repeat the constant info twice
-    COALESCE (t.player_name, y.player_name) AS player_name,
+SELECT COALESCE (t.player_name, y.player_name) AS player_name,
     COALESCE (t.height, y.height) AS height,
     COALESCE (t.college, y.college) AS college,
     COALESCE (t.country, y.country) AS country,
@@ -69,7 +68,8 @@ INSERT into players WITH yesterday AS (
         FROM player_seasons
         WHERE season = 2001
     )
-SELECT -- we don't need to repeat the constant info twice
+SELECT -- we don't need to repeat the constant info in two columns in case the player played
+    -- in the previous season and today's season
     COALESCE (t.player_name, y.player_name) AS player_name,
     COALESCE (t.height, y.height) AS height,
     COALESCE (t.college, y.college) AS college,
