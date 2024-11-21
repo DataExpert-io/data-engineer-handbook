@@ -81,6 +81,7 @@ Top must-join communities for ML:
   - [Tableau](https://www.tableau.com/)
   - [Power BI](https://powerbi.microsoft.com/)
   - [Apache Superset](https://superset.apache.org/)
+  - [Evidence](https://evidence.dev)
 - Data Integration
   - [Cube](https://cube.dev)
   - [Fivetran](https://www.fivetran.com)
@@ -179,6 +180,7 @@ Here's the mostly comprehensive list of data engineering creators:
 | Ijaz Ali             |                                                                                                                           | [Ijaz Ali](https://www.linkedin.com/in/ijaz-ali-6aaa87122/) (24K+)   
 | Subhankar            |                                                                                                                           | [Subhankar](https://www.linkedin.com/in/subhankarumass/) (5k+)                                                                    |                                                                                                                                                                                 |                                                                                                               |                                                                                                                                                                                                     |
 | Ankur Ranjan            |    [Big Data Show](https://www.youtube.com/@TheBigDataShow) (100k+)                                                                                                                       | [Ankur Ranjan](https://www.linkedin.com/in/thebigdatashow/) (48k+)                                                                    |                                                                                                                                                                                 |                                                                                                               |                                                                                                                                                                                                     |
+| Lenny            |                                                                                                                           | [Lenny A](https://www.linkedin.com/in/lennyardiles/) (6k+)                                                                    |                                                                                                                                                                                 |                                                                                                               |                                                                                                                                                                                                     |
 
 
 ### Great Podcasts
