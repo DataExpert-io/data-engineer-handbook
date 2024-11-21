@@ -16,7 +16,7 @@ services:
       - ./:/bootcamp/
       - ./data.dump:/docker-entrypoint-initdb.d/data.dump
       - ./scripts/init-db.sh:/docker-entrypoint-initdb.d/init-db.sh
-      - postgres-data:/var/lib/postgresql/data
+      - ./postgres-data:/var/lib/postgresql/data
 
 volumes:
   postgres-data:
