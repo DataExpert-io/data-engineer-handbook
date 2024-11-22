@@ -18,7 +18,7 @@
      draft_round TEXT,
      draft_number TEXT,
      seasons season_stats[],
-     scorer_class scoring_class,
+     scoring_class scoring_class,
      years_since_last_active INTEGER,
      is_active BOOLEAN,
      current_season INTEGER,
