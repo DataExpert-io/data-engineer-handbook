@@ -47,7 +47,7 @@ There are two methods to get Postgres running locally.
 2. Run this command after replacing **`<computer-username>`** with your computer's username:
     
     ```bash
-    psql -U <computer-username> postgres < data.dump
+    pg_restore -U <computer-username> postgres data.dump
     ```
     
 3. Set up DataGrip, DBeaver, or your VS Code extension to point at your locally running Postgres instance.
@@ -115,6 +115,10 @@ There are two methods to get Postgres running locally.
 - If the test connection is successful, click "Finish" or "Save" to save the connection. You should now be able to use the database client to manage your PostgreSQL database locally.
 
 ## **🚨 Tables not loading!? 🚨**
+- If you're seeing errors about `error: invalid command \N`, you should use `pg_restore` to load `data.dump`.
+```bash
+  pg_restore -U $POSTGRES_USER -d $POSTGRES_DB data.dump
+```
 - If you are on Windows and used **`docker compose up`**, table creation and data load will not take place with container creation. Once you have docker container up and verified that you are able to connect to empty postgres database with your own choice of client, follow the following steps:
 1. On Docker desktop, connect to my-postgres-container terminal.
 2. Run:
@@ -123,7 +127,7 @@ There are two methods to get Postgres running locally.
         -v ON_ERROR_STOP=1 \
         --username $POSTGRES_USER \
         --dbname $POSTGRES_DB \
-        < /docker-entrypoint-initdb.d/data.dump>
+        < /docker-entrypoint-initdb.d/data.dump
     ```
     - → This will run the file `data.dump` from inside your docker container.
 
