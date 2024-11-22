@@ -20,8 +20,8 @@
      seasons season_stats[],
      scorer_class scoring_class,
      years_since_last_active INTEGER,
-     is_active BOOLEAN,
      current_season INTEGER,
+     is_active BOOLEAN,
      PRIMARY KEY (player_name, current_season)
  );
 
