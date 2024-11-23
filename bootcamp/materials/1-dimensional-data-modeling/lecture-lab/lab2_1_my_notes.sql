@@ -1,5 +1,5 @@
 /* In this lab, we work with the players table from lab1. Only that we need to add the 
- attribute is_active */
+ attribute is_active.*/
 /* STEP1: Creating the types and the players table */
 -- CREATE TYPE season_stats AS (
 --     season Integer,
