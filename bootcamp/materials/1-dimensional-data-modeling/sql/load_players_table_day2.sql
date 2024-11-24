@@ -1,19 +1,30 @@
 INSERT INTO players
+-- generate a date spine table years with all years from 1996 to 2022 , column name season
 WITH years AS (
     SELECT *
     FROM GENERATE_SERIES(1996, 2022) AS season
-), p AS (
+), 
+
+-- holding data of all players and their starting season
+p AS (
     SELECT
         player_name,
         MIN(season) AS first_season
     FROM player_seasons
     GROUP BY player_name
-), players_and_seasons AS (
+), 
+
+-- holding data of player, season, for each plaer, including all seasons equal or greater than his start season
+players_and_seasons AS (
     SELECT *
     FROM p
     JOIN years y
         ON p.first_season <= y.season
-), windowed AS (
+), 
+
+-- genrate windowed table holding players and season_stats data. One row for each player, holding player data, and also season
+-- stats. seasons is of data type season_stats, array of struct, holding all season stats for this player.
+windowed AS (
     SELECT
         pas.player_name,
         pas.season,
@@ -28,7 +39,8 @@ WITH years AS (
                             ps.reb,
                             ps.ast
                         )::season_stats
-                END)
+                END
+            )
             OVER (PARTITION BY pas.player_name ORDER BY COALESCE(pas.season, ps.season)),
             NULL
         ) AS seasons
@@ -37,7 +49,9 @@ WITH years AS (
         ON pas.player_name = ps.player_name
         AND pas.season = ps.season
     ORDER BY pas.player_name, pas.season
-), static AS (
+), 
+
+static AS (
     SELECT
         player_name,
         MAX(height) AS height,
