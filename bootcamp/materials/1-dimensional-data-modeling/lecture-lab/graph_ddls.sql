@@ -2,8 +2,6 @@
 CREATE TYPE vertex_type
     AS ENUM('player', 'team', 'game');
 
-
-
 CREATE TABLE vertices (
     identifier TEXT,
     type vertex_type,
@@ -15,8 +13,7 @@ CREATE TYPE edge_type AS
     ENUM ('plays_against',
           'shares_team',
           'plays_in',
-          'plays_on'
-        );
+          'plays_on');
 
 CREATE TABLE edges (
     subject_identifier TEXT,
@@ -31,3 +28,5 @@ CREATE TABLE edges (
                 object_type,
                 edge_type)
 )
+
+SELECT * FROM game_details
