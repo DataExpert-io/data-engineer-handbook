@@ -1,0 +1,13 @@
+# Awesome communities to join
+- [Seattle Data Guy Discord](https://discord.gg/ah95MZKkFF)
+- [EcZachly Data Engineering Discord](https://discord.gg/JGumAXncAK)
+- [AdalFlow Discord (LLM Library)](https://discord.com/invite/ezzszrRZvT)
+- [Chip Huyen MLOps Discord](https://discord.gg/dzh728c5t3)
+- [Data Engineer Things Community](https://www.dataengineerthings.org/aboutus/)
+- [DBT Community](https://www.getdbt.com/community/join-the-community/)
+- [r/dataengineering](https://www.reddit.com/r/dataengineering)
+- [Microsoft Fabric Community](https://community.fabric.microsoft.com/)
+- [r/MicrosoftFabric](https://www.reddit.com/r/MicrosoftFabric/)
+- [r/databricks](https://www.reddit.com/r/databricks/)
+- [Data Talks Club Slack](https://datatalks.club/slack)
+- [Data Engineering Wiki](https://dataengineering.wiki/)

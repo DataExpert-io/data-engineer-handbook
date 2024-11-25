@@ -1,0 +1,22 @@
+services:
+  postgres:
+    image: postgres:14
+    restart: on-failure
+    container_name: ${DOCKER_CONTAINER}
+    env_file:
+      - .env
+      - example.env
+    environment:
+      - POSTGRES_DB=${POSTGRES_SCHEMA}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    ports:
+      - "${HOST_PORT}:5432"
+    volumes:
+      - ./:/bootcamp/
+      - ./data.dump:/docker-entrypoint-initdb.d/data.dump
+      - ./scripts/init-db.sh:/docker-entrypoint-initdb.d/init-db.sh
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  postgres-data:
