@@ -1,3 +1,5 @@
+
+
 INSERT INTO players
 WITH years AS (
     SELECT *
