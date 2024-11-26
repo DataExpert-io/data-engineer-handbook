@@ -31,7 +31,7 @@ Top 3 must read books are:
 ### Great [list of over 10 communities to join](communities.md):
 
 Top must-join communities for DE:
-- [EcZachly Data Engineering Discord](https://discord.gg/JGumAXncAK)
+- [DataExpert.io Community Discord](https://discord.gg/JGumAXncAK)
 - [Data Talks Club Slack](https://datatalks.club/slack)
 - [Data Engineer Things Community](https://www.dataengineerthings.org/aboutus/)
 
