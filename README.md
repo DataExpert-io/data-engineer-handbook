@@ -31,7 +31,7 @@ Top 3 must read books are:
 ### Great [list of over 10 communities to join](communities.md):
 
 Top must-join communities for DE:
-- [EcZachly Data Engineering Discord](https://discord.gg/JGumAXncAK)
+- [DataExpert.io Community Discord](https://discord.gg/JGumAXncAK)
 - [Data Talks Club Slack](https://datatalks.club/slack)
 - [Data Engineer Things Community](https://www.dataengineerthings.org/aboutus/)
 
@@ -80,6 +80,7 @@ Top must-join communities for ML:
   - [Looker Studio](https://lookerstudio.google.com/overview)
   - [Tableau](https://www.tableau.com/)
   - [Power BI](https://powerbi.microsoft.com/)
+  - [Hex](https://hex.ai/)
   - [Apache Superset](https://superset.apache.org/)
   - [Evidence](https://evidence.dev)
 - Data Integration
@@ -184,6 +185,8 @@ Here's the mostly comprehensive list of data engineering creators:
 | Mehdi Ouazza | [Mehdio DataTV](https://www.youtube.com/@mehdio) (3k+)                                                               | [Mehdi Ouazza](https://www.linkedin.com/in/mehd-io/) (20k+)                                                                       | [mehd_io](https://x.com/mehd_io)                                                                                                                             |                                                  | [@mehdio_datatv](https://www.tiktok.com/@mehdio_datatv)                                                                                                                                                 |
 | ITVersity           | [ITVersity](https://www.youtube.com/@itversity) (67k+)                                                        | [Durga Gadiraju](https://www.linkedin.com/in/durga0gadiraju/) (48k+)                                                               |                                                                                                                                                                                 |                                                                                                               |                                                                  
 | Arnaud Milleker      |                                                                                                                           | [Arnaud Milleker](https://www.linkedin.com/in/arnaudmilleker/) (7k+)                                                      |                                                                                                                                                                                 |                                                                                                               |                                                                                                                                                                                                     |
+| Soumil Shah      | [Soumil Shah] (https://www.youtube.com/@SoumilShah) (50k) | [Soumil Shah](https://www.linkedin.com/in/shah-soumil/) (8k+) |                                                                                                                                                                                 |                                                                                                               |                                                                                                                                                                                                     |
+| Ananth Packkildurai      |  | [Ananth Packkildurai](https://www.linkedin.com/in/ananthdurai/) (18k+) |                                                                                                                                                                                 |                                                                                                               |                                                                                                                                                                                                     |
 
 ### Great Podcasts
 
