@@ -1,14 +1,24 @@
-# Week 6 Infrastructure Track Spark Training
+# Week 3 Spark Fundamentals training
+
+## Unit Testing PySpark Course Getting Started
+
+You need to install the required dependencies in `requirements.txt`
+
+Running `pip install -r requirements.txt` will install them.
+
+Running pytest is easy. You just need to run `pytest` and you're good to go!
 
 
 
-## Usage
+## Spark Fundamentals and Advanced Spark Setup
 
-To launch the spark and iceberg docker containers, run:
+To launch the Spark and Iceberg Docker containers, run:
 
 ```bash
 make up
 ```
+
+Or `docker compose up` if you're on Windows!
 
 Then, you should be able to access a Jupyter notebook at `localhost:8888`.
 
