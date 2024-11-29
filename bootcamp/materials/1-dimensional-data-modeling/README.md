@@ -82,7 +82,7 @@ There are two methods to get Postgres running locally.
 - If you navigate to **`http://localhost:5050`** you will be able to see the PGAdmin instance up and running and should be able to connect to the following server:
     ![Image showing the setup for PGAdmin](.attachments/pgadmin-server.png)
 Where:
-    - Host name: host.docker.internal
+    - Host name: host.docker.internal (Or container name i.e my-postgres-container)
     - Port: 5432
     - Username: postgres
     - Password: postgres
