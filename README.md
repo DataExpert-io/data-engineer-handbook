@@ -97,6 +97,7 @@ Top must-join communities for ML:
   - [Apache Kylin](https://kylin.apache.org/)
   - [DuckDB](https://duckdb.org/)
   - [QuestDB](https://questdb.io/)
+  - [StarRocks](https://www.starrocks.io/)
 - LLM application library
   - [AdalFlow](https://github.com/SylphAI-Inc/AdalFlow)
   - [LangChain](https://github.com/langchain-ai/langchain)
