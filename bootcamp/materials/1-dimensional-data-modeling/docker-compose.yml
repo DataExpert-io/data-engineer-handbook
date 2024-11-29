@@ -5,13 +5,12 @@ services:
     container_name: ${DOCKER_CONTAINER}
     env_file:
       - .env
-      - example.env
     environment:
       - POSTGRES_DB=${POSTGRES_SCHEMA}
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
     ports:
-      - "${CONTAINER_PORT}:5432"
+      - "${HOST_PORT}:5432"
     volumes:
       - ./:/bootcamp/
       - ./data.dump:/docker-entrypoint-initdb.d/data.dump

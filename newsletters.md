@@ -20,7 +20,7 @@
 - [All Hands on Data](https://allhandsondata.substack.com/)
 - [Modern Data 101](https://moderndata101.substack.com/)
 - [SELECT Insights](https://newsletter.ssp.sh/)
-- [Interesting Data Gigs](https://newsletter.interestinggigs.com)
+- [Interesting Data Gigs](https://www.interestinggigs.com/)
 - [Ju Data Engineering Weekly](https://juhache.substack.com/)
 - [From An Engineer Sight](https://fromanengineersight.substack.com/)
 - [Data Engineering Community](https://dataengineeringcommunity.substack.com/)
