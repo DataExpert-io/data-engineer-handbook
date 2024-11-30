@@ -130,6 +130,9 @@ Where:
 ```
 - If you are on Windows and used **`docker compose up`**, table creation and data load will not take place with container creation. Once you have docker container up and verified that you are able to connect to empty postgres database with your own choice of client, follow the following steps:
 1. On Docker desktop, connect to my-postgres-container terminal.
+```
+docker exec -it my-postgres-container bash
+```
 2. Run:
     ```bash
     psql \
@@ -138,6 +141,14 @@ Where:
         --dbname $POSTGRES_DB \
         < /docker-entrypoint-initdb.d/data.dump
     ```
+or
+```
+pg_restore \
+    --username=$POSTGRES_USER \
+    --dbname=$POSTGRES_DB \
+    --verbose \
+    /docker-entrypoint-initdb.d/data.dump
+```
     - → This will run the file `data.dump` from inside your docker container.
 
 - If the tables don't come with the loaded data, follow these steps with manual installation of postgres:
