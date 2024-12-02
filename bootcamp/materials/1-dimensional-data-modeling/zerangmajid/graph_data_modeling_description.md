@@ -41,18 +41,19 @@ What Does the Graph Represent? This visualization illustrates relationships with
 Flexible schemas allow modeling data from disparate sources into a unified shared schema. They are often used in systems where the structure of data is variable or evolves over time.
 
 #### Benefits of Flexible Schemas
-
-Ease of Modification: Avoid frequent ALTER TABLE commands, making schema changes seamless.
-Manage More Columns: Handle complex data with numerous columns more effectively.
-Minimize NULL Columns: Flexible schemas reduce the prevalence of unused or NULL columns.
-Dynamic Properties: Use fields like other_properties for rarely used but necessary data fields.
-Drawbacks of Flexible Schemas:
-
-Compression Issues: Compression may be less effective, especially when using JSON fields.
+- **Ease of Modification**: Avoid frequent `ALTER TABLE` commands, making schema changes seamless.
+- **Manage More Columns**: Handle complex data with numerous columns effectively.
+- **Minimize NULL Columns**: Flexible schemas reduce unused or NULL columns.
+- **Dynamic Properties**: Use fields like `other_properties` for rarely used but necessary data fields.
+- 
+#### Drawbacks of Flexible Schemas
+- **Compression Issues**: Compression may be less effective, especially with JSON fields.
+- **Query Complexity**: Querying and reading such schemas can be less intuitive or slower.ds.
 Query Complexity: Querying and reading such schemas can be less intuitive or slower.
 
 
 ## Repository Structure
+This section provides links to key SQL scripts for setting up and querying the graph database.
 
 - **[1. graph_setup.sql](./1.graph_setup.sql)**: Sets up the graph database schema with vertices and edges.
 
@@ -87,7 +88,9 @@ Player Performance: Analyze points scored, games played, and team affiliations.
 Graph Relationships: Identify connections between players, teams, and games.
 Custom Queries: Calculate metrics like games-to-points ratio and relationships between players.
 
-## Example Query: Games Against Opponent
+### Example Query: Games Against Opponent
+**Purpose**: Analyze how many games players have played against specific opponents and their scoring performance.
+
 ```sql
 SELECT v.properties ->> 'player_name' AS player_name,
        e.object_identifier AS opponent_identifier,
@@ -107,7 +110,7 @@ WHERE e.object_type = 'player'::vertex_type;
 
 Key Insight:
 
-Vince Carter has played 5 games against the player with ID 1495 and scored a total of 55 poin
+Vince Carter has played 5 games against the player with ID 1495 and scored a total of 55 poins
 
 [View Script](./3.queries.sql)
 
@@ -140,6 +143,9 @@ Dirk Nowitzki has the highest average points per game among all players.
 - Remove duplicates using **ROW_NUMBER()** to maintain data integrity.
 - Use **JSON properties** to allow flexibility in storing additional data.
 - Index **fields** that are frequently queried for improved performance.
+## Conclusion
+Graph data modeling is an efficient way to represent and analyze complex relationships. This guide provided a detailed overview of graph database concepts, SQL scripts for implementation, and sample queries for extracting insights. By leveraging flexible schemas and graph structures, users can address real-world use cases like social networks, recommendations, and more.
+
 
 
 
