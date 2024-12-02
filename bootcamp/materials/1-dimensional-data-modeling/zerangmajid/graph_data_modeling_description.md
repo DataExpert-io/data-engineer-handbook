@@ -1,7 +1,19 @@
 # Graph Data Modeling Description
 
 ## Overview
-This document describes the **SQL scripts** used for modeling graph data. The database structure consists of **vertices** and **edges** that represent players, teams, games, and their relationships.
+This document describes the **SQL scripts** used for **modeling graph data**. The repository is organized to showcase:
+The database structure consists of **vertices** and **edges** that represent players, teams, games, and their relationships.
+
+## Repository Structure
+
+- **[1. graph_setup.sql](./1.graph_setup.sql)**: Sets up the graph database schema with vertices and edges.
+- **[2. data_insertion.sql](./2.data_insertion.sql)**: Inserts sample data into the graph database.
+- **[3. queries.sql](./3.queries.sql)**: Executes various queries to extract insights from the graph database.
+- **[6. query_results.md](./6.query_results.md)**: Shows query results and explains their significance.
+- **[example_results.md](./example_results.md)**: Provides detailed examples of query outputs.
+
+
+
 
 ## Steps
 ### Step 1: Enumerated Types
