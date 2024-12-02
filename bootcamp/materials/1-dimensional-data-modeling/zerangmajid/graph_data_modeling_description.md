@@ -59,7 +59,7 @@ This section provides links to key SQL scripts for setting up and querying the g
 
 - **[2. data_insertion.sql](./2.data_insertion.sql)**: Inserts sample data into the graph database.
 - **[3. queries.sql](./3.queries.sql)**: Executes various queries to extract insights from the graph database.
-- **[6. query_results.md](./6.query_results.md)**: Shows query results and explains their significance.
+ 
 
 
 
