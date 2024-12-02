@@ -146,6 +146,10 @@ Dirk Nowitzki has the highest average points per game among all players.
 ## Conclusion
 Graph data modeling is an efficient way to represent and analyze complex relationships. This guide provided a detailed overview of graph database concepts, SQL scripts for implementation, and sample queries for extracting insights. By leveraging flexible schemas and graph structures, users can address real-world use cases like social networks, recommendations, and more.
 
+### More Detailed Setup Instructions
+For a complete guide on setting up and running this project using Docker Compose and PostgreSQL, visit the [Data Modeling Setup Page](https://github.com/zerangmajid/data-engineer-handbook/tree/main/bootcamp/materials/1-dimensional-data-modeling).
+
+
 
 
 
