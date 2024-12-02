@@ -1,0 +1,23 @@
+CREATE TABLE public.games (
+    game_date_est date,
+    game_id integer NOT NULL,
+    game_status_text text,
+    home_team_id integer,
+    visitor_team_id integer,
+    season integer,
+    team_id_home integer,
+    pts_home real,
+    fg_pct_home real,
+    ft_pct_home real,
+    fg3_pct_home real,
+    ast_home real,
+    reb_home real,
+    team_id_away integer,
+    pts_away real,
+    fg_pct_away real,
+    ft_pct_away real,
+    fg3_pct_away real,
+    ast_away real,
+    reb_away real,
+    home_team_wins integer
+);
