@@ -1,5 +1,11 @@
 # Graph Data Modeling Description
 
+
+- [Overview](#overview)
+- [Graph Data Relationships](#graph-data-relationships)
+- [Flexible Schemas](#flexible-schemas)
+
+
 ## Overview
 **Graph data modeling** focuses on  **relationships** rather than  **entities**. It uses  **vertices** and  **edges** to represent interconnected data. 
 Graph data modeling is a technique focused on capturing relationships between data entities. Unlike traditional models that prioritize tables and rows, graph models use nodes and edges, making them highly effective for use cases like social networks, recommendation systems, and relationship-driven datasets.
@@ -14,6 +20,12 @@ The database structure consists of **vertices** and **edges** that represent pla
 #### Additive vs. Non-Additive Dimensions
 - **Additive Dimensions**: Data you can sum without overlap (e.g., Age groups in a population).
 - **Non-Additive Dimensions**: Data prone to double counting (e.g., Active users across devices).
+
+![Graph Data Relationships](./resources/Graph%20Data%20Relationships.png)
+<p align="center">Visualization of graph data relationships including players, teams, and games.</p>
+
+
+
 
 ## Repository Structure
 
