@@ -1,8 +1,19 @@
 # Graph Data Modeling Description
 
 ## Overview
+**Graph data modeling** focuses on  **relationships** rather than  **entities**. It uses  **vertices** and  **edges** to represent interconnected data. 
+Graph data modeling is a technique focused on capturing relationships between data entities. Unlike traditional models that prioritize tables and rows, graph models use nodes and edges, making them highly effective for use cases like social networks, recommendation systems, and relationship-driven datasets.
+
+#### Why Graph Data Modeling?
+- Captures complex relationships efficiently.
+- Ideal for analyzing networks, social connections, and player interactions.
+
 This document describes the **SQL scripts** used for **modeling graph data**. The repository is organized to showcase:
 The database structure consists of **vertices** and **edges** that represent players, teams, games, and their relationships.
+
+#### Additive vs. Non-Additive Dimensions
+- **Additive Dimensions**: Data you can sum without overlap (e.g., Age groups in a population).
+- **Non-Additive Dimensions**: Data prone to double counting (e.g., Active users across devices).
 
 ## Repository Structure
 
@@ -11,7 +22,6 @@ The database structure consists of **vertices** and **edges** that represent pla
 - **[2. data_insertion.sql](./2.data_insertion.sql)**: Inserts sample data into the graph database.
 - **[3. queries.sql](./3.queries.sql)**: Executes various queries to extract insights from the graph database.
 - **[6. query_results.md](./6.query_results.md)**: Shows query results and explains their significance.
-- **[example_results.md](./example_results.md)**: Provides detailed examples of query outputs.
 
 
 
