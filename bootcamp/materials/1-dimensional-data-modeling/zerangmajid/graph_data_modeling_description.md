@@ -3,7 +3,10 @@
 
 - [Overview](#overview)
 - [Graph Data Relationships](#graph-data-relationships)
-- [Flexible Schemas](#flexible-schemas)
+- [Flexible Schemas](#flexible-schema)
+- [Repository Structure](#repository-structure)
+- [Key Steps](#key-steps)
+
 
 
 ## Overview
@@ -21,10 +24,32 @@ The database structure consists of **vertices** and **edges** that represent pla
 - **Additive Dimensions**: Data you can sum without overlap (e.g., Age groups in a population).
 - **Non-Additive Dimensions**: Data prone to double counting (e.g., Active users across devices).
 
+### Graph Data Relationships
+This section visualizes the relationships between players, teams, and games within a graph database.
+
+What Does the Graph Represent? This visualization illustrates relationships within a graph database:
+
+- **Vertices** (Nodes): Represent entities like players, teams, and games.
+- **Edges** (Relationships): Define the interactions or relationships between these entities, such as "plays against" or "shares teams."
+
 ![Graph Data Relationships](./resources/Graph%20Data%20Relationships.png)
 <p align="center">Visualization of graph data relationships including players, teams, and games.</p>
 
 
+### Flexible Schema
+#### What is a Flexible Schema?
+Flexible schemas allow modeling data from disparate sources into a unified shared schema. They are often used in systems where the structure of data is variable or evolves over time.
+
+#### Benefits of Flexible Schemas
+
+Ease of Modification: Avoid frequent ALTER TABLE commands, making schema changes seamless.
+Manage More Columns: Handle complex data with numerous columns more effectively.
+Minimize NULL Columns: Flexible schemas reduce the prevalence of unused or NULL columns.
+Dynamic Properties: Use fields like other_properties for rarely used but necessary data fields.
+Drawbacks of Flexible Schemas:
+
+Compression Issues: Compression may be less effective, especially when using JSON fields.
+Query Complexity: Querying and reading such schemas can be less intuitive or slower.
 
 
 ## Repository Structure
