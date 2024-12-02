@@ -7,6 +7,7 @@ The database structure consists of **vertices** and **edges** that represent pla
 ## Repository Structure
 
 - **[1. graph_setup.sql](./1.graph_setup.sql)**: Sets up the graph database schema with vertices and edges.
+
 - **[2. data_insertion.sql](./2.data_insertion.sql)**: Inserts sample data into the graph database.
 - **[3. queries.sql](./3.queries.sql)**: Executes various queries to extract insights from the graph database.
 - **[6. query_results.md](./6.query_results.md)**: Shows query results and explains their significance.
@@ -14,190 +15,77 @@ The database structure consists of **vertices** and **edges** that represent pla
 
 
 
+## Key Steps
 
-## Steps
-### Step 1: Enumerated Types
-Define types for **vertices** and **edges** to categorize data.
+### 1. Database Setup
+The graph_setup.sql file defines the schema of the graph database, including:
 
+Enumerated Types: Used to categorize vertices and edges.
+Vertices Table: Stores nodes (e.g., players, teams, games) with their properties.
+Edges Table: Stores relationships between nodes (e.g., "plays_in", "shares_team").[View Script](./1.graph_setup.sql)
+
+### 2. Data Insertion
+ The data_insertion.sql file populates the database with sample data for vertices and edges, representing:
+
+Players and their properties (e.g., name, performance metrics).
+Teams and games, along with their attributes.
+Relationships such as which player played in which game or belongs to which team.
+[View Script](./2.data_insertion.sql)
+
+
+### 3. Querying the Database
+The queries.sql file contains SQL queries to extract insights from the graph database. These include:
+
+Player Performance: Analyze points scored, games played, and team affiliations.
+Graph Relationships: Identify connections between players, teams, and games.
+Custom Queries: Calculate metrics like games-to-points ratio and relationships between players.
+
+## Example Query: Games Against Opponent
 ```sql
-CREATE TYPE vertex_type AS ENUM('player', 'team', 'game');
-CREATE TYPE edge_type AS ENUM('plays_against', 'shares_team', 'plays_in', 'plays_on');
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### Step 2: Create Tables
-## Vertices Table
-Define the vertices table to store nodes (players, teams, or games) with their properties.
-CREATE TABLE vertices (
-    identifier TEXT,
-    type vertex_type,
-    properties JSON,
-    PRIMARY KEY (identifier, type)
-);
+SELECT v.properties ->> 'player_name' AS player_name,
+       e.object_identifier AS opponent_identifier,
+       e.properties ->> 'subject_points' AS subject_points,
+       e.properties ->> 'num_games' AS games_against_opponent
+FROM vertices v
+JOIN edges e ON v.identifier = e.subject_identifier
+WHERE e.object_type = 'player'::vertex_type;
+```
+## Result Preview:
+| Player Name    | Opponent ID | Subject Points | Games Against Opponent |
+|----------------|-------------|----------------|-------------------------|
+| Vince Carter   | 977         | 13             | 2                       |
+| Vince Carter   | 1495        | 55             | 5                       |
+| Dirk Nowitzki  | 708         | 29             | 1                       |
+| Dirk Nowitzki  | 1495        | 4              | 1                       |
 
-## Edges Table
-Define the edges table to represent relationships between nodes.
-CREATE TABLE edges (
-    subject_identifier TEXT,
-    subject_type vertex_type,
-    object_identifier TEXT,
-    object_type vertex_type,
-    edge_type edge_type,
-    properties JSON,
-    PRIMARY KEY (subject_identifier, subject_type, object_identifier, object_type, edge_type)
-);
+Key Insight:
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### Step 3: Populate Data
-## Insert Games into Vertices
-Populate the vertices table with game information.
-INSERT INTO vertices
-SELECT
-    game_id AS identifier,
-    'game'::vertex_type AS type,
-    json_build_object(
-        'pts_home', pts_home,
-        'pts_away', pts_away,
-        'winning_team', CASE WHEN home_team_wins = 1 THEN home_team_id ELSE visitor_team_id END
-    ) AS properties
-FROM games;
+Vince Carter has played 5 games against the player with ID 1495 and scored a total of 55 poin
+
+[View Script](./3.queries.sql)
 
 
-##Insert Players into Vertices
-Populate the vertices table with player information.
-WITH players_agg AS (
-    SELECT
-        player_id AS identifier,
-        MAX(player_name) AS player_name,
-        COUNT(1) AS number_of_games,
-        SUM(pts) AS total_points,
-        ARRAY_AGG(DISTINCT team_id) AS teams
-    FROM game_details
-    GROUP BY player_id
-)
-INSERT INTO vertices
-SELECT
-    identifier,
-    'player'::vertex_type,
-    json_build_object(
-        'player_name', player_name,
-        'number_of_games', number_of_games,
-        'total_points', total_points,
-        'teams', teams
-    ) AS properties
-FROM players_agg;
-
-##Insert Teams into Vertices
-Populate the vertices table with team information.
-INSERT INTO vertices
-SELECT
-    team_id AS identifier,
-    'team'::vertex_type AS type,
-    json_build_object(
-        'abbreviation', abbreviation,
-        'nickname', nickname,
-        'city', city,
-        'arena', arena,
-        'year_founded', yearfounded
-    ) AS properties
-FROM teams;
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### Step 4: Create Edges
-Create plays_in Edges
-Establish relationships between players and games.
-
-INSERT INTO edges
-SELECT
-    player_id AS subject_identifier,
-    'player'::vertex_type AS subject_type,
-    game_id AS object_identifier,
-    'game'::vertex_type AS object_type,
-    'plays_in'::edge_type AS edge_type,
-    json_build_object(
-        'start_position', start_position,
-        'pts', pts,
-        'team_id', team_id,
-        'team_abbreviation', team_abbreviation
-    ) AS properties
-FROM game_details;
-
-##Create plays_against and shares_team Edges
-Create edges to represent player matchups and teammates.
-
-WITH deduped AS (
-    SELECT *, ROW_NUMBER() OVER (PARTITION BY player_id, game_id) AS row_num
-    FROM game_details
-),
-filtered AS (
-    SELECT *
-    FROM deduped
-    WHERE row_num = 1
-),
-aggregated AS (
-    SELECT
-        f1.player_id AS subject_player_id,
-        f2.player_id AS object_player_id,
-        CASE
-            WHEN f1.team_abbreviation = f2.team_abbreviation THEN 'shares_team'::edge_type
-            ELSE 'plays_against'::edge_type
-        END AS edge_type,
-        COUNT(1) AS num_games,
-        SUM(f1.pts) AS subject_points,
-        SUM(f2.pts) AS object_points
-    FROM filtered f1
-    JOIN filtered f2
-        ON f1.game_id = f2.game_id
-        AND f1.player_id <> f2.player_id
-    WHERE f1.player_id > f2.player_id
-    GROUP BY
-        f1.player_id,
-        f2.player_id,
-        CASE
-            WHEN f1.team_abbreviation = f2.team_abbreviation THEN 'shares_team'::edge_type
-            ELSE 'plays_against'::edge_type
-        END
-)
-INSERT INTO edges
-SELECT
-    subject_player_id AS subject_identifier,
-    'player'::vertex_type AS subject_type,
-    object_player_id AS object_identifier,
-    'player'::vertex_type AS object_type,
-    edge_type,
-    json_build_object(
-        'num_games', num_games,
-        'subject_points', subject_points,
-        'object_points', object_points
-    ) AS properties
-FROM aggregated;
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### Step 5: Analyze the Data
-##Fetch Players
-
-SELECT * FROM vertices WHERE type = 'player';
-
-##Fetch Player Relationships
+## Example Query: Player Statistics Aggregation
+```sql
 SELECT
     v.properties ->> 'player_name' AS player_name,
-    e.object_identifier AS opponent_identifier,
-    e.properties ->> 'num_games' AS games_against_opponent
+    AVG(CAST(v.properties ->> 'total_points' AS NUMERIC)) AS avg_points,
+    COUNT(*) AS total_games
 FROM vertices v
-JOIN edges e
-    ON v.identifier = e.subject_identifier
-    AND v.type = e.subject_type
-WHERE e.object_type = 'player'::vertex_type;
-
-## Top Scoring Players Against Opponents
-
-SELECT
-    v.properties ->> 'player_name',
-    MAX(e.properties ->> 'subject_points') AS max_points
-FROM vertices v
-JOIN edges e
-    ON v.identifier = e.subject_identifier
-    AND v.type = e.subject_type
-WHERE e.edge_type = 'plays_against'::edge_type
+WHERE v.type = 'player'::vertex_type
 GROUP BY v.properties ->> 'player_name'
-ORDER BY max_points DESC;
+ORDER BY avg_points DESC;
+```
+## Result Preview:
+| Player Name    | Average Points | Total Games |
+|----------------|----------------|-------------|
+| Dirk Nowitzki	 | 25.7	          | 82          |
+| Vince Carter   | 22.3           | 74          |
+
+Key Insight:
+
+Dirk Nowitzki has the highest average points per game among all players.
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
 
