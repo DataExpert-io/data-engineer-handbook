@@ -1,7 +1,7 @@
 # 📅 Data Modeling
 
 This repository contains the setup for the data modeling modules in Weeks 1 and 2.
- 
+
 :wrench: **Tech Stack**
 
 - Git
@@ -21,16 +21,16 @@ For detailed instructions and more information, please refer to the step-by-step
 ## 1️⃣ **Clone the repository**
 
 - Clone the repo using the SSH link. This will create a new folder in the current directory on your local machine.
-    
+
     ```bash
     git clone git@github.com:DataExpert-io/data-engineer-handbook.git
     ```
-    
+
     > ℹ️ To securely interact with GitHub repositories, it is recommended to use SSH keys. Follow the instructions provided **[here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)** to set up SSH keys on GitHub.
-    > 
+    >
 
 - Navigate into the cloned repo using the command line:
-    
+
     ```bash
     cd data-engineer-handbook/bootcamp/materials/1-dimensional-data-modeling
     ```
@@ -44,12 +44,12 @@ There are two methods to get Postgres running locally.
 1. Install Postgres
     - For Mac: Follow this **[tutorial](https://daily-dev-tips.com/posts/installing-postgresql-on-a-mac-with-homebrew/)** (Homebrew is really nice for installing on Mac)
     - For Windows: Follow this **[tutorial](https://www.sqlshack.com/how-to-install-postgresql-on-windows/)**
-2. Run this command after replacing **`<computer-username>`** with your computer's username:
-    
+2. Run this command after replacing **`<postgres-username>`** with a user created in your local postgres:
+
     ```bash
-    pg_restore -U <computer-username> postgres data.dump
+    pg_restore -U <postgres-username> -d postgres data.dump
     ```
-    
+
 3. Set up DataGrip, DBeaver, or your VS Code extension to point at your locally running Postgres instance.
 4. Have fun querying!
 
@@ -57,24 +57,24 @@ There are two methods to get Postgres running locally.
 
 - Install Docker Desktop from **[here](https://www.docker.com/products/docker-desktop/)**.
 - Copy **`example.env`** to **`.env`**:
-    
+
     ```bash
     cp example.env .env
     ```
 
 - Start the Docker Compose container:
     - If you're on Mac:
-        
+
         ```bash
         make up
         ```
-        
+
     - If you're on Windows:
-        
+
         ```bash
         docker compose up -d
         ```
-        
+
 - A folder named **`postgres-data`** will be created in the root of the repo. The data backing your Postgres instance will be saved here.
 - You can check that your Docker Compose stack is running by either:
     - Going into Docker Desktop: you should see an entry there with a drop-down for each of the containers running in your Docker Compose stack.
@@ -89,13 +89,13 @@ Where:
 
 
 - When you're finished with your Postgres instance, you can stop the Docker Compose containers with:
-    
+
     ```bash
     make down
     ```
-    
+
     Or if you're on Windows:
-    
+
     ```bash
     docker compose down -v
     ```
@@ -103,7 +103,7 @@ Where:
 ### :rotating_light: **Need help loading tables?** :rotating_light:
 
 > Refer to the instructions below to resolve the issue when the data dump fails to load tables, displaying the message `PostgreSQL Database directory appears to contain a database; Skipping initialization.`
-> 
+>
 
 ## :three: **Connect to Postgres in Database Client**
 
@@ -118,9 +118,9 @@ Where:
     - The default database is **`postgres`** and corresponds to **`$POSTGRES_DB`** in your **`.env`**.
     - The default host is **`localhost`** or **`0.0.0.0`.** This is the IP address of the Docker container running the PostgreSQL instance.
     - The default port for Postgres is **`5432` .** This corresponds to the **`$CONTAINER_PORT`** variable in the **`.env`** file.
-    
+
     &rarr; :bulb: You can edit these values by modifying the corresponding values in **`.env`**.
-    
+
 - If the test connection is successful, click "Finish" or "Save" to save the connection. You should now be able to use the database client to manage your PostgreSQL database locally.
 
 ## **🚨 Tables not loading!? 🚨**
@@ -147,18 +147,18 @@ Where:
 3. Enter your credentials for postgres (described in the connect to postgres section)
     - → If the above worked, you should now be inside a psql REPL (It looks like `postgres=#`)
 4. Run:
-    
+
     ```bash
     postgres=# \\i data.dump
     ```
-    
+
     - → This will run the file `data.dump` from inside your psql REPL.
 
-- If you did the setup using Option 2, and the tables are not in the database, another solution is to: 
+- If you did the setup using Option 2, and the tables are not in the database, another solution is to:
 
 1. Find the container id by running `docker ps` - under CONTAINER ID
 2. Go inside the container by executing `docker exec -it <container_name_or_id> bash`
-3. Run `pg_restore -U $POSTGRES_USER -d $POSTGRES_DB /docker-entrypoint-initdb.d/data.dump` 
+3. Run `pg_restore -U $POSTGRES_USER -d $POSTGRES_DB /docker-entrypoint-initdb.d/data.dump`
 
 ---
 
