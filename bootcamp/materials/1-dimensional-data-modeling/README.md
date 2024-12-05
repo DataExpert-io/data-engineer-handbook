@@ -1,4 +1,4 @@
-# 📅 Data Modeling
+## 📅 Data Modeling
 
 This repository contains the setup for the data modeling modules in Weeks 1 and 2.
  
