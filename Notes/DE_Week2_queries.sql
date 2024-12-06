@@ -93,45 +93,50 @@
 -- Day 2 Lab --
 --
 -- DROP TABLE users_cumulated;
--- CREATE TABLE users_cumulated (
---     user_id TEXT
---     , dates_active DATE[]  -- list of dates in past where user active
---     , curr_date DATE -- Current date for user
---     , PRIMARY KEY (user_id, curr_date)
--- );
+CREATE TABLE users_cumulated (
+    user_id TEXT
+    , dates_active DATE[]  -- list of dates in past where user active
+    , curr_date DATE -- Current date for user
+    , PRIMARY KEY (user_id, curr_date)
+);
+
 --
--- INSERT INTO users_cumulated
--- WITH
---     yesterday AS (
---         SELECT *
---         FROM users_cumulated
---         WHERE curr_date = DATE('2023-01-01') +30
---     ),
---     today AS (
---         SELECT
---             CAST(user_id AS TEXT) AS user_id
---             , CAST (event_time AS TIMESTAMP)::date AS date_active
---         FROM events
---         WHERE CAST (event_time AS TIMESTAMP)::date = DATE('2023-01-02') +30
---             AND user_id IS NOT NULL
---         GROUP BY
---                 user_id
---                , CAST (event_time AS TIMESTAMP)::date
---     )
---
--- SELECT
---     COALESCE(t.user_id, y.user_id) AS user_id
---     , CASE
---         WHEN y.dates_active IS NULL THEN ARRAY [t.date_active]
---         WHEN t.date_active IS NULL THEN y.dates_active
---         ELSE ARRAY[t.date_active] || y.dates_active
---     END AS dates_active
---     , DATE(
---         COALESCE(t.date_active, y.curr_date + INTERVAL '1 day')
---       )AS curr_date
--- FROM today t
---     FULL OUTER JOIN yesterday y
---     ON t.user_id=y.user_id;
+INSERT INTO users_cumulated
+WITH
+    yesterday AS (
+        SELECT *
+        FROM users_cumulated
+        WHERE curr_date = DATE('2023-01-01')
+    ),
+    today AS (
+        SELECT
+            CAST(user_id AS TEXT) AS user_id
+            , CAST (event_time AS TIMESTAMP)::date AS date_active
+        FROM events
+        WHERE CAST (event_time AS TIMESTAMP)::date = DATE('2023-01-02')
+            AND user_id IS NOT NULL
+        GROUP BY
+                user_id
+               , CAST (event_time AS TIMESTAMP)::date
+    )
+
+SELECT
+    COALESCE(t.user_id, y.user_id) AS user_id
+    , CASE
+        WHEN y.dates_active IS NULL THEN ARRAY [t.date_active]
+        WHEN t.date_active IS NULL THEN y.dates_active
+        ELSE ARRAY[t.date_active] || y.dates_active
+    END AS dates_active
+    , DATE(
+        COALESCE(t.date_active, y.curr_date + INTERVAL '1 day')
+      )AS curr_date
+FROM today t
+    FULL OUTER JOIN yesterday y
+    ON t.user_id=y.user_id;
+
+
+
+------------------------------------------------------------------------------------------------
 --
 --
 -- SELECT *
