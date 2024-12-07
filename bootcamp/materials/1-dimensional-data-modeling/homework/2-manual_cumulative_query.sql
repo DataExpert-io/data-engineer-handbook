@@ -1,9 +1,13 @@
-with last_year as (
-	select * from actors where current_year = 1974
+with last_processed_year as (
+	select max(current_year) as last_year from actors
+)
+
+, last_year as (
+	select * from actors where current_year = (select last_year from last_processed_year)
 )
 
 , this_year as (
-	select * from actor_films where year = 1975
+	select * from actor_films where year = (select last_year + 1 from last_processed_year)
 )
 
 , this_year_films_in_array as (
@@ -43,7 +47,7 @@ with last_year as (
 			else ly.quality_class
 		end as quality_class
 		, ty.films is not null as is_active
-		, 1975 as current_year
+		, (select last_year + 1 from last_processed_year) as current_year
 		
 	from
 		last_year as ly
