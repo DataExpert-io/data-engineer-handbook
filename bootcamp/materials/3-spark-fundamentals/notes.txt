@@ -1,0 +1,1 @@
+When you use broadcast() in Spark, the entire dataset is distributed to each node before the join. This works well when the dataset being broadcasted is small enough to fit into the memory of each node.
