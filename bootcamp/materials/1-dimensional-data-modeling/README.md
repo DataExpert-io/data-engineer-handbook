@@ -53,7 +53,7 @@ There are two methods to get Postgres running locally.
 3. Set up DataGrip, DBeaver, or your VS Code extension to point at your locally running Postgres instance.
 4. Have fun querying!
 
-### 🐳 **Option 2: Run Postgres in Docker**
+### 🐳 **Option 2: Run Postgres and PGAdmin in Docker**
 
 - Install Docker Desktop from **[here](https://www.docker.com/products/docker-desktop/)**.
 - Copy **`example.env`** to **`.env`**:
@@ -79,6 +79,15 @@ There are two methods to get Postgres running locally.
 - You can check that your Docker Compose stack is running by either:
     - Going into Docker Desktop: you should see an entry there with a drop-down for each of the containers running in your Docker Compose stack.
     - Running **`docker ps -a`** and looking for the containers with the name **`postgres`**.
+- If you navigate to **`http://localhost:5050`** you will be able to see the PGAdmin instance up and running and should be able to connect to the following server:
+    ![Image showing the setup for PGAdmin](.attachments/pgadmin-server.png)
+Where:
+    - Host name: host.docker.internal (Or container name i.e my-postgres-container)
+    - Port: 5432
+    - Username: postgres
+    - Password: postgres
+
+
 - When you're finished with your Postgres instance, you can stop the Docker Compose containers with:
     
     ```bash
