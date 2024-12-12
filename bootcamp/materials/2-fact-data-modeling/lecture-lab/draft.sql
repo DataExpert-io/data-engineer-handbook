@@ -15,9 +15,16 @@
 -- from events
 -- where user_id = '10060569187331700000'
 -- GROUP BY DATE(event_time);
-SELECT *
-from array_metrics;
-SELECT cardinality(metric_array),
-    count(1)
-from array_metrics
-GROUP BY 1;
+-- SELECT *
+-- from array_metrics;
+-- SELECT cardinality(metric_array),
+--     count(1)
+-- from array_metrics
+-- GROUP BY 1;
+SELECT user_id,
+    device_id,
+    COUNT(1) as event_counts,
+    COLLECT_LIST(DISTINCT host) as host_array
+FROM events
+GROUP BY 1,
+    2;
