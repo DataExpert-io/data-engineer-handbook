@@ -117,7 +117,7 @@ Where:
     - The default password is **`postgres`** and corresponds to **`$POSTGRES_PASSWORD`** in your **`.env`**.
     - The default database is **`postgres`** and corresponds to **`$POSTGRES_DB`** in your **`.env`**.
     - The default host is **`localhost`** or **`0.0.0.0`.** This is the IP address of the Docker container running the PostgreSQL instance.
-    - The default port for Postgres is **`5432` .** This corresponds to the **`$CONTAINER_PORT`** variable in the **`.env`** file.
+    - The default port for Postgres is **`5432` .** This corresponds to the **`$CONTAINER_PORT`** variable in the **`.env`** file.  Use port **`5434`** if connecting to the Docker container running PostgreSQL.
     
     &rarr; :bulb: You can edit these values by modifying the corresponding values in **`.env`**.
     
