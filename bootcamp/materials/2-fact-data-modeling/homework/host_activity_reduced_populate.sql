@@ -29,7 +29,7 @@ SELECT
             THEN ARRAY[t.unique_visitors]
             ELSE ARRAY[]::BIGINT[]
         END
-    AS hit_array
+    AS unique_visitors_array
 FROM host_activity_reduced har
     FULL OUTER JOIN
 today t ON har.host = t.host
