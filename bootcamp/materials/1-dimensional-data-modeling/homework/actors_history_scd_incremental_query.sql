@@ -1,7 +1,7 @@
 -- SELECT * FROM actors_history_scd
 
 -- Add new records where the condition is met
-INSERT INTO actors_history_scd(actorid, films, quality_class, is_active, start_date, end_date, current_flag)
+INSERT INTO actors_history_scd (actorid, films, quality_class, is_active, start_date, end_date, current_flag)
 SELECT
     a.actorid,
     a.films,

@@ -9,7 +9,7 @@ CREATE TYPE film_type AS (
 )
 
 CREATE TYPE quality_type
-    AS ENUM('star', 'average', 'good', 'star');
+    AS ENUM('bad', 'average', 'good', 'star');
 
 
 -- DROP TABLE  IF EXISTS
