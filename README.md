@@ -195,7 +195,7 @@ Here's the mostly comprehensive list of data engineering creators:
 | Ananth Packkildurai      |  | [Ananth Packkildurai](https://www.linkedin.com/in/ananthdurai/) (18k+) |                                                                                                                                                                                 |                                                                                                               |                                                                                                                                                                                                     |
 | Dan Kornas            |                                |                                  |                  [dankornas](https://www.twitter.com/dankornas) (66k+)                                                                                                                                                               |                                                                                                               |  
 | Nitin             | https://www.linkedin.com/in/tomernitin29/                          |
-
+| Manojkumar Vadivel      |  | [Manojkumar Vadivel](https://www.linkedin.com/in/manojvsj/) (12k+) | 
 
 ### Great Podcasts
 
