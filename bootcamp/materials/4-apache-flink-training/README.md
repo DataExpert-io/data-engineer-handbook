@@ -109,7 +109,7 @@ cd bootcamp/materials/4-apache-flink-training
 
     After about a minute, you should see a prompt that the job's been submitted (e.g., `Job has been submitted with JobID <job_id_number>`). Now go back to the [Flink UI](http://localhost:8081/#/job/running) to see the job running! :tada:
 
-4. Trigger an event from the Kafka source by visiting [www.zachwilson.tech](https://www.zachwilson.tech/) and then query the `processed_events` table in your postgreSQL database to confirm the data/events were added.
+4. Trigger an event from the Kafka source by visiting [https://bootcamp.techcreator.io/](https://bootcamp.techcreator.io/) and then query the `processed_events` table in your postgreSQL database to confirm the data/events were added.
 
     ```bash
     make psql
