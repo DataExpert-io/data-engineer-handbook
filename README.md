@@ -83,6 +83,8 @@ Top must-join communities for ML:
   - [Hex](https://hex.ai/)
   - [Apache Superset](https://superset.apache.org/)
   - [Evidence](https://evidence.dev)
+  - [Redash](https://redash.io/)
+  - [Lightdash](https://lightdash.com/)
 - Data Integration
   - [Cube](https://cube.dev)
   - [Fivetran](https://www.fivetran.com)
