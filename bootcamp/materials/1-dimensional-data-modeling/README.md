@@ -45,10 +45,12 @@ There are two methods to get Postgres running locally.
     - For Mac: Follow this **[tutorial](https://daily-dev-tips.com/posts/installing-postgresql-on-a-mac-with-homebrew/)** (Homebrew is really nice for installing on Mac)
     - For Windows: Follow this **[tutorial](https://www.sqlshack.com/how-to-install-postgresql-on-windows/)**
 2. Run this command after replacing **`<computer-username>`** with your computer's username:
-    
+
     ```bash
-    pg_restore -U <computer-username> postgres data.dump
+    pg_restore -U <computer-username> -d postgres data.dump
     ```
+
+    If you have any issue, the syntax is `pg_restore -U [username] -d [database_name] -h [host] -p [port] [backup_file]`
     
 3. Set up DataGrip, DBeaver, or your VS Code extension to point at your locally running Postgres instance.
 4. Have fun querying!
