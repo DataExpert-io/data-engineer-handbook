@@ -31,7 +31,7 @@ Top 3 must read books are:
 ### Great [list of over 10 communities to join](communities.md):
 
 Top must-join communities for DE:
-- [EcZachly Data Engineering Discord](https://discord.gg/JGumAXncAK)
+- [DataExpert.io Community Discord](https://discord.gg/JGumAXncAK)
 - [Data Talks Club Slack](https://datatalks.club/slack)
 - [Data Engineer Things Community](https://www.dataengineerthings.org/aboutus/)
 
@@ -80,8 +80,11 @@ Top must-join communities for ML:
   - [Looker Studio](https://lookerstudio.google.com/overview)
   - [Tableau](https://www.tableau.com/)
   - [Power BI](https://powerbi.microsoft.com/)
+  - [Hex](https://hex.ai/)
   - [Apache Superset](https://superset.apache.org/)
   - [Evidence](https://evidence.dev)
+  - [Redash](https://redash.io/)
+  - [Lightdash](https://lightdash.com/)
 - Data Integration
   - [Cube](https://cube.dev)
   - [Fivetran](https://www.fivetran.com)
@@ -89,6 +92,9 @@ Top must-join communities for ML:
   - [dlt](https://dlthub.com/)
   - [Sling](https://slingdata.io/)
   - [Meltano](https://meltano.com/)
+ - Semantic Layers
+  - [Cube](https://cube.dev)
+  - [dbt Semantic Layer](https://www.getdbt.com/product/semantic-layer) 
 - Modern OLAP
   - [Apache Druid](https://druid.apache.org/)
   - [ClickHouse](https://clickhouse.com/)
@@ -96,6 +102,7 @@ Top must-join communities for ML:
   - [Apache Kylin](https://kylin.apache.org/)
   - [DuckDB](https://duckdb.org/)
   - [QuestDB](https://questdb.io/)
+  - [StarRocks](https://www.starrocks.io/)
 - LLM application library
   - [AdalFlow](https://github.com/SylphAI-Inc/AdalFlow)
   - [LangChain](https://github.com/langchain-ai/langchain)
@@ -131,6 +138,7 @@ Top must-join communities for ML:
 - [Building a Universal Data Lakehouse](https://www.onehouse.ai/whitepaper/onehouse-universal-data-lakehouse-whitepaper)
 - [XTable in Action: Seamless Interoperability in Data Lakes](https://arxiv.org/abs/2401.09621)
 - [MapReduce: Simplified Data Processing on Large Clusters](https://research.google/pubs/mapreduce-simplified-data-processing-on-large-clusters/)
+- [Tidy Data](https://vita.had.co.nz/papers/tidy-data.pdf)
 
 ## Social Media Accounts
 
@@ -153,6 +161,7 @@ Here's the mostly comprehensive list of data engineering creators:
 | TECHTFQ by Thoufiq   | [TECHTFQ by Thoufiq](https://www.youtube.com/@techTFQ) (100k+)                                                            |                                                                                                                                   |                                                                                                                                                                                 |                                                                                                               |                                                                                                                                                                                                     |
 | SQLBI                | [SQLBI](https://www.youtube.com/@SQLBI) (100k+)                                                                           | [Marco Russo](https://www.linkedin.com/in/sqlbi) (50k+)                                                                           | [marcorus](https://x.com/marcorus) (10k+)                                                                                                                                       |                                                                                                               |                                                                                                                                                                                                     |
 | Azure Lib            | [Azure Lib](https://www.youtube.com/@azurelib-academy) (10k+)                                                             | [Deepak Goyal](https://www.linkedin.com/in/deepak-goyal-93805a17/) (100k+)                                                        |                                                                                                                                                                                 |                                                                                                               |                                                                                                                                                                                                     |
+| Prashanth Kumar Pandey            | [ScholarNest](https://www.youtube.com/@ScholarNest) (77k+)                                                             | [Prashanth Kumar Pandey](https://www.linkedin.com/in/prashant-kumar-pandey/) (37K+)                                                        |                                                                                                                                                                                 |                                                                                                               |                                                                                                                                                                                                     |
 | Advancing Analytics  | [Advancing Analytics](https://www.youtube.com/@AdvancingAnalytics) (10k+)                                                 | [Simon Whiteley](https://www.linkedin.com/in/simon-whiteley-uk/) (10k+)                                                           |                                                                                                                                                                                 |                                                                                                               |                                                                                                                                                                                                     |
 | Kahan Data Solutions | [Kahan Data Solutions](https://www.youtube.com/@KahanDataSolutions) (10k+)                                                |                                                                                                                                   |                                                                                                                                                                                 |                                                                                                               |                                                                                                                                                                                                     |
 | Ankit Bansal         | [Ankit Bansal](https://youtube.com/@ankitbansal6) (10k+)                                                                  | [Ankit Bansal](https://www.linkedin.com/in/ankitbansal6/) (50k+)                                                                  |                                                                                                                                                                                 |                                                                                                               |                                                                                                                                                                                                     |
@@ -184,6 +193,11 @@ Here's the mostly comprehensive list of data engineering creators:
 | Mehdi Ouazza | [Mehdio DataTV](https://www.youtube.com/@mehdio) (3k+)                                                               | [Mehdi Ouazza](https://www.linkedin.com/in/mehd-io/) (20k+)                                                                       | [mehd_io](https://x.com/mehd_io)                                                                                                                             |                                                  | [@mehdio_datatv](https://www.tiktok.com/@mehdio_datatv)                                                                                                                                                 |
 | ITVersity           | [ITVersity](https://www.youtube.com/@itversity) (67k+)                                                        | [Durga Gadiraju](https://www.linkedin.com/in/durga0gadiraju/) (48k+)                                                               |                                                                                                                                                                                 |                                                                                                               |                                                                  
 | Arnaud Milleker      |                                                                                                                           | [Arnaud Milleker](https://www.linkedin.com/in/arnaudmilleker/) (7k+)                                                      |                                                                                                                                                                                 |                                                                                                               |                                                                                                                                                                                                     |
+| Soumil Shah      | [Soumil Shah] (https://www.youtube.com/@SoumilShah) (50k) | [Soumil Shah](https://www.linkedin.com/in/shah-soumil/) (8k+) |                                                                                                                                                                                 |                                                                                                               |                                                                                                                                                                                                     |
+| Ananth Packkildurai      |  | [Ananth Packkildurai](https://www.linkedin.com/in/ananthdurai/) (18k+) |                                                                                                                                                                                 |                                                                                                               |                                                                                                                                                                                                     |
+| Dan Kornas            |                                |                                  |                  [dankornas](https://www.twitter.com/dankornas) (66k+)                                                                                                                                                               |                                                                                                               |  
+| Nitin             | https://www.linkedin.com/in/tomernitin29/                          |
+| Manojkumar Vadivel      |  | [Manojkumar Vadivel](https://www.linkedin.com/in/manojvsj/) (12k+) | 
 
 ### Great Podcasts
 
