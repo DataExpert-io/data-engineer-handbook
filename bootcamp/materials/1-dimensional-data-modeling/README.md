@@ -32,7 +32,7 @@ For detailed instructions and more information, please refer to the step-by-step
 - Navigate into the cloned repo using the command line:
     
     ```bash
-    cd data-engineer-handbook/bootcamp/materials/1-dimensional-data-modeling
+    cd data-engineer-handbook/boot camp/materials/1-dimensional-data-modeling
     ```
 
 ## 2️⃣ **Run Postgres**
