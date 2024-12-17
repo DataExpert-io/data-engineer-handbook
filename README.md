@@ -83,6 +83,8 @@ Top must-join communities for ML:
   - [Hex](https://hex.ai/)
   - [Apache Superset](https://superset.apache.org/)
   - [Evidence](https://evidence.dev)
+  - [Redash](https://redash.io/)
+  - [Lightdash](https://lightdash.com/)
 - Data Integration
   - [Cube](https://cube.dev)
   - [Fivetran](https://www.fivetran.com)
@@ -90,6 +92,9 @@ Top must-join communities for ML:
   - [dlt](https://dlthub.com/)
   - [Sling](https://slingdata.io/)
   - [Meltano](https://meltano.com/)
+ - Semantic Layers
+  - [Cube](https://cube.dev)
+  - [dbt Semantic Layer](https://www.getdbt.com/product/semantic-layer) 
 - Modern OLAP
   - [Apache Druid](https://druid.apache.org/)
   - [ClickHouse](https://clickhouse.com/)
@@ -190,6 +195,9 @@ Here's the mostly comprehensive list of data engineering creators:
 | Arnaud Milleker      |                                                                                                                           | [Arnaud Milleker](https://www.linkedin.com/in/arnaudmilleker/) (7k+)                                                      |                                                                                                                                                                                 |                                                                                                               |                                                                                                                                                                                                     |
 | Soumil Shah      | [Soumil Shah] (https://www.youtube.com/@SoumilShah) (50k) | [Soumil Shah](https://www.linkedin.com/in/shah-soumil/) (8k+) |                                                                                                                                                                                 |                                                                                                               |                                                                                                                                                                                                     |
 | Ananth Packkildurai      |  | [Ananth Packkildurai](https://www.linkedin.com/in/ananthdurai/) (18k+) |                                                                                                                                                                                 |                                                                                                               |                                                                                                                                                                                                     |
+| Dan Kornas            |                                |                                  |                  [dankornas](https://www.twitter.com/dankornas) (66k+)                                                                                                                                                               |                                                                                                               |  
+| Nitin             | https://www.linkedin.com/in/tomernitin29/                          |
+| Manojkumar Vadivel      |  | [Manojkumar Vadivel](https://www.linkedin.com/in/manojvsj/) (12k+) | 
 
 ### Great Podcasts
 
