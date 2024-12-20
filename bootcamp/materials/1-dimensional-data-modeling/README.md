@@ -44,7 +44,21 @@ There are two methods to get Postgres running locally.
 1. Install Postgres
     - For Mac: Follow this **[tutorial](https://daily-dev-tips.com/posts/installing-postgresql-on-a-mac-with-homebrew/)** (Homebrew is really nice for installing on Mac)
     - For Windows: Follow this **[tutorial](https://www.sqlshack.com/how-to-install-postgresql-on-windows/)**
-2. Run this command after replacing **`<computer-username>`** with your computer's username:
+2. Create a database called `postgres` and a user called `postgres` in Postgres, where data can be loaded in Step 3. 
+   ```sql
+   -- Creates a role
+   CREATE ROLE postgres WITH LOGIN PASSWORD 'admin';
+   ALTER ROLE postgres WITH SUPERUSER CREATEDB;
+
+   -- Drops all tables in public schema.
+   DROP SCHEMA public CASCADE;
+   CREATE SCHEMA public;
+
+   GRANT ALL ON SCHEMA public TO postgres;
+   GRANT ALL ON SCHEMA public TO public;
+   ```
+
+3. Run this command after replacing **`<computer-username>`** with your computer's username:
 
     ```bash
     pg_restore -U <computer-username> -d postgres data.dump
@@ -52,8 +66,8 @@ There are two methods to get Postgres running locally.
 
     If you have any issue, the syntax is `pg_restore -U [username] -d [database_name] -h [host] -p [port] [backup_file]`
     
-3. Set up DataGrip, DBeaver, or your VS Code extension to point at your locally running Postgres instance.
-4. Have fun querying!
+4. Set up DataGrip, DBeaver, or your VS Code extension to point at your locally running Postgres instance.
+5. Have fun querying!
 
 ### 🐳 **Option 2: Run Postgres and PGAdmin in Docker**
 
