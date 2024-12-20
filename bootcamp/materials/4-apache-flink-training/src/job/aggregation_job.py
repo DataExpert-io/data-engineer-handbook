@@ -52,12 +52,13 @@ def create_processed_events_source_kafka(t_env):
     pattern = "yyyy-MM-dd''T''HH:mm:ss.SSS''Z''"
     sink_ddl = f"""
         CREATE TABLE {table_name} (
-            ip VARCHAR,
-            event_time VARCHAR,
-            referrer VARCHAR,
-            host VARCHAR,
             url VARCHAR,
-            geodata VARCHAR,
+            referrer VARCHAR,
+            user_agent VARCHAR,
+            host VARCHAR,
+            ip VARCHAR,
+            headers VARCHAR,
+            event_time VARCHAR,
             window_timestamp AS TO_TIMESTAMP(event_time, '{pattern}'),
             WATERMARK FOR window_timestamp AS window_timestamp - INTERVAL '15' SECOND
         ) WITH (
@@ -68,8 +69,8 @@ def create_processed_events_source_kafka(t_env):
             'properties.security.protocol' = 'SASL_SSL',
             'properties.sasl.mechanism' = 'PLAIN',
             'properties.sasl.jaas.config' = 'org.apache.flink.kafka.shaded.org.apache.kafka.common.security.plain.PlainLoginModule required username=\"{kafka_key}\" password=\"{kafka_secret}\";',
-            'scan.startup.mode' = 'latest-offset',
-            'properties.auto.offset.reset' = 'latest',
+            'scan.startup.mode' = 'earliest-offset',
+            'properties.auto.offset.reset' = 'earliest',
             'format' = 'json'
         );
     """

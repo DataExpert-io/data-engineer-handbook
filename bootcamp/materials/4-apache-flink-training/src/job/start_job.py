@@ -53,12 +53,14 @@ def create_processed_events_sink_postgres(t_env):
             'driver' = 'org.postgresql.Driver'
         );
     """
+    # must include driver code when implementing flink
+    # This DOES NOT create a table in postgres, it just lets flink know what the table looks like
     t_env.execute_sql(sink_ddl)
     return table_name
 
-class GetLocation(ScalarFunction):
+class GetLocation(ScalarFunction):    # Scalar takes 1 row or 1 column and returns 1 row or 1 column
   def eval(self, ip_address):
-    url = "https://api.ip2location.io"
+    url = "https://api.ip2location.io"  # Gets the country and city from the api 
     response = requests.get(url, params={
         'ip': ip_address,
         'key': os.environ.get("IP_CODING_KEY")
@@ -82,10 +84,11 @@ get_location = udf(GetLocation(), result_type=DataTypes.STRING())
 
 
 def create_events_source_kafka(t_env):
+    # This actually creates the kafka table
     kafka_key = os.environ.get("KAFKA_WEB_TRAFFIC_KEY", "")
     kafka_secret = os.environ.get("KAFKA_WEB_TRAFFIC_SECRET", "")
     table_name = "events"
-    pattern = "yyyy-MM-dd''T''HH:mm:ss.SSS''Z''"
+    pattern = "yyyy-MM-dd''T''HH:mm:ss.SSS''Z''"   # We need to establish a format for a time stamp
     source_ddl = f"""
         CREATE TABLE {table_name} (
             url VARCHAR,
@@ -95,7 +98,8 @@ def create_events_source_kafka(t_env):
             ip VARCHAR,
             headers VARCHAR,
             event_time VARCHAR,
-            event_timestamp AS TO_TIMESTAMP(event_time, '{pattern}')
+            event_timestamp AS TO_TIMESTAMP(event_time, '{pattern}'),
+            WATERMARK FOR event_timestamp AS event_timestamp - INTERVAL '15' SECOND
         ) WITH (
             'connector' = 'kafka',
             'properties.bootstrap.servers' = '{os.environ.get('KAFKA_URL')}',
@@ -109,6 +113,10 @@ def create_events_source_kafka(t_env):
             'format' = 'json'
         );
         """
+    
+    # flink isn't inherently connected to kafka, so we need to establish the kafka connector
+    # the files from the KAFKA_GROUP, SSL and other crap in in the keys folder
+    # format can be set to json, csv, etc. 
     print(source_ddl)
     t_env.execute_sql(source_ddl)
     return table_name
@@ -116,17 +124,17 @@ def create_events_source_kafka(t_env):
 def log_processing():
     print('Starting Job!')
     # Set up the execution environment
-    env = StreamExecutionEnvironment.get_execution_environment()
+    env = StreamExecutionEnvironment.get_execution_environment() # This gives a streaming environment, can also enableBatchMode()
     print('got streaming environment')
-    env.enable_checkpointing(10 * 1000)
+    env.enable_checkpointing(10 * 1000) # Measured in milliseconds, mult by 1000 makes every 10 seconds
     env.set_parallelism(1)
 
     # Set up the table environment
     settings = EnvironmentSettings.new_instance().in_streaming_mode().build()
-    t_env = StreamTableEnvironment.create(env, environment_settings=settings)
-    t_env.create_temporary_function("get_location", get_location)
+    t_env = StreamTableEnvironment.create(env, environment_settings=settings) # Working with spark equiv of df
+    t_env.create_temporary_function("get_location", get_location)  # registering a UDF for the GetLocation function in spark
     try:
-        # Create Kafka table
+        # Create Kafka table as the source table
         source_table = create_events_source_kafka(t_env)
         postgres_sink = create_processed_events_sink_postgres(t_env)
         print('loading into postgres')
