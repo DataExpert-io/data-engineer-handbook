@@ -11,7 +11,7 @@ WITH with_previous AS (
         , LAG(quality_class, 1) OVER (PARTITION BY actorid ORDER BY current_year) AS previous_quality_class
         , LAG(is_active, 1) OVER (PARTITION BY actorid ORDER BY current_year)     AS previous_is_active
     FROM actors
-    WHERE current_year < 2021
+    WHERE current_year <= 2021
 ),
 with_indicators AS (
     SELECT *
@@ -34,7 +34,7 @@ SELECT
     , is_active
     , MIN(current_year) AS start_year
     , MAX(current_year) AS end_year
-    , 2020 AS current_year
+    , cast(2021 as BIGINT) AS current_year
 FROM with_streaks
 GROUP BY actor
         , actorid
