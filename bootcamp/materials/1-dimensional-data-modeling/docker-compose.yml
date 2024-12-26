@@ -5,6 +5,7 @@ services:
     container_name: ${DOCKER_CONTAINER}
     env_file:
       - .env
+      - example.env
     environment:
       - POSTGRES_DB=${POSTGRES_SCHEMA}
       - POSTGRES_USER=${POSTGRES_USER}
@@ -16,17 +17,21 @@ services:
       - ./data.dump:/docker-entrypoint-initdb.d/data.dump
       - ./scripts/init-db.sh:/docker-entrypoint-initdb.d/init-db.sh
       - postgres-data:/var/lib/postgresql/data
+
   pgadmin:
-    image: dpage/pgadmin4
-    restart: on-failure
-    container_name: pgadmin
-    environment:
-      - PGADMIN_DEFAULT_EMAIL=${PGADMIN_EMAIL}
-      - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_PASSWORD}
-    ports:
-      - "${PGADMIN_PORT}:80"
-    volumes:
-      - pgadmin-data:/var/lib/pgadmin
+      image: dpage/pgadmin4:latest
+      restart: always
+      container_name: pgadmin
+      environment:
+        - PGADMIN_DEFAULT_EMAIL=admin@example.com  # Replace with your desired email
+        - PGADMIN_DEFAULT_PASSWORD=admin          # Replace with your desired password
+      ports:
+        - "5050:80"                               # Map pgAdmin's web UI to localhost:5050
+      depends_on:
+        - postgres                                # Ensures pgAdmin waits for Postgres to start
+#       volumes:
+#         - pgadmin-data:/var/lib/pgadmin
+
+
 volumes:
   postgres-data:
-  pgadmin-data:
