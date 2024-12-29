@@ -1,0 +1,54 @@
+services:
+  jobmanager:
+    build: .
+    image: eczachly-pyflink
+    pull_policy: never
+    container_name: "jobmanager"
+    hostname: "jobmanager"
+    platform: "linux/amd64"
+    env_file:
+      - flink-env.env
+    expose:
+      - "6123"
+    ports:
+      - "8081:8081"
+    volumes:
+      - ./:/opt/flink/usrlib
+      - ./src/:/opt/src
+    command: jobmanager
+    extra_hosts:
+      - "host.docker.internal:host-gateway" #// Access services on the host machine from within the Docker container
+    environment:
+      - POSTGRES_URL=${POSTGRES_URL:-jdbc:postgresql://host.docker.internal:5432/postgres}
+      - POSTGRES_USER=${POSTGRES_USER:-postgres}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-postgres}
+      - POSTGRES_DB=${POSTGRES_DB:-postgres}
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: jobmanager
+
+  # Flink task manager
+  taskmanager:
+    image: eczachly-pyflink
+    pull_policy: never
+    container_name: "taskmanager"
+    platform: "linux/amd64"
+    env_file:
+      - flink-env.env
+    expose:
+      - "6121"
+      - "6122"
+    volumes:
+      - ./:/opt/flink/usrlib
+      - ./src/:/opt/src
+    depends_on:
+      - jobmanager
+    command: taskmanager --taskmanager.registration.timeout 5 min
+    extra_hosts:
+      - "host.docker.internal:host-gateway" #// Access services on the host machine from within the Docker container
+    environment:
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: jobmanager
+        taskmanager.numberOfTaskSlots: 15
+        parallelism.default: 3
