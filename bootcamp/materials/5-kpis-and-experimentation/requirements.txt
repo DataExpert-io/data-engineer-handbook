@@ -1,4 +1,4 @@
 Flask
-request
+requests
 jsonify
 statsig
