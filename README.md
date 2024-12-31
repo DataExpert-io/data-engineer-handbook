@@ -59,6 +59,7 @@ Top must-join communities for ML:
 - Data Warehouse
   - [Snowflake](https://www.snowflake.com/en/)
   - [Firebolt](https://www.firebolt.io/)
+  - [Databend](https://www.databend.com/)
 - Data Quality
   - [dbt](https://www.getdbt.com/)
   - [Gable](https://www.gable.ai)
