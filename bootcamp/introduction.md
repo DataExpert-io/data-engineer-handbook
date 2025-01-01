@@ -46,6 +46,7 @@ This will be six weeks of curricula
   - Day 2 Lecture is [here](https://www.dataexpert.io/lesson/kpis-and-experimentation-day-2-lecture-yt)
 - Apache Spark fundamentals (infrastructure)
   - Homework is [here](materials/3-spark-fundamentals/homework/homework.md)
+  - Testing Homework is [here](materials/3-spark-fundamentals/homework/homework_testing.md)
   - Day 1 Lecture is [here](https://www.dataexpert.io/lesson/apache-spark-day-1-lecture-yt)
   - Day 1 Lab is [here](https://www.dataexpert.io/lesson/apache-spark-day-1-lab-yt)
   - Day 2 Lecture is [here](https://www.dataexpert.io/lesson/apache-spark-day-2-lecture-yt)
