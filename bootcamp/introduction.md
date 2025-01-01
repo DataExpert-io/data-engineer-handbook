@@ -2,6 +2,7 @@
 
 This will be six weeks of curricula
 
+- Bootcamp Database Setup is [here](https://www.dataexpert.io/lesson/boot-camp-database-setup-yt)
 - Dimensional Data Modeling
   - Homework is [here](materials/1-dimensional-data-modeling/homework/homework.md)
   - Day 1 Lecture is [here](https://www.dataexpert.io/lesson/dimensional-data-modeling-lecture-day-1-yt)
