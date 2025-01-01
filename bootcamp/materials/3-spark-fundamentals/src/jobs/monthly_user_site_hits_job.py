@@ -25,5 +25,6 @@ def main():
       .master("local") \
       .appName("players_scd") \
       .getOrCreate()
+
     output_df = do_monthly_user_site_hits_transformation(spark, spark.table("monthly_user_site_hits"), ds)
     output_df.write.mode("overwrite").insertInto("monthly_user_site_hits_agg")

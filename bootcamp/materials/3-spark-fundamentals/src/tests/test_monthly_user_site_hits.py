@@ -1,6 +1,6 @@
 from chispa.dataframe_comparer import *
 
-from ..jobs.monthly_user_site_hits_job import do_monthly_user_site_hits_transformation
+from jobs.monthly_user_site_hits_job import do_monthly_user_site_hits_transformation
 from collections import namedtuple
 
 MonthlySiteHit = namedtuple("MonthlySiteHit",  "month_start hit_array date_partition")
