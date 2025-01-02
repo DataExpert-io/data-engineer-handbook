@@ -23,6 +23,7 @@ services:
       - 8080:8080
       - 10000:10000
       - 10001:10001
+      - 4040-4042:4040-4042
   rest:
     image: tabulario/iceberg-rest
     container_name: iceberg-rest
