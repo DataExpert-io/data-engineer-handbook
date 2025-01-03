@@ -17,6 +17,14 @@ down:
 		docker rm ${DOCKER_CONTAINER}; \
 	fi
 
+.PHONY: stop
+stop:
+	docker compose stop
+
+.PHONY: start
+start:
+	docker logs start
+
 .PHONY: restart
 restart:
 	docker compose down -v; \
