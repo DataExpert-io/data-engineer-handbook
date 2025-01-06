@@ -28,7 +28,7 @@ tasks = [
 
 @app.route('/')
 def hello():
-    return "Hello, this is a Flask API!"
+    return "Hello, this is a Flask filled with Jamison!"
 
 
 @app.route('/signup')
@@ -54,8 +54,8 @@ def get_tasks():
     if random_num:
         hash_string = str(random.randint(0, 1000000))
     user_id = str(hash(hash_string))
-    color = statsig.get_experiment(StatsigUser(user_id), "button_color_v3").get("Button Color", "blue")
-    paragraph_text = statsig.get_experiment(StatsigUser(user_id), "button_color_v3").get("Paragraph Text", "Data Engineering Boot Camp")
+    color = statsig.get_experiment(StatsigUser(user_id), "button_color_v4").get("Button Color", "blue")
+    paragraph_text = statsig.get_experiment(StatsigUser(user_id), "button_color_v4").get("Paragraph Text", "Data Engineering Boot Camp")
     experiment_description = 'odd tasks for blue and green, even for red and orange'
     filtered_tasks = ''.join(map(lambda a: f"""
             <tr>
