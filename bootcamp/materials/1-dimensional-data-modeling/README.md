@@ -136,7 +136,18 @@ There are two methods to get Postgres running locally.
 2. Go inside the container by executing `docker exec -it <container_name_or_id> bash`
 3. Run `pg_restore -U $POSTGRES_USER -d $POSTGRES_DB /docker-entrypoint-initdb.d/data.dump` 
 
----
+## **Frequently Asked Questions (FAQs)**
+
+1. **Not able to connect Postgres running on Docker?**
+   - Please recheck details like host and port details.
+
+2. **Throwing errors like connection refused even when all details are correct.**
+   - Please check that the port(5432 or port you use) runs only docker service, not any other services.
+     - Windows - use the command to check port availability in cmd ```netstat -ano | findstr :5432```
+               - to kill rest of extra services use ```taskkill /PID <PID> /F```
+     - Mac - use the command on terminal to check port availability ```lsof -i :5432```
+           - to kill rest of extra services use ```kill -9 <PID>```
+   
 
 #### 💡 Additional Docker Make commands
 
