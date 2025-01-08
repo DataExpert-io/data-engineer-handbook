@@ -1,4 +1,4 @@
-DROP TABLE host_activity_reduced
+-- DROP TABLE host_activity_reduced
 
 CREATE TABLE host_activity_reduced (
     host TEXT PRIMARY KEY,

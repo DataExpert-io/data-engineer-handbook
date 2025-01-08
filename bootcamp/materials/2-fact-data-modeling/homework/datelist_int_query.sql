@@ -29,6 +29,7 @@ SELECT
         datelist_int,
         browser_type,
         -- Check if the user was active at least once during the month
+        -- BIT_COUNT checks in a number of 0 and 1, which element is set to 1
         BIT_COUNT(datelist_int)>0 as monthly_active,
         -- Count the total number of active days based on the bit representation
         BIT_COUNT(datelist_int) as num_days_active

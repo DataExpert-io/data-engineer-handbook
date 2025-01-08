@@ -1,7 +1,7 @@
 
-select * from events
+-- select * from events
 
-DROP TABLE hosts_cumulated
+-- DROP TABLE hosts_cumulated
 
 CREATE TABLE hosts_cumulated (
     host TEXT PRIMARY KEY,
