@@ -6,7 +6,10 @@ You need to install the required dependencies in `requirements.txt`
 
 Running `pip install -r requirements.txt` will install them.
 
-Running pytest is easy. You just need to run `python -m pytest` and you're good to go!
+> **_NOTE:_** Make sure to have spark set locally before running below.
+
+
+Running the pytest is easy. You need to run `python -m pytest` and you're good to go!
 
 
 
