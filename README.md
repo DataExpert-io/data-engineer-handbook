@@ -93,7 +93,7 @@ Top must-join communities for ML:
   - [dlt](https://dlthub.com/)
   - [Sling](https://slingdata.io/)
   - [Meltano](https://meltano.com/)
- - Semantic Layers
+- Semantic Layers
   - [Cube](https://cube.dev)
   - [dbt Semantic Layer](https://www.getdbt.com/product/semantic-layer) 
 - Modern OLAP
