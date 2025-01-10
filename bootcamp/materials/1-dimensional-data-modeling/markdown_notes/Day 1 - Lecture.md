@@ -29,7 +29,7 @@ First thing when modeling data is to think “who’s gonna use this?”.  It’
 
 - **Data analysts / data scientists** → Easy data to query. Flat. Not many complex data types. Don’t wanna make their job hard with these datasets.
 - **Other data engineers** → Should be compact and probably harder to query. Nested types are ok.
-  - *Master data set* ****→ a dataset upon which many other are built.
+  - *Master data set* → a dataset upon which many other are built.
 - **ML models** → depends on the model and how its trained. But most times it’s ID and flat data.
 - **Customers** → Should be very easy to interpret. Charts.
 
@@ -64,7 +64,7 @@ flowchart LR;
 
 # Cumulative Table Design
 
-One thing that can happen when building master data is that some days, not every user is gonna show up *(NDZ: this is assuming that our data effectively includes user).*
+One thing that can happen when building master data is that some days, not every user is gonna show up *[this is assuming that our data effectively includes user — Ed.].*
 
 Master data should keep all history. A cumulative table is all about holding on all the dimensions that ever existed (maybe up until a point).
 
