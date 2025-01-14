@@ -4,8 +4,11 @@ from statsig.statsig_event import StatsigEvent
 from statsig.statsig_user import StatsigUser
 import random
 import os
+# Before running this code using the command `python src/server.py`, 
+# run in the terminal: export STATSIG_API_KEY="your_api_key_value"
 
 API_KEY = os.environ.get('STATSIG_API_KEY')
+# API_KEY = 'secret-p6oGkHukn22jXNwjfEwdo4UPMEqhc3gvsgmzvGPeOrj'
 statsig.initialize(API_KEY)
 app = Flask(__name__)
 
@@ -50,12 +53,12 @@ def signup():
 @app.route('/tasks', methods=['GET'])
 def get_tasks():
     random_num = request.args.get('random')
-    hash_string = request.remote_addr
+    hash_string = request.remote_addr # this is your ip address
     if random_num:
         hash_string = str(random.randint(0, 1000000))
     user_id = str(hash(hash_string))
-    color = statsig.get_experiment(StatsigUser(user_id), "button_color_v3").get("Button Color", "blue")
-    paragraph_text = statsig.get_experiment(StatsigUser(user_id), "button_color_v3").get("Paragraph Text", "Data Engineering Boot Camp")
+    color = statsig.get_experiment(StatsigUser(user_id), "button_color_my_version").get("Button Color", "blue")
+    paragraph_text = statsig.get_experiment(StatsigUser(user_id), "button_color_my_version").get("Paragraph Text", "Data Engineering Boot Camp")
     experiment_description = 'odd tasks for blue and green, even for red and orange'
     filtered_tasks = ''.join(map(lambda a: f"""
             <tr>
@@ -74,6 +77,12 @@ def get_tasks():
 
             </tr>
         """, list(filter(lambda x: x['id'] % 2 == (0 if color == 'Red' or color == 'Orange' else 1), tasks))))
+    # a. If the color is 'Red' or 'Orange':
+    #     i. Return True if the task's id is even (task['id'] % 2 == 0)
+    #     ii. Otherwise, return False
+    # b. If the color is not 'Red' or 'Orange':
+    #     i. Return True if the task's id is odd (task['id'] % 2 == 1)
+    #     ii. Otherwise, return False    
     return f"""
         <div style="{"background: " + color}">
         <h1>{"experiment group: " + color}</h1>
@@ -98,6 +107,8 @@ def get_tasks():
 @app.route('/tasks/<int:task_id>', methods=['GET'])
 def get_task(task_id):
     task = next((task for task in tasks if task['id'] == task_id), None)
+    # The first argument of next is a generator expression (an iterator). If the iterator 
+    # next is used with a generator expression to find the first task that matches the given task_id.
     if task:
         return jsonify({'task': task})
     return jsonify({'error': 'Task not found'}), 404
