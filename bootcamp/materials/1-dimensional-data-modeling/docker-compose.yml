@@ -19,7 +19,7 @@ services:
   pgadmin:
     image: dpage/pgadmin4
     restart: on-failure
-    container_name: pgadmin
+    container_name: pgadmin_de_handbook
     environment:
       - PGADMIN_DEFAULT_EMAIL=${PGADMIN_EMAIL}
       - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_PASSWORD}
