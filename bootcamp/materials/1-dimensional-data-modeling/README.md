@@ -147,6 +147,8 @@ There are two methods to get Postgres running locally.
                - to kill rest of extra services use ```taskkill /PID <PID> /F```
      - Mac - use the command on terminal to check port availability ```lsof -i :5432```
            - to kill rest of extra services use ```kill -9 <PID>```
+           
+    - Try replacing the host with the IP address of the Docker container running the PostgreSQL instance. You can find the IP address by running `docker inspect <container_name_or_id>`
    
 
 #### 💡 Additional Docker Make commands
