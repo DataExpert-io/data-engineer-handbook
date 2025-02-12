@@ -62,6 +62,7 @@ Top must-join communities for ML:
   - [Databend](https://www.databend.com/)
 - Data Quality
   - [dbt](https://www.getdbt.com/)
+  - [Metaplane](https://www.metaplane.dev/)
   - [Gable](https://www.gable.ai)
   - [Great Expectations](https://www.greatexpectations.io)
   - [Streamdal](https://streamdal.com)
