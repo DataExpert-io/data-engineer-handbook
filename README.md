@@ -246,7 +246,7 @@ Here's the mostly comprehensive list of data engineering creators:
 
 | Name           | Instagram Profile                                                                   | Follower Count |
 |----------------|--------------------------------------------------------------------------------------|---------------:|
-| Sundas Khalid    | [eczachly](https://www.instagram.com/sundaskhalidd)                              | 300,000+       |
+| Sundas Khalid  | [sundaskhalidd](https://www.instagram.com/sundaskhalidd)                              | 300,000+       |
 | Zach Wilson    | [eczachly](https://www.instagram.com/eczachly)                             | 150,000+       |
 | Andreas Kretz  | [learndataengineering](https://www.instagram.com/learndataengineering)          | 5,000+         |
 | Alex Merced    | [@alexmercedcoder](https://www.instagram.com/alexmercedcoder)                       | N/A           |
