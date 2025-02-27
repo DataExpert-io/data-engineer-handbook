@@ -39,7 +39,7 @@ def create_processed_events_sink_postgres(t_env):
     sink_ddl = f"""
         CREATE TABLE {table_name} (
             ip VARCHAR,
-            event_timestamp TIMESTAMP(3),
+            event_timestamp TIMESTAMP(3), 
             referrer VARCHAR,
             host VARCHAR,
             url VARCHAR,
@@ -76,7 +76,8 @@ class GetLocation(ScalarFunction):
     state = data.get('region_name', '')
     city = data.get('city_name', '')
     return json.dumps({'country': country, 'state': state, 'city': city})
-
+  
+# udf: user-defined function
 get_location = udf(GetLocation(), result_type=DataTypes.STRING())
 
 
@@ -95,7 +96,8 @@ def create_events_source_kafka(t_env):
             ip VARCHAR,
             headers VARCHAR,
             event_time VARCHAR,
-            event_timestamp AS TO_TIMESTAMP(event_time, '{pattern}')
+            event_timestamp AS TO_TIMESTAMP(event_time, '{pattern}'),
+            WATERMARK FOR event_timestamp AS event_timestamp - INTERVAL '15' SECOND
         ) WITH (
             'connector' = 'kafka',
             'properties.bootstrap.servers' = '{os.environ.get('KAFKA_URL')}',
@@ -104,7 +106,7 @@ def create_events_source_kafka(t_env):
             'properties.security.protocol' = 'SASL_SSL',
             'properties.sasl.mechanism' = 'PLAIN',
             'properties.sasl.jaas.config' = 'org.apache.flink.kafka.shaded.org.apache.kafka.common.security.plain.PlainLoginModule required username=\"{kafka_key}\" password=\"{kafka_secret}\";',
-            'scan.startup.mode' = 'latest-offset',
+            'scan.startup.mode' = 'earliest-offset',
             'properties.auto.offset.reset' = 'latest',
             'format' = 'json'
         );
@@ -116,9 +118,10 @@ def create_events_source_kafka(t_env):
 def log_processing():
     print('Starting Job!')
     # Set up the execution environment
+    # Creates an execution environment that represents the context in which the program is currently executed.
     env = StreamExecutionEnvironment.get_execution_environment()
     print('got streaming environment')
-    env.enable_checkpointing(10 * 1000)
+    env.enable_checkpointing(10 * 1000) # every 10 seconds
     env.set_parallelism(1)
 
     # Set up the table environment
@@ -129,6 +132,7 @@ def log_processing():
         # Create Kafka table
         source_table = create_events_source_kafka(t_env)
         postgres_sink = create_processed_events_sink_postgres(t_env)
+        kafka_sink = create_processed_events_sink_kafka(t_env)
         print('loading into postgres')
         t_env.execute_sql(
             f"""
@@ -136,6 +140,20 @@ def log_processing():
                     SELECT
                         ip,
                         event_timestamp,
+                        referrer,
+                        host,
+                        url,
+                        get_location(ip) as geodata
+                    FROM {source_table}
+                    """
+        )
+        print('loading into kafka')
+        t_env.execute_sql(
+            f"""
+                    INSERT INTO {kafka_sink}
+                    SELECT
+                        ip,
+                        CAST(event_timestamp AS STRING) AS event_timestamp,
                         referrer,
                         host,
                         url,
