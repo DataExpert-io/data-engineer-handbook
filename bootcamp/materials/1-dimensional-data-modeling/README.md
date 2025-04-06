@@ -76,7 +76,45 @@ There are two methods to get Postgres running locally.
         ```bash
         docker compose up -d
         ```
-        
+
+ ### 🐳 **Option 3: Run Postgres and PGAdmin in Docker Engine on WSL**
+ 
+- Install Docker in your WSL distribution
+
+    ```bash
+        sudo apt update
+        sudo apt install -y docker.io
+    ```
+
+- Install Docker Compose
+
+    ``` bash
+        sudo apt update
+        sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+        sudo chmod +x /usr/local/bin/docker-compose
+    ```
+
+- Add user to docker group
+
+    ``` bash
+        sudo groupadd docker
+        sudo usermod -aG docker $USER
+    ```
+
+- Start and enable the Docker service
+
+    ```bash
+        sudo dockerd
+    ```     
+
+- Copy **`example.env`** to **`.env`** in a new terminal:
+    
+    ```bash
+        cd bootcamp/materials/1-dimensional-data-modeling
+        cp example.env .env
+        docker-compose up -d
+    ```
+
 - A folder named **`postgres-data`** will be created in the root of the repo. The data backing your Postgres instance will be saved here.
 - You can check that your Docker Compose stack is running by either:
     - Going into Docker Desktop: you should see an entry there with a drop-down for each of the containers running in your Docker Compose stack.
