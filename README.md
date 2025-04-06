@@ -169,6 +169,7 @@ Here's the mostly comprehensive list of data engineering creators:
 | Prashanth Kumar Pandey     | [ScholarNest](https://www.youtube.com/@ScholarNest)                                              | 77,000+        |
 | ITVersity                  | [ITVersity](https://www.youtube.com/@itversity)                                                  | 67,000+        |
 | Soumil Shah                | [Soumil Shah](https://www.youtube.com/@SoumilShah)                                               | 50,000         |
+| Ansh Lamba                 | [Ansh Lamba](https://www.youtube.com/@AnshLambaJSR)                                              | 18,000+        |
 | Azure Lib                  | [Azure Lib](https://www.youtube.com/@azurelib-academy)                                        | 10,000+        |
 | Advancing Analytics        | [Advancing Analytics](https://www.youtube.com/@AdvancingAnalytics)                               | 10,000+        |
 | Kahan Data Solutions       | [Kahan Data Solutions](https://www.youtube.com/@KahanDataSolutions)                               | 10,000+        |
@@ -204,6 +205,7 @@ Here's the mostly comprehensive list of data engineering creators:
 | Ijaz Ali                 | [Ijaz Ali](https://www.linkedin.com/in/ijaz-ali-6aaa87122/)                                       | 24,000+        |
 | Mehdi Ouazza             | [Mehdi Ouazza](https://www.linkedin.com/in/mehd-io/)                                        | 20,000+        |
 | Ananth Packkildurai      | [Ananth Packkildurai](https://www.linkedin.com/in/ananthdurai/)                                    | 18,000+        |
+| Ansh Lamba               | [Ansh Lamba](https://www.linkedin.com/in/ansh-lamba-793681184/)                                    | 13,000+        |
 | Manojkumar Vadivel       | [Manojkumar Vadivel](https://www.linkedin.com/in/manojvsj/)                                        | 12,000+        |
 | Advancing Analytics      | [Simon Whiteley](https://www.linkedin.com/in/simon-whiteley-uk/)                                  | 10,000+        |
 | Li Yin                   | [Li Yin](https://www.linkedin.com/in/li-yin-ai/)                                                  | 10,000+        |
@@ -332,6 +334,7 @@ Top must follow newsletters for data engineering:
 - [Databricks - Certified Associate Developer for Apache Spark](https://www.databricks.com/learn/certification/apache-spark-developer-associate)
 - [Databricks - Data Engineer Associate](https://www.databricks.com/learn/certification/data-engineer-associate)
 - [Databricks - Data Engineer Professional](https://www.databricks.com/learn/certification/data-engineer-professional)
-- [Exam DP-203: Data Engineering on Microsoft Azure](https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-203/?tab=tab-learning-paths)
-- [Microsoft Fabric Analytics Engineer Associate](https://learn.microsoft.com/credentials/certifications/fabric-analytics-engineer-associate/)
+- [Microsoft DP-203: Data Engineering on Microsoft Azure](https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-203/?tab=tab-learning-paths)
+- [Microsoft DP-600: Fabric Analytics Engineer Associate](https://learn.microsoft.com/credentials/certifications/fabric-analytics-engineer-associate/)
+- [Microsoft DP-700: Fabric Data Engineer Associate](https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/?practice-assessment-type=certification)
 - [AWS Certified Data Engineer - Associate](https://aws.amazon.com/certification/certified-data-engineer-associate/)
