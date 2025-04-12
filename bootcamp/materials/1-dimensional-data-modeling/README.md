@@ -113,6 +113,11 @@ There are two methods to get Postgres running locally.
 
 ### :rotating_light: **Need help loading tables?** :rotating_light:
 
+In Docker Desktop App, in Containers Section, inside 1-dimensional-data-modeling click on my-postgres-container, under Exec, you can run the below command
+```bash
+pg_restore --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" --verbose /docker-entrypoint-initdb.d/data.dump
+```
+
 > Refer to the instructions below to resolve the issue when the data dump fails to load tables, displaying the message `PostgreSQL Database directory appears to contain a database; Skipping initialization.`
 ## **🚨 Tables not loading!? 🚨**
 
