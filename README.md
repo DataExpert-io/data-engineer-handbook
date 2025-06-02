@@ -180,6 +180,7 @@ Here's the mostly comprehensive list of data engineering creators:
 | Mehdi Ouazza              | [Mehdio DataTV](https://www.youtube.com/@mehdio)                                                    | 3,000+         |
 | Alex Merced                | [Alex Merced Data](https://www.youtube.com/@alexmerceddata_)                                            | N/A           |
 | John Kutay                 | [John Kutay](https://www.youtube.com/@striiminc) | N/A           |
+| Emil Kaminski              | [Databricks For Professionals](https://www.youtube.com/@DatabricksPro)                           | 5,000+          |
 
 
 #### LinkedIn
