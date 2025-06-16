@@ -77,7 +77,9 @@ There are two methods to get Postgres running locally.
         docker compose up -d
         ```
         
-- A folder named **`postgres-data`** will be created in the root of the repo. The data backing your Postgres instance will be saved here.
+- Two volumes will be created:
+  - **`1-dimensional-data-modeling_postgres-data`** The data backing your Postgres instance will be saved here.
+  - **`1-dimensional-data-modeling_pgadmin-data`** The data backing your PGAdmin instance will be saved here.
 - You can check that your Docker Compose stack is running by either:
     - Going into Docker Desktop: you should see an entry there with a drop-down for each of the containers running in your Docker Compose stack.
     - Running **`docker ps -a`** and looking for the containers with the name **`postgres`**.
