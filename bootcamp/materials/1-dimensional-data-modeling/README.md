@@ -12,9 +12,9 @@ This repository contains the setup for the data modeling modules in Weeks 1 and 
 
 :pencil: **TL;DR**
 
-1. [Clone the repository](https://github.com/DataExpert-io/data-engineer-handbook/edit/main/bootcamp/materials/1-dimensional-data-modeling/README.md).
-2. [Start Postgres instance](https://github.com/DataExpert-io/data-engineer-handbook/edit/main/bootcamp/materials/1-dimensional-data-modeling/README.md#2%EF%B8%8F%E2%83%A3run-postgres).
-3. [Connect to Postgres](https://github.com/DataExpert-io/data-engineer-handbook/edit/main/bootcamp/materials/1-dimensional-data-modeling/README.md#threeconnect-to-postgres-in-database-client) using your preferred database management tool.
+1. [Clone the repository]([https://github.com/DataExpert-io/data-engineer-handbook/main/bootcamp/materials/1-dimensional-data-modeling/README.md](https://github.com/DataExpert-io/data-engineer-handbook/tree/main/bootcamp/materials/1-dimensional-data-modeling#1%EF%B8%8F%E2%83%A3clone-the-repository)).
+2. [Start Postgres instance](https://github.com/DataExpert-io/data-engineer-handbook/tree/main/bootcamp/materials/1-dimensional-data-modeling#2%EF%B8%8F%E2%83%A3run-postgres).
+3. [Connect to Postgres](https://github.com/DataExpert-io/data-engineer-handbook/tree/main/bootcamp/materials/1-dimensional-data-modeling#threeconnect-to-postgres-in-local-database-client) using your preferred database management tool.
 
 For detailed instructions and more information, please refer to the step-by-step instructions below.
 
@@ -83,7 +83,7 @@ There are two methods to get Postgres running locally.
 - You can check that your Docker Compose stack is running by either:
     - Going into Docker Desktop: you should see an entry there with a drop-down for each of the containers running in your Docker Compose stack.
     - Running **`docker ps -a`** and looking for the containers with the name **`postgres`**.
-- If you navigate to **`http://localhost:5050`** you will be able to see the PGAdmin instance up and running and should be able to connect to the following server as details shown:
+- If you navigate to **`http://localhost:5050`**, you'll see the PGAdmin instance up and running and should be able to connect to the following server using the details shown below:
     
     <img src=".attachments/pgadmin-server.png" style="width:500px;"/> 
 
