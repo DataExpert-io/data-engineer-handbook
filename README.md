@@ -1,6 +1,6 @@
 # The Data Engineering Handbook
 
-This repo has all the resources you need to become an AMAZING DATA ENGINEER!
+This repo has all the resources you need to become an amazing DATA ENGINEER!
 
 ## Getting started
 
