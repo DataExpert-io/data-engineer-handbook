@@ -17,7 +17,7 @@ Construct the following eight queries:
 - A DDL for `hosts_cumulated` table 
   - a `host_activity_datelist` which logs to see which dates each host is experiencing any activity
   
-- The incremental query to generate `host_activity_datelist`
+- The incremental query to generate `host_activity_datelist`, similar to the cumulative query you did to generate `device_activity_datelist` from `events`
 
 - A monthly, reduced fact table DDL `host_activity_reduced`
    - month
