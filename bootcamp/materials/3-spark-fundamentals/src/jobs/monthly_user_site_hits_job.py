@@ -1,9 +1,5 @@
 from pyspark.sql import SparkSession
 
-
-
-
-
 def do_monthly_user_site_hits_transformation(spark, dataframe, ds):
     query = f"""
     SELECT
@@ -17,7 +13,6 @@ def do_monthly_user_site_hits_transformation(spark, dataframe, ds):
     """
     dataframe.createOrReplaceTempView("monthly_user_site_hits")
     return spark.sql(query)
-
 
 def main():
     ds = '2023-01-01'

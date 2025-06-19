@@ -45,21 +45,23 @@ def create_aggregated_events_referrer_sink_postgres(t_env):
     t_env.execute_sql(sink_ddl)
     return table_name
 
+
 def create_processed_events_source_kafka(t_env):
     kafka_key = os.environ.get("KAFKA_WEB_TRAFFIC_KEY", "")
     kafka_secret = os.environ.get("KAFKA_WEB_TRAFFIC_SECRET", "")
-    table_name = "process_events_kafka"
+    table_name = "events"
     pattern = "yyyy-MM-dd''T''HH:mm:ss.SSS''Z''"
     sink_ddl = f"""
         CREATE TABLE {table_name} (
-            ip VARCHAR,
-            event_time VARCHAR,
-            referrer VARCHAR,
-            host VARCHAR,
             url VARCHAR,
-            geodata VARCHAR,
-            window_timestamp AS TO_TIMESTAMP(event_time, '{pattern}'),
-            WATERMARK FOR window_timestamp AS window_timestamp - INTERVAL '15' SECOND
+            referrer VARCHAR,
+            user_agent VARCHAR,
+            host VARCHAR,
+            ip VARCHAR,
+            headers VARCHAR,
+            event_time VARCHAR,
+            event_timestamp AS TO_TIMESTAMP(event_time, '{pattern}'),
+            WATERMARK FOR event_timestamp AS event_timestamp - INTERVAL '15' SECOND
         ) WITH (
              'connector' = 'kafka',
             'properties.bootstrap.servers' = '{os.environ.get('KAFKA_URL')}',
@@ -95,7 +97,7 @@ def log_aggregation():
         aggregated_sink_table = create_aggregated_events_referrer_sink_postgres(t_env)
         t_env.from_path(source_table)\
             .window(
-            Tumble.over(lit(5).minutes).on(col("window_timestamp")).alias("w")
+            Tumble.over(lit(5).minutes).on(col("event_timestamp")).alias("w")
         ).group_by(
             col("w"),
             col("host")
@@ -108,7 +110,7 @@ def log_aggregation():
             .execute_insert(aggregated_table)
 
         t_env.from_path(source_table).window(
-            Tumble.over(lit(5).minutes).on(col("window_timestamp")).alias("w")
+            Tumble.over(lit(5).minutes).on(col("event_timestamp")).alias("w")
         ).group_by(
             col("w"),
             col("host"),
