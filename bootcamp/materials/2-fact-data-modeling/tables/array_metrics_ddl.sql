@@ -1,4 +1,4 @@
-CREATE TABLE array_metrics (
+CREATE TABLE array_metrics(
     user_id NUMERIC,
     month_start DATE,
     metric_name TEXT,
