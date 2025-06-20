@@ -13,7 +13,7 @@ The `actor_films` dataset contains the following fields:
 - `rating`: The rating of the film.
 - `filmid`: A unique identifier for each film.
 
-The primary key for this dataset is (`actor_id`, `film_id`).
+The primary key for this dataset is (`actorid`, `filmid`).
 
 ## Assignment Tasks
 
