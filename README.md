@@ -71,6 +71,7 @@ Top must-join communities for ML:
   - [Soda](https://www.soda.io/)
   - [DQOps](https://dqops.com/)
   - [HEDDA.IO](https://hedda.io)
+  - [Dingo](https://github.com/MigoXLab/dingo)
 - Education Companies
   - [DataExpert.io](https://www.dataexpert.io)
   - [LearnDataEngineering.com](https://www.learndataengineering.com)
