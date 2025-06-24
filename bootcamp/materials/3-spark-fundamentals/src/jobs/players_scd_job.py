@@ -1,7 +1,6 @@
 from pyspark.sql import SparkSession
 
 query = """
-
 WITH streak_started AS (
     SELECT player_name,
            current_season,
@@ -35,14 +34,11 @@ WITH streak_started AS (
 
      SELECT player_name, scoring_class, start_date, end_date
      FROM aggregated
-
 """
-
 
 def do_player_scd_transformation(spark, dataframe):
     dataframe.createOrReplaceTempView("players")
     return spark.sql(query)
-
 
 def main():
     spark = SparkSession.builder \
