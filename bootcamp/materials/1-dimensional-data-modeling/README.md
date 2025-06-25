@@ -39,6 +39,9 @@ For detailed instructions and more information, please refer to the step-by-step
 
 There are two methods to get Postgres running locally.
 
+> **Prefer Docker**  
+> Unless you want to use a local Postgres install—or must run on bare-metal / low-power hardware—use **Option 2 (Docker)**. It’s easy to reset and leaves your host machine clean.
+
 ### 💻 **Option 1: Run on local machine**
 
 1. Install Postgres
@@ -57,14 +60,15 @@ There are two methods to get Postgres running locally.
 
 ### 🐳 **Option 2: Run Postgres and PGAdmin in Docker**
 
-- Install Docker Desktop from **[here](https://www.docker.com/products/docker-desktop/)**.
-- Copy **`example.env`** to **`.env`**:
+1. **Install Docker Desktop** - **[here](https://www.docker.com/products/docker-desktop/)**.
+2. Copy **`example.env`** to **`.env`**:
     
     ```bash
     cp example.env .env
     ```
-
-- Start the Docker Compose container:
+	This stores the database credentials, plus email and password used by pgAdmin and Postgres.
+	
+3. **Start the Docker Compose stack**:
     - If you're on Mac:
         
         ```bash
@@ -77,16 +81,25 @@ There are two methods to get Postgres running locally.
         docker compose up -d
         ```
         
-- Two volumes will be created:
-  - **`1-dimensional-data-modeling_postgres-data`** The data backing your Postgres instance will be saved here.
-  - **`1-dimensional-data-modeling_pgadmin-data`** The data backing your PGAdmin instance will be saved here.
-- You can check that your Docker Compose stack is running by either:
-    - Going into Docker Desktop: you should see an entry there with a drop-down for each of the containers running in your Docker Compose stack.
-    - Running **`docker ps -a`** and looking for the containers with the name **`postgres`**.
-- If you navigate to **`http://localhost:5050`**, you'll see the PGAdmin instance up and running and should be able to connect to the following server using the details shown below:
-    
+	Two volumes will be created:
+	  - **`1-dimensional-data-modeling_postgres-data`** The data backing your Postgres instance will be saved here.
+	  - **`1-dimensional-data-modeling_pgadmin-data`** The data backing your PGAdmin instance will be saved here.
+	
+4. **Check that your Docker Compose stack is running**:
+    - **Docker Desktop**: you should see an entry there with a drop-down for each of the containers running in your Docker Compose stack.
+    - **CLI**: Running **`docker ps -a`** and looking for the containers with the name **`postgres`**.
+	
+5. **Open pgAdmin**
+	- Visit [http://localhost:5050](http://localhost:5050).
+	  *On macOS, Safari works; Firefox can occasionally fail to load this address.*
+	- Log in with the email and password from your `.env` file.
+	
+	**First-time pgAdmin set-up**
+	3. On Default Workspace ➜ Dashboard choose `Add New Server` (under `Quick Links`).
+	4. `General` tab – give it a friendly name, e.g. `Data-Engineer-Handbook-DB`.
+	5. `Connection` tab – copy host, port, username and password from `.env`, as shown below:
     <img src=".attachments/pgadmin-server.png" style="width:500px;"/> 
-
+	6. Save ➜ Expand `Servers` › *`your-server`* › `Databases` › `postgres` › `Schemas` › `public` › `Tables` – several tables should be present.
 
 - When you're finished with your Postgres instance(required in week 1 & 2 & 4), you can stop the Docker Compose containers with:
     
@@ -95,6 +108,8 @@ There are two methods to get Postgres running locally.
     ```
 
 ## :three: **Connect to Postgres in Local Database Client**
+
+> If you used **Option 2**, you can ignore this section; pgAdmin already gives you a web-based client.
 
 - Some options for interacting with your Postgres instance:
     - DataGrip - JetBrains; 30-day free trial or paid version
