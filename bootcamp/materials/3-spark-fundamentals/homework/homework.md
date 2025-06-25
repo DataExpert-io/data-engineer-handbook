@@ -3,12 +3,11 @@
 - match_details
   - a row for every players performance in a match
 - matches
-  - a row for every match 
-- medals_matches_players 
+  - a row for every match
+- medals_matches_players
   - a row for every medal type a player gets in a match
 - medals
-  - a row for every medal type 
-
+  - a row for every medal type
 
 Your goal is to make the following things happen:
 
@@ -24,4 +23,4 @@ Your goal is to make the following things happen:
   - With the aggregated data set
     - Try different `.sortWithinPartitions` to see which has the smallest data size (hint: playlists and maps are both very low cardinality)
 
-Save these as .py files and submit them this way! 
+Save these as .py files and submit them this way!
