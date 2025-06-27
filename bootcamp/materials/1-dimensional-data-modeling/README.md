@@ -1,159 +1,277 @@
-# 📅 Data Modeling
+# 📊 Get Set for Data Modeling (Weeks 1 & 2)
 
-This repository contains the setup for the data modeling modules in Weeks 1 and 2.
- 
-:wrench: **Tech Stack**
+Welcome, Data Explorer! 🚀 Whether you're just beginning or brushing up on skills, this guide will walk you through everything you need — from installing tools to troubleshooting hiccups — all in one friendly place.
 
-- Git
-- Postgres
-- PSQL CLI
-- Database management environment (DataGrip, DBeaver, VS Code with extensions, etc.)
-- Docker, Docker Compose, and Docker Desktop
+---
 
-:pencil: **TL;DR**
+## 🧰 Your Dev Toolkit at a Glance
 
-1. [Clone the repository]([https://github.com/DataExpert-io/data-engineer-handbook/main/bootcamp/materials/1-dimensional-data-modeling/README.md](https://github.com/DataExpert-io/data-engineer-handbook/tree/main/bootcamp/materials/1-dimensional-data-modeling#1%EF%B8%8F%E2%83%A3clone-the-repository)).
-2. [Start Postgres instance](https://github.com/DataExpert-io/data-engineer-handbook/tree/main/bootcamp/materials/1-dimensional-data-modeling#2%EF%B8%8F%E2%83%A3run-postgres).
-3. [Connect to Postgres](https://github.com/DataExpert-io/data-engineer-handbook/tree/main/bootcamp/materials/1-dimensional-data-modeling#threeconnect-to-postgres-in-local-database-client) using your preferred database management tool.
+🟦 **Git**  
+_Clone code, version your work._
 
-For detailed instructions and more information, please refer to the step-by-step instructions below.
+🟪 **PostgreSQL**  
+_Reliable, powerful open-source database engine._
 
-## 1️⃣ **Clone the repository**
+⬛ **PSQL (CLI)**  
+_Talk directly to your database via terminal._
 
-- Clone the repo using the SSH link. This will create a new folder in the current directory on your local machine.
-    
-    ```bash
-    git clone git@github.com:DataExpert-io/data-engineer-handbook.git
-    ```
-    
-    > ℹ️ To securely interact with GitHub repositories, it is recommended to use SSH keys. Follow the instructions provided **[here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)** to set up SSH keys on GitHub.
-    > 
+🐳 **Docker + Compose**  
+_Spin up Postgres + PGAdmin instantly, no manual setup._
 
-- Navigate into the cloned repo using the command line:
-    
-    ```bash
-    cd data-engineer-handbook/bootcamp/materials/1-dimensional-data-modeling
-    ```
+🧑‍💻 **PGAdmin / DBeaver / VS Code**  
+_Graphical tools for exploring and querying your data._
 
-## 2️⃣ **Run Postgres**
+---
 
-There are two methods to get Postgres running locally.
+## 📝 Your Setup in 3 Steps
 
-### 💻 **Option 1: Run on local machine**
+### Step 1️⃣: Download the Code
 
-1. Install Postgres
-    - For Mac: Follow this **[tutorial](https://daily-dev-tips.com/posts/installing-postgresql-on-a-mac-with-homebrew/)** (Homebrew is really nice for installing on Mac)
-    - For Windows: Follow this **[tutorial](https://www.sqlshack.com/how-to-install-postgresql-on-windows/)**
-2. Run this command after replacing **`<computer-username>`** with your computer's username:
+Clone the course files onto your machine:
 
-    ```bash
-    pg_restore -c --if-exists -U <computer-username> -d postgres data.dump
-    ```
+```bash
+git clone git@github.com:DataExpert-io/data-engineer-handbook.git
+cd data-engineer-handbook/bootcamp/materials/1-dimensional-data-modeling
+```
 
-    If you have any issue, the syntax is `pg_restore -U [username] -d [database_name] -h [host] -p [port] [backup_file]`
-    
-3. Set up DataGrip, DBeaver, or your VS Code extension to point at your locally running Postgres instance.
-4. Have fun querying!
+> 🔐 Need SSH set up first? Use [GitHub’s SSH guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 
-### 🐳 **Option 2: Run Postgres and PGAdmin in Docker**
+---
 
-- Install Docker Desktop from **[here](https://www.docker.com/products/docker-desktop/)**.
-- Copy **`example.env`** to **`.env`**:
-    
-    ```bash
-    cp example.env .env
-    ```
+### Step 2️⃣: Start PostgreSQL
 
-- Start the Docker Compose container:
-    - If you're on Mac:
-        
-        ```bash
-        make up
-        ```
-        
-    - If you're on Windows:
-        
-        ```bash
-        docker compose up -d
-        ```
-        
-- Two volumes will be created:
-  - **`1-dimensional-data-modeling_postgres-data`** The data backing your Postgres instance will be saved here.
-  - **`1-dimensional-data-modeling_pgadmin-data`** The data backing your PGAdmin instance will be saved here.
-- You can check that your Docker Compose stack is running by either:
-    - Going into Docker Desktop: you should see an entry there with a drop-down for each of the containers running in your Docker Compose stack.
-    - Running **`docker ps -a`** and looking for the containers with the name **`postgres`**.
-- If you navigate to **`http://localhost:5050`**, you'll see the PGAdmin instance up and running and should be able to connect to the following server using the details shown below:
-    
-    <img src=".attachments/pgadmin-server.png" style="width:500px;"/> 
+#### 🧩 Option A: Local Installation (Manual Setup)
 
+1. Install PostgreSQL  
+   - [Mac – use Homebrew](https://brew.sh/)  
+   - [Windows – official installer](https://www.postgresql.org/download/)
 
-- When you're finished with your Postgres instance(required in week 1 & 2 & 4), you can stop the Docker Compose containers with:
-    
-    ```bash
-    docker compose stop
-    ```
+2. Restore the sample database:
 
-## :three: **Connect to Postgres in Local Database Client**
+```bash
+pg_restore -c --if-exists -U <your-username> -d postgres data.dump
+```
 
-- Some options for interacting with your Postgres instance:
-    - DataGrip - JetBrains; 30-day free trial or paid version
-    - VSCode built-in extension (there are a few of these).
-    - PGAdmin.
-    - Postbird.
-    - Dbeaver
-- Using your client of choice, follow the instructions to establish a new PostgreSQL connection.
-    - The default username is **`postgres`** and corresponds to **`$POSTGRES_USER`** in your **`.env`**.
-    - The default password is **`postgres`** and corresponds to **`$POSTGRES_PASSWORD`** in your **`.env`**.
-    - The default database is **`postgres`** and corresponds to **`$POSTGRES_DB`** in your **`.env`**.
-    - The default host is **`localhost`** or **`0.0.0.0`.** This is the IP address of the Docker container running the PostgreSQL instance.
-    - The default port for Postgres is **`5432` .** This corresponds to the **`$CONTAINER_PORT`** variable in the **`.env`** file.
-    
-    &rarr; :bulb: You can edit these values by modifying the corresponding values in **`.env`**.
-    
-- If the test connection is successful, click "Finish" or "Save" to save the connection. You should now be able to use the database client to manage your PostgreSQL database locally.
+If that fails, try:
 
-### :rotating_light: **Need help loading tables?** :rotating_light:
+```bash
+pg_restore -U [username] -d [db_name] -h [host] -p [port] data.dump
+```
 
-> Refer to the instructions below to resolve the issue when the data dump fails to load tables, displaying the message `PostgreSQL Database directory appears to contain a database; Skipping initialization.`
-## **🚨 Tables not loading!? 🚨**
+---
 
-- If the tables don't come with the loaded data, follow these steps with manual local installation of Postgres:
+#### 🐳 Option B: Docker (Simplest & Preferred)
 
-1. Find where your `psql` client is installed (Something like `C:\\Program Files\\PostgreSQL\\13\\runpsql.bat`)
-2. Make sure you're in the root of the repo, and launch `psql` by running that `.bat` script
-3. Enter your credentials for Postgres (described in the connect to Postgres section)
-    - → If the above worked, you should now be inside a psql REPL (It looks like `postgres=#`)
-4. Run:
-    
-    ```bash
-    postgres=# \\i data.dump
-    ```
-    
-    - → This will run the file `data.dump` from inside your psql REPL.
+1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop)  
+2. Copy the env template:
 
-- If you did the setup using Option 2 which is Docker option, and the tables are not in the database, another solution is to: 
+```bash
+cp example.env .env
+```
 
-1. Find the container id by running `docker ps` - under CONTAINER ID
-2. Go inside the container by executing `docker exec -it <container_name_or_id> bash`
-3. Run `pg_restore -U $POSTGRES_USER -d $POSTGRES_DB /docker-entrypoint-initdb.d/data.dump` 
+3. Start PostgreSQL & PGAdmin in containers:
 
-## **Frequently Asked Questions (FAQs)**
+```bash
+# Mac users:
+make up
 
-1. **Not able to connect Postgres running on Docker?**
-   - Please recheck details like host and port details.
+# Windows (or general):
+docker compose up -d
+```
 
-2. **Throwing errors like connection refused even when all details are correct.**
-   - Please check that the port(5432 or port you use) runs only docker service, not any other services.
-     - Windows - use the command to check port availability in cmd ```netstat -ano | findstr :5432```
-               - to kill rest of extra services use ```taskkill /PID <PID> /F```
-     - Mac - use the command on terminal to check port availability ```lsof -i :5432```
-           - to kill rest of extra services use ```kill -9 <PID>```
-   
+4. Check containers are running:
 
-#### 💡 Additional Docker Make commands
+```bash
+docker ps -a
+```
 
-- To restart the Postgres instance, you can run **`make restart`**.
-- To see logs from the Postgres container, run **`make logs`**.
-- To inspect the Postgres container, run **`make inspect`**.
-- To find the port Postgres is running on, run **`make ip`**.
+5. When you're done with work:
+
+```bash
+docker compose stop
+```
+
+---
+
+### Step 3️⃣: Connect to PostgreSQL
+
+Choose any GUI tool you like. Here’s how:
+
+#### 🌐 If using PGAdmin (via Docker browser)
+
+1. Go to [http://localhost:5050](http://localhost:5050)  
+2. Log in using the credentials from your `.env` file  
+3. Create a new server:  
+   - **Name**: Name of your choice  
+   - **Host**: `my-postgres-container`  
+   - **Port**: `5432`  
+   - **Database**: `postgres`  
+   - **Username**: `postgres`  
+   - **Password**: `postgres`  
+   - ✅ Save Password  
+4. Click **Save** — and you’re connected!
+
+---
+
+#### 💻 If using a desktop client (like DataGrip, DBeaver, or VS Code)
+
+Use the following values to set up a new PostgreSQL connection:
+   - **Host**: `localhost`  
+   - **Port**: `5432`  
+   - **Database**: `postgres`  
+   - **Username**: `postgres`  
+   - **Password**: `postgres`  
+   - ✅ Save Password  
+
+✅ Test & Save your connection and you’re good to go.
+
+---
+
+## 🧩 Tables Not Loading? Let’s Fix It!
+
+If you don’t see any tables after restoring the database, try these steps depending on how you installed Postgres:
+
+### 📦 For Local Installation (No Docker)
+
+1. **Find your `psql` client executable** (on Windows):
+
+```bash
+C:\Program Files\PostgreSQL\13\runpsql.bat
+```
+
+Or search for **SQL Shell (psql)** in your Start menu.
+
+2. **Open your terminal and `cd` into the repo folder**, where `data.dump` is located.
+
+3. **Run `psql` and enter credentials** (username is usually `postgres`)
+
+4. Once you’re inside the Postgres prompt (`postgres=#`), run:
+
+```sql
+\i data.dump
+```
+
+> 🧠 This tells Postgres to execute all SQL commands inside the dump file, creating tables and loading data.
+
+---
+
+### 🐳 For Docker Users
+
+1. Get your running containers:
+
+```bash
+docker ps
+```
+
+2. Copy the name of your Postgres container (e.g., `my-postgres-container`)
+
+3. Open a bash terminal inside it:
+
+```bash
+docker exec -it my-postgres-container bash
+```
+
+4. Run the restore manually from inside the container:
+
+```bash
+pg_restore -U $POSTGRES_USER -d $POSTGRES_DB /docker-entrypoint-initdb.d/data.dump
+```
+
+> ✅ Replace `$POSTGRES_USER` and `$POSTGRES_DB` with actual values from your `.env` file if needed.
+
+5. Optionally check if tables are loaded:
+
+```bash
+psql -U postgres -d postgres -c '\dt'
+```
+
+This shows all the tables in the current schema.
+
+---
+
+## ❓ Common Errors & Fixes
+
+### ❌ “Connection refused” or can’t connect to localhost?
+
+- Double check host is correct (`localhost` or `my-postgres-container`)
+- Ensure Docker is running and the container is up
+- Try restarting the services with `make restart`
+
+---
+
+### 🔄 Port 5432 already in use?
+
+You may have another service (like another DB) using it.
+
+#### macOS:
+
+```bash
+lsof -i :5432
+kill -9 <PID>
+```
+
+#### Windows:
+
+```cmd
+netstat -ano | findstr :5432
+taskkill /PID <PID> /F
+```
+
+---
+
+### 🚪 PGAdmin login not working?
+
+Make sure you’re using values from `.env`:
+
+```env
+PGADMIN_DEFAULT_EMAIL=postgres@postgres.com
+PGADMIN_DEFAULT_PASSWORD=postgres
+```
+
+If you've changed the `.env`, delete the PGAdmin container and re-run `make up`.
+
+---
+
+### 🕵️ Not sure which container is which?
+
+Run:
+
+```bash
+docker ps
+```
+
+Look under the `NAMES` column for `my-postgres-container` and `pgadmin`.
+
+---
+
+### 🔁 Want a fresh start?
+
+Stop and remove all running containers:
+
+```bash
+docker compose down
+docker compose up -d
+```
+
+Or use:
+
+```bash
+make restart
+```
+
+---
+
+## 🔧 Helpful Docker Make Commands
+
+| Command           | What it does                    |
+|------------------|----------------------------------|
+| `make up`        | Start Postgres and PGAdmin       |
+| `make stop`      | Stop both containers             |
+| `make restart`   | Restart the Postgres container   |
+| `make logs`      | View logs from containers        |
+| `make inspect`   | Inspect container configuration  |
+| `make ip`        | Get container IP address         |
+
+---
+
+🎉 That’s it! You’re all set for the next chapters of your data journey.
