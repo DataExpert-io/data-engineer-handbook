@@ -7,10 +7,10 @@ from pyspark.sql import SparkSession
 def do_monthly_user_site_hits_transformation(spark, dataframe, ds):
     query = f"""
     SELECT
-           month_start,
-           SUM(COALESCE(hit_array[0], 0)) as num_hits_first_day,
-           SUM(COALESCE(hit_array[1], 0)) AS num_hits_second_day,
-           SUM(COALESCE(hit_array[2], 0)) as num_hits_third_day
+          month_start,
+          SUM(COALESCE(get(hit_array, 0), 0)) AS num_hits_first_day,
+          SUM(COALESCE(get(hit_array, 1), 0)) AS num_hits_second_day,
+          SUM(COALESCE(get(hit_array, 2), 0)) AS num_hits_third_day
     FROM monthly_user_site_hits
     WHERE date_partition = '{ds}'
     GROUP BY month_start
