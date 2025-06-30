@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "postgres": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["postgres-mcp", "--access-mode=unrestricted"],
+      "env": {
+        "DATABASE_URI": "postgres://postgres:postgres@localhost:5432/postgres"
+      }
+    }
+  }
+}
