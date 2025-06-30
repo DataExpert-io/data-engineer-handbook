@@ -15,10 +15,9 @@ CREATE TYPE quality_class_enum AS ENUM ('star', 'good', 'average', 'bad');
 
 DROP TABLE IF EXISTS actors;
 CREATE TABLE actors (
-    actor text,
+    actor text NOT NULL,
     actorid text PRIMARY KEY,
-    films film_struct [],
-    quality_class quality_class_enum,
-    is_active boolean,
-    current_year integer
+    films film_struct[] NOT NULL,
+    quality_class quality_class_enum NOT NULL,
+    last_active_year integer NOT NULL
 );
