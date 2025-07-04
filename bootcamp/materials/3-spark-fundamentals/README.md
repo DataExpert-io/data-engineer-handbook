@@ -2,6 +2,8 @@
 
 ## Unit Testing PySpark Course Getting Started
 
+### Spark requires Java 11 to function correctly. Java 17+ may cause test failures due to security manager restrictions.
+
 You need to install the required dependencies in `requirements.txt`
 
 Running `pip install -r requirements.txt` will install them.
