@@ -221,9 +221,9 @@ Here's the mostly comprehensive list of data engineering creators:
 | Simon Späti              | [Simon Späti](https://www.linkedin.com/in/sspaeti/)                                            | 10,000+        |
 | Constantin Lungu         | [Constantin Lungu](https://www.linkedin.com/in/constantin-lungu-668b8756)                         | 10,000+        |
 | Lakshmi Sontenam         | [Lakshmi Sontenam](https://www.linkedin.com/in/shivaga9esh)                                      | 9,500+         |
+| Dimitri Visnadi          | [Dimitri Visnadi](https://www.linkedin.com/in/visnadi/)                                    | 8,500+         |
 | Soumil Shah              | [Soumil Shah](https://www.linkedin.com/in/shah-soumil/)                                          | 8,000+         |
 | Arnaud Milleker          | [Arnaud Milleker](https://www.linkedin.com/in/arnaudmilleker/)                                    | 7,000+         |
-| Dimitri Visnadi          | [Dimitri Visnadi](https://www.linkedin.com/in/visnadi/)                                    | 7,000+         |
 | Lenny                    | [Lenny A](https://www.linkedin.com/in/lennyardiles/)                                         | 6,000+         |
 | Dipankar Mazumdar        | [Dipankar Mazumdar](https://www.linkedin.com/in/dipankar-mazumdar/)                                 | 5,000+         |
 | Daniel Ciocirlan         | [Daniel Ciocirlan](https://www.linkedin.com/in/danielciocirlan)                                    | 5,000+         |
@@ -249,6 +249,7 @@ Here's the mostly comprehensive list of data engineering creators:
 | Seattle Data Guy  | [SeattleDataGuy](https://www.twitter.com/SeattleDataGuy)   | 10,000+        |
 | SQLBI             | [marcorus](https://x.com/marcorus)                       | 10,000+        |
 | Joseph Machado    | [startdataeng](https://twitter.com/startdataeng)         | 5,000+         |
+| Dimitri Visnadi    | [visnadicom](https://x.com/visnadicom)         | 22         |
 | Alex Merced       | [@amdatalakehouse](https://www.twitter.com/amdatalakehouse)      | N/A           |
 | John Kutay        | [@JohnKutay](https://x.com/JohnKutay)                            | N/A           |
 | Mehdi Ouazza      | [mehd_io](https://x.com/mehd_io)                                 | N/A           |
@@ -261,6 +262,7 @@ Here's the mostly comprehensive list of data engineering creators:
 | Sundas Khalid  | [sundaskhalidd](https://www.instagram.com/sundaskhalidd)                              | 300,000+       |
 | Zach Wilson    | [eczachly](https://www.instagram.com/eczachly)                             | 150,000+       |
 | Andreas Kretz  | [learndataengineering](https://www.instagram.com/learndataengineering)          | 5,000+         |
+| Dimitri Visnadi  | [visnadicom](https://www.instagram.com/visnadicom/#)          | 19         |
 | Alex Merced    | [@alexmercedcoder](https://www.instagram.com/alexmercedcoder)                       | N/A           |
 
 #### TikTok
@@ -269,6 +271,7 @@ Here's the mostly comprehensive list of data engineering creators:
 |-----------------|----------------------------------------------------------------------------------|---------------:|
 | Zach Wilson     | [@eczachly](https://www.tiktok.com/@eczachly)                            | 70,000+        |
 | Alex Freberg    | [@alex_the_analyst](https://www.tiktok.com/@alex_the_analyst)             | 10,000+        |
+| Dimitri Visnadi    | [@visnadicom](https://www.tiktok.com/@visnadicom)             | 10,000+        |
 | Mehdi Ouazza    | [@mehdio_datatv](https://www.tiktok.com/@mehdio_datatv)                          | N/A           |
 
 
