@@ -58,6 +58,7 @@ Top must-join communities for ML:
   - [Onehouse](https://www.onehouse.ai)
   - [Delta Lake](https://delta.io/)
   - [Ilum](https://ilum.cloud/)
+  - [DuckLake](https://ducklake.select/)
 - Data Warehouse
   - [Snowflake](https://www.snowflake.com/en/)
   - [Firebolt](https://www.firebolt.io/)
