@@ -26,7 +26,7 @@ streak_identified AS (
             AS streak_identifier
     FROM change_indicators
 )
-INSERT INTO actors_history_scd
+-- INSERT INTO actors_history_scd
 SELECT
     actor_id, 
     actor_name, 
