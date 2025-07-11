@@ -25,26 +25,15 @@ streak_identified AS (
             END) OVER (PARTITION BY actor_id ORDER BY current_year) 
             AS streak_identifier
     FROM change_indicators
-),
-aggregated AS (
-    SELECT
-        actor_id, 
-        actor_name, 
-        quality_class, 
-        is_active,
-        streak_identifier,
-        MIN(current_year) AS start_date,
-        MAX(current_year) AS end_date
-    FROM streak_identified
-    GROUP BY actor_id, actor_name, quality_class, is_active, streak_identifier
 )
 INSERT INTO actors_history_scd
-SELECT 
+SELECT
     actor_id, 
     actor_name, 
     quality_class, 
-    is_active, 
-    start_date, 
-    end_date
-FROM aggregated
+    is_active,
+    MIN(current_year) AS start_date,
+    MAX(current_year) AS end_date
+FROM streak_identified
+GROUP BY actor_id, actor_name, quality_class, is_active, streak_identifier
 ORDER BY actor_id, actor_name, start_date;
