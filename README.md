@@ -181,10 +181,12 @@ Here's the mostly comprehensive list of data engineering creators:
 | Ankit Bansal               | [Ankit Bansal](https://youtube.com/@ankitbansal6)                                               | 10,000+        |
 | Mr. K Talks Tech           | [Mr. K Talks Tech](https://www.youtube.com/channel/UCzdOan4AmF65PmLLks8Lmww)                      | 10,000+        |
 | Samuel Focht               | [Python Basics](https://www.youtube.com/@PythonBasics)                                           | 10,000+        |
-| Mehdi Ouazza              | [Mehdio DataTV](https://www.youtube.com/@mehdio)                                                    | 3,000+         |
-| Alex Merced                | [Alex Merced Data](https://www.youtube.com/@alexmerceddata_)                                            | N/A           |
-| John Kutay                 | [John Kutay](https://www.youtube.com/@striiminc) | N/A           |
 | Emil Kaminski              | [Databricks For Professionals](https://www.youtube.com/@DatabricksPro)                           | 5,000+          |
+| Mehdi Ouazza               | [Mehdio DataTV](https://www.youtube.com/@mehdio)                                                    | 3,000+         |
+| Dimitri Visnadi            | [Dimitri Visnadi](https://www.youtube.com/@thedatafreelancer)                                     | 12           |
+| Alex Merced                | [Alex Merced Data](https://www.youtube.com/@alexmerceddata_)                                            | N/A           |
+| John Kutay                 | [John Kutay](https://www.youtube.com/@striiminc)                                                 | N/A           |
+
 
 
 #### LinkedIn
@@ -262,7 +264,7 @@ Here's the mostly comprehensive list of data engineering creators:
 | Sundas Khalid  | [sundaskhalidd](https://www.instagram.com/sundaskhalidd)                              | 300,000+       |
 | Zach Wilson    | [eczachly](https://www.instagram.com/eczachly)                             | 150,000+       |
 | Andreas Kretz  | [learndataengineering](https://www.instagram.com/learndataengineering)          | 5,000+         |
-| Dimitri Visnadi  | [visnadicom](https://www.instagram.com/visnadicom/#)          | 19         |
+| Dimitri Visnadi  | [thedatafreelancer](https://www.instagram.com/thedatafreelancer)          | 19         |
 | Alex Merced    | [@alexmercedcoder](https://www.instagram.com/alexmercedcoder)                       | N/A           |
 
 #### TikTok
@@ -271,7 +273,7 @@ Here's the mostly comprehensive list of data engineering creators:
 |-----------------|----------------------------------------------------------------------------------|---------------:|
 | Zach Wilson     | [@eczachly](https://www.tiktok.com/@eczachly)                            | 70,000+        |
 | Alex Freberg    | [@alex_the_analyst](https://www.tiktok.com/@alex_the_analyst)             | 10,000+        |
-| Dimitri Visnadi    | [@visnadicom](https://www.tiktok.com/@visnadicom)             | 10,000+        |
+| Dimitri Visnadi    | [@thedatafreelancer](https://www.tiktok.com/@thedatafreelancer)             | 10,000+        |
 | Mehdi Ouazza    | [@mehdio_datatv](https://www.tiktok.com/@mehdio_datatv)                          | N/A           |
 
 
