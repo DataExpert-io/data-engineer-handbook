@@ -2,7 +2,7 @@
 
 WITH last_year AS (
     SELECT * FROM actors 
-    WHERE current_year = 1979
+    WHERE current_year = 1980
 ),
 this_year AS (
     SELECT 
@@ -20,7 +20,7 @@ this_year AS (
                 ELSE 'bad' 
             END)::quality_class AS quality_class
     FROM actor_films
-    WHERE year = 1980
+    WHERE year = 1981
     GROUP BY actor, actorid, year
 )
 INSERT INTO actors
@@ -31,7 +31,7 @@ SELECT
         || COALESCE(ty.films, ARRAY[]::film_stats[]) AS films,
     COALESCE(ly.quality_class, ty.quality_class) AS quality_class,
     ty.year IS NOT NULL AS is_active,
-    1980 AS current_year
+    1981 AS current_year
 FROM last_year ly
 FULL OUTER JOIN this_year ty
 ON ly.actor_id = ty.actorid;
