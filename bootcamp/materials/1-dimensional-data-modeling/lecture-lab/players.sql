@@ -1,11 +1,13 @@
- CREATE TYPE season_stats AS (
-                         season Integer,
-                         pts REAL,
-                         ast REAL,
-                         reb REAL,
-                         weight INTEGER
-                       );
- CREATE TYPE scoring_class AS
+CREATE TYPE season_stats AS (
+	season Integer,
+	gp Integer,
+	pts REAL,
+	reb REAL,
+	ast REAL,
+	weight INTEGER
+	);
+
+CREATE TYPE scoring_class AS
      ENUM ('bad', 'average', 'good', 'star');
 
 
@@ -22,8 +24,6 @@
      years_since_last_active INTEGER,
      is_active BOOLEAN,
      current_season INTEGER,
+	 years_since_last_active INTEGER,
      PRIMARY KEY (player_name, current_season)
  );
-
-
-
