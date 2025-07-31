@@ -33,4 +33,4 @@ def main():
         .appName("players_scd") \
         .getOrCreate()
     output_df = do_team_vertex_transformation(spark, spark.table("players"))
-    output_df.write.mode("overwrite").insertInto("players_scd")
+    output_df.write.mode("overwrite").insertInto("team_vertex")
