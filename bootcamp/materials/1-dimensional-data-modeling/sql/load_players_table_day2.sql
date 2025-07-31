@@ -65,8 +65,8 @@ SELECT
         ELSE 'bad'
     END::scoring_class AS scoring_class,
     w.season - (seasons[CARDINALITY(seasons)]::season_stats).season as years_since_last_active,
-    w.season,
-    (seasons[CARDINALITY(seasons)]::season_stats).season = season AS is_active
+    (seasons[CARDINALITY(seasons)]::season_stats).season = season AS is_active,
+    w.season
 FROM windowed w
 JOIN static s
     ON w.player_name = s.player_name;
