@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun Aug 03 12:14:29 UTC 2025:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0198-6fda-d7df-000004eef2d8 
+on database directory /home/iceberg/notebooks/notebooks/metastore_db with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@5ffd2b27 
+Loaded from file:/opt/spark/jars/derby-10.14.2.0.jar
+java.vendor=Debian
+java.runtime.version=17.0.14+7-Debian-1deb11u1
+user.dir=/home/iceberg/notebooks/notebooks
+os.name=Linux
+os.arch=aarch64
+os.version=5.15.49-linuxkit-pr
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
