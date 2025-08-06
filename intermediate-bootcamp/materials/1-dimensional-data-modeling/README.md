@@ -49,6 +49,8 @@ cd data-engineer-handbook/bootcamp/materials/1-dimensional-data-modeling
 cp example.env .env
 ```
 
+> The `.env` file stores credentials used by PostgreSQL and PGAdmin
+
 3. Start PostgreSQL & PGAdmin in containers:
 
 ```bash
@@ -102,14 +104,20 @@ Choose any GUI tool you like. Here’s how:
 1. Go to [http://localhost:5050](http://localhost:5050)  
 2. Log in using the credentials from your `.env` file  
 3. Create a new server:  
-   - **Name**: Name of your choice  
-   - **Host**: `my-postgres-container`  
-   - **Port**: `5432`  
-   - **Database**: `postgres`  
-   - **Username**: `postgres`  
-   - **Password**: `postgres`  
-   - ✅ Save Password  
+	1. `Dashboard` ➜ `Quick Links` ➜ `Add New Server`
+	2. Under the `General` tab: give it a friendly `Name`, e.g. `Data-Engineer-Handbook-DB`
+	3. `Connection` tab: Copy in credentials from `.env`, where the defaults are:
+	   - **Name**: Name of your choice  
+	   - **Host**: `my-postgres-container`  
+	   - **Port**: `5432`  
+	   - **Database**: `postgres`  
+	   - **Username**: `postgres`  
+	   - **Password**: `postgres`  
+	   - ✅ Save Password  
 4. Click **Save** — and you’re connected!
+5. Expand `Servers`  › *`your-server`* › `Databases` › `postgres`
+	- The database must be highlighted to be able to open the `Query Tool`
+	- Further expanding `postgres` › `Schemas` › `public` › `Tables` should show the expected content
 
 ---
 
