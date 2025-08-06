@@ -31,3 +31,4 @@
 - [Stream Processing with Apache Flink](https://www.oreilly.com/library/view/stream-processing-with/9781491974285/)
 - [Apache Iceberg The Definitive Guide](https://www.oreilly.com/library/view/apache-iceberg-the/9781098148614/)
 - [Python for Data Analysis, 3E](https://wesmckinney.com/book/)
+- [Architecting an Apache Iceberg Lakehouse](https://www.manning.com/books/architecting-an-apache-iceberg-lakehouse)
