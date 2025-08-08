@@ -3,7 +3,7 @@
 - [EcZachly Data Engineering Discord](https://discord.gg/JGumAXncAK)
 - [AdalFlow Discord (LLM Library)](https://discord.com/invite/ezzszrRZvT)
 - [Chip Huyen MLOps Discord](https://discord.gg/dzh728c5t3)
-- [Data Engineer Things Community](https://www.dataengineerthings.org/aboutus/)
+- [Data Engineer Things Community](https://www.dataengineerthings.org/)
 - [DBT Community](https://www.getdbt.com/community/join-the-community/)
 - [r/dataengineering](https://www.reddit.com/r/dataengineering)
 - [Microsoft Fabric Community](https://community.fabric.microsoft.com/)
