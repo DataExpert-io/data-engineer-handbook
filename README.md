@@ -34,7 +34,7 @@ Top 3 must read books are:
 Top must-join communities for DE:
 - [DataExpert.io Community Discord](https://discord.gg/JGumAXncAK)
 - [Data Talks Club Slack](https://datatalks.club/slack)
-- [Data Engineer Things Community](https://dataengineerthings.slack.com/join/shared_invite/zt-34mqkmrxs-59yWxQRruwq5_h~7PKRFuQ#/shared-invite/email)
+- [Data Engineer Things Community](https://www.dataengineerthings.org/)
 
 Top must-join communities for ML:
 - [AdalFlow Discord](https://discord.com/invite/ezzszrRZvT)
@@ -308,6 +308,7 @@ Top must follow newsletters for data engineering:
 - [Joe Reis](https://joereis.substack.com)
 - [Start Data Engineering](https://www.startdataengineering.com)
 - [Data Engineering Weekly](https://www.dataengineeringweekly.com)
+- [Data Engineer Things](https://dataengineerthings.substack.com/)
 
 ### Glossaries:
 - [Data Engineering Vault](https://www.ssp.sh/brain/data-engineering/)
