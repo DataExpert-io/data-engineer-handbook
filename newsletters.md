@@ -24,3 +24,4 @@
 - [Ju Data Engineering Weekly](https://juhache.substack.com/)
 - [From An Engineer Sight](https://fromanengineersight.substack.com/)
 - [Data Engineering Community](https://dataengineeringcommunity.substack.com/)
+- [Data Engineer Things](https://dataengineerthings.substack.com/)
