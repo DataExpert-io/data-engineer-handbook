@@ -40,27 +40,7 @@ cd data-engineer-handbook/bootcamp/materials/1-dimensional-data-modeling
 
 ### Step 2️⃣: Start PostgreSQL
 
-#### 🧩 Option A: Local Installation (Manual Setup)
-
-1. Install PostgreSQL  
-   - [Mac – use Homebrew](https://brew.sh/)  
-   - [Windows – official installer](https://www.postgresql.org/download/)
-
-2. Restore the sample database:
-
-```bash
-pg_restore -c --if-exists -U <your-username> -d postgres data.dump
-```
-
-If that fails, try:
-
-```bash
-pg_restore -U [username] -d [db_name] -h [host] -p [port] data.dump
-```
-
----
-
-#### 🐳 Option B: Docker (Simplest & Preferred)
+#### 🐳 Option A: Docker (Simplest & Preferred)
 
 1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop)  
 2. Copy the env template:
@@ -89,6 +69,26 @@ docker ps -a
 
 ```bash
 docker compose stop
+```
+
+---
+
+#### 🧩 Option B: Local Installation (Manual Setup)
+
+1. Install PostgreSQL  
+   - [Mac – use Homebrew](https://brew.sh/)  
+   - [Windows – official installer](https://www.postgresql.org/download/)
+
+2. Restore the sample database:
+
+```bash
+pg_restore -c --if-exists -U <your-username> -d postgres data.dump
+```
+
+If that fails, try:
+
+```bash
+pg_restore -U [username] -d [db_name] -h [host] -p [port] data.dump
 ```
 
 ---
