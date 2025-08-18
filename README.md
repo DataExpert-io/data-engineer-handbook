@@ -7,9 +7,13 @@ This repo has all the resources you need to become an amazing data engineer!
 
 If you are new to data engineering, start by following this [2024 breaking into data engineering roadmap](https://blog.dataengineer.io/p/the-2024-breaking-into-data-engineering)
 
-If you are here for the [6-week free YouTube boot camp](https://youtu.be/myhe0LXpCeo) you can check out
-- [introduction](bootcamp/introduction.md)
-- [software needed](bootcamp/software.md)
+If you are here for the [4-week free beginner boot camp](https://learn.dataexpert.io/program/the-absolute-beginner-data-engineering-boot-camp-starting-august-7th-6453/details) you can check out:
+- [introduction](beginner-bootcamp/introduction.md)
+- [software needed](beginner-bootcamp/software.md)
+
+If you are here for the [6-week free intermediate boot camp](https://learn.dataexpert.io/program/free-community-boot-camp/details) you can check out
+- [introduction](intermediate-bootcamp/introduction.md)
+- [software needed](intermediate-bootcamp/software.md)
 
 
 For more applied learning:
