@@ -3,35 +3,39 @@
 -- GROUP BY 1,2,3 
 -- HAVING COUNT(1) > 1;
 
-SELECT 
+WITH ranked AS (
+    SELECT *, ROW_NUMBER() OVER (PARTITION BY game_id, team_id, player_id) AS row_num
+    FROM game_details
+)
+SELECT
     game_id, 
     team_id, 
-    MAX(team_abbreviation),
-    MAX(team_city),
+    team_abbreviation,
+    team_city,
     player_id,
-    MAX(player_name),
-    MAX(nickname),
-    MAX(start_position),
-    MAX(comment),
-    MAX(min),
-    MAX(fgm),
-    MAX(fga),
-    MAX(fg_pct),
-    MAX(fg3m),
-    MAX(fg3a),
-    MAX(fg3_pct),
-    MAX(ftm),
-    MAX(fta),
-    MAX(ft_pct),
-    MAX(oreb),
-    MAX(dreb),
-    MAX(reb),
-    MAX(ast),
-    MAX(stl),
-    MAX(blk),
-    MAX("TO"),
-    MAX(pf),
-    MAX(pts),
-    MAX(plus_minus)
-FROM game_details
-GROUP BY game_id, team_id, player_id; 
+    player_name,
+    nickname,
+    start_position,
+    comment,
+    min,
+    fgm,
+    fga,
+    fg_pct,
+    fg3m,
+    fg3a,
+    fg3_pct,
+    ftm,
+    fta,
+    ft_pct,
+    oreb,
+    dreb,
+    reb,
+    ast,
+    stl,
+    blk,
+    "TO",
+    pf,
+    pts,
+    plus_minus) 
+FROM ranked
+WHERE row_num = 1; 
