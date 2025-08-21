@@ -31,7 +31,7 @@ Clone the course files onto your machine:
 
 ```bash
 git clone git@github.com:DataExpert-io/data-engineer-handbook.git
-cd data-engineer-handbook/bootcamp/materials/1-dimensional-data-modeling
+cd data-engineer-handbook/intermediate-bootcamp/materials/1-dimensional-data-modeling
 ```
 
 > 🔐 Need SSH set up first? Use [GitHub’s SSH guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
