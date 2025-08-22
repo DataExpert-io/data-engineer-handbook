@@ -1,5 +1,5 @@
-SELECT cardinality(hit_array), COUNT(1)
-FROM host_activity_reduced GROUP BY 1;
+-- SELECT cardinality(hit_array), COUNT(1)
+-- FROM host_activity_reduced GROUP BY 1;
 
 INSERT INTO host_activity_reduced
 WITH yesterday AS (
@@ -31,22 +31,16 @@ SELECT
     COALESCE(y.month_start, t.event_month) AS month_start,
     COALESCE(y.host, t.host) AS host,
     CASE
-        WHEN t.host IS NULL
-        THEN y.hit_array
+        WHEN t.host IS NULL THEN y.hit_array || ARRAY[0]
         ELSE y.hit_array || ARRAY[COALESCE(t.num_hits, 0)]
     END AS hit_array,
     CASE
-        WHEN t.host IS NULL
-        THEN y.unique_visitors_array
+        WHEN t.host IS NULL THEN y.unique_visitors_array || ARRAY[0]
         ELSE y.unique_visitors_array || ARRAY[COALESCE(t.num_unique_visitors, 0)]
     END AS unique_visitors_array
-FROM
-    today t
-FULL OUTER JOIN
-    yesterday y
-    ON y.host = t.host
-ON CONFLICT (month_start, host)
-DO
+FROM today t
+FULL OUTER JOIN yesterday y ON y.host = t.host
+ON CONFLICT (month_start, host) DO
     UPDATE SET
         hit_array = EXCLUDED.hit_array,
         unique_visitors_array = EXCLUDED.unique_visitors_array;
