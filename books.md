@@ -32,3 +32,4 @@
 - [Apache Iceberg The Definitive Guide](https://www.oreilly.com/library/view/apache-iceberg-the/9781098148614/)
 - [Python for Data Analysis, 3E](https://wesmckinney.com/book/)
 - [Architecting an Apache Iceberg Lakehouse](https://www.manning.com/books/architecting-an-apache-iceberg-lakehouse)
+- [Learn AI Data Engineering in a Month of Lunches](https://www.manning.com/books/learn-ai-data-engineering-in-a-month-of-lunches)
