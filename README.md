@@ -309,6 +309,7 @@ Here's the mostly comprehensive list of data engineering creators:
 - [The Data Chief](https://www.thoughtspot.com/data-chief/podcast)
 - [The Joe Reis Show](https://open.spotify.com/show/3mcKitYGS4VMG2eHd2PfDN)
 - [Data Bytes](https://open.spotify.com/show/6VbjON5Ck9QYInBnmoqrDE)
+- [Super Data Science: ML & AI Podcast with Jon Krohn](https://open.spotify.com/show/1n8P7ZSgfVLVJ3GegxPat1)
 
 ### Great [list of 20+ newsletters](newsletters.md)
 
