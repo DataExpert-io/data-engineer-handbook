@@ -349,6 +349,7 @@ Top must follow newsletters for data engineering:
 - [Scaler](https://www.scaler.com/)
 - [DataTeams - Data Engingeer hiring platform](https://www.datateams.ai/)
 - [Udemy Courses from Daniel Blanco](https://danielblanco.dev/links)
+- [DeepLearning.AI Data Engineering Professional Certificate](https://www.coursera.org/professional-certificates/data-engineering)
 
 ### Certifications Courses
 
