@@ -307,7 +307,8 @@ Here's the mostly comprehensive list of data engineering creators:
 - [MLOps.community](https://podcast.mlops.community/)
 - [Monday Morning Data Chat](https://open.spotify.com/show/3Km3lBNzJpc1nOTJUtbtMh)
 - [The Data Chief](https://www.thoughtspot.com/data-chief/podcast)
-- The Joe Reis Show [Spotify](https://open.spotify.com/show/3mcKitYGS4VMG2eHd2PfDN), [YouTube](https://www.youtube.com/playlist?list=PLIlqnK97FLdtRvCqN2pAyhz-BvBQu_7ck)
+- [The Joe Reis Show](https://open.spotify.com/show/3mcKitYGS4VMG2eHd2PfDN)
+- [Data Bytes](https://open.spotify.com/show/6VbjON5Ck9QYInBnmoqrDE)
 
 ### Great [list of 20+ newsletters](newsletters.md)
 
