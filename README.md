@@ -307,6 +307,9 @@ Here's the mostly comprehensive list of data engineering creators:
 - [MLOps.community](https://podcast.mlops.community/)
 - [Monday Morning Data Chat](https://open.spotify.com/show/3Km3lBNzJpc1nOTJUtbtMh)
 - [The Data Chief](https://www.thoughtspot.com/data-chief/podcast)
+- [The Joe Reis Show](https://open.spotify.com/show/3mcKitYGS4VMG2eHd2PfDN)
+- [Data Bytes](https://open.spotify.com/show/6VbjON5Ck9QYInBnmoqrDE)
+- [Super Data Science: ML & AI Podcast with Jon Krohn](https://open.spotify.com/show/1n8P7ZSgfVLVJ3GegxPat1)
 
 ### Great [list of 20+ newsletters](newsletters.md)
 
@@ -349,6 +352,7 @@ Top must follow newsletters for data engineering:
 - [Scaler](https://www.scaler.com/)
 - [DataTeams - Data Engingeer hiring platform](https://www.datateams.ai/)
 - [Udemy Courses from Daniel Blanco](https://danielblanco.dev/links)
+- [DeepLearning.AI Data Engineering Professional Certificate](https://www.coursera.org/professional-certificates/data-engineering)
 
 ### Certifications Courses
 
