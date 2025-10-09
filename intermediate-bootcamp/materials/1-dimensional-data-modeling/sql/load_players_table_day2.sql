@@ -1,43 +1,34 @@
-INSERT INTO players
-WITH years AS (
-    SELECT *
-    FROM GENERATE_SERIES(1996, 2022) AS season
-), p AS (
-    SELECT
-        player_name,
-        MIN(season) AS first_season
+WITH first_season AS (
+    SELECT player_name, MIN(season) AS first_season
     FROM player_seasons
     GROUP BY player_name
-), players_and_seasons AS (
-    SELECT *
-    FROM p
-    JOIN years y
-        ON p.first_season <= y.season
-), windowed AS (
+),
+player_timeline AS (
+    SELECT fs.player_name, gs.season
+    FROM first_season fs
+    JOIN LATERAL generate_series(fs.first_season, 2022) AS gs(season) ON true
+),
+season_stats_array AS (
     SELECT
-        pas.player_name,
-        pas.season,
-        ARRAY_REMOVE(
-            ARRAY_AGG(
-                CASE
-                    WHEN ps.season IS NOT NULL
-                        THEN ROW(
-                            ps.season,
-                            ps.gp,
-                            ps.pts,
-                            ps.reb,
-                            ps.ast
-                        )::season_stats
-                END)
-            OVER (PARTITION BY pas.player_name ORDER BY COALESCE(pas.season, ps.season)),
-            NULL
+        pt.player_name,
+        ARRAY_AGG(
+            ROW(ps.season, ps.gp, ps.pts, ps.reb, ps.ast)::season_stats
+            ORDER BY ps.season  
         ) AS seasons
-    FROM players_and_seasons pas
+    FROM player_timeline pt
     LEFT JOIN player_seasons ps
-        ON pas.player_name = ps.player_name
-        AND pas.season = ps.season
-    ORDER BY pas.player_name, pas.season
-), static AS (
+        ON pt.player_name = ps.player_name AND pt.season = ps.season
+    GROUP BY pt.player_name
+),
+latest_season AS (
+    SELECT DISTINCT ON (player_name)
+        player_name,
+        season,
+        pts
+    FROM player_seasons
+    ORDER BY player_name, season DESC
+),
+static_info AS (
     SELECT
         player_name,
         MAX(height) AS height,
@@ -49,24 +40,38 @@ WITH years AS (
     FROM player_seasons
     GROUP BY player_name
 )
+INSERT INTO players (
+    player_name,
+    height,
+    college,
+    country,
+    draft_year,
+    draft_round,
+    draft_number,
+    season_stats,
+    scoring_class,
+    years_since_last_active,
+    is_active,
+    season
+)
 SELECT
-    w.player_name,
+    s.player_name,
     s.height,
     s.college,
     s.country,
     s.draft_year,
     s.draft_round,
     s.draft_number,
-    seasons AS season_stats,
+    sa.seasons,
     CASE
-        WHEN (seasons[CARDINALITY(seasons)]::season_stats).pts > 20 THEN 'star'
-        WHEN (seasons[CARDINALITY(seasons)]::season_stats).pts > 15 THEN 'good'
-        WHEN (seasons[CARDINALITY(seasons)]::season_stats).pts > 10 THEN 'average'
+        WHEN ls.pts > 20 THEN 'star'
+        WHEN ls.pts > 15 THEN 'good'
+        WHEN ls.pts > 10 THEN 'average'
         ELSE 'bad'
-    END::scoring_class AS scoring_class,
-    w.season - (seasons[CARDINALITY(seasons)]::season_stats).season as years_since_last_active,
-    (seasons[CARDINALITY(seasons)]::season_stats).season = season AS is_active,
-    w.season
-FROM windowed w
-JOIN static s
-    ON w.player_name = s.player_name;
+    END::scoring_class, 
+    2022 - ls.season AS years_since_last_active,
+    ls.season = 2022 AS is_active,
+    2022
+FROM static_info s
+JOIN season_stats_array sa ON s.player_name = sa.player_name
+JOIN latest_season ls ON s.player_name = ls.player_name;
