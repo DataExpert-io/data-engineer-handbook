@@ -26,7 +26,8 @@ WITH years AS (
                             ps.gp,
                             ps.pts,
                             ps.reb,
-                            ps.ast
+                            ps.ast,
+                            ps.weight
                         )::season_stats
                 END)
             OVER (PARTITION BY pas.player_name ORDER BY COALESCE(pas.season, ps.season)),
