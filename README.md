@@ -168,6 +168,7 @@ Here's the mostly comprehensive list of data engineering creators:
 | Name                        | YouTube Channel                                                                                         | Follower Count |
 |----------------------------|---------------------------------------------------------------------------------------------------------|---------------:|
 | ByteByteGo                 | [ByteByteGo](https://www.youtube.com/c/ByteByteGo)                                             | 1,000,000+     |
+| Data with Baraa            | [Data with Baraa](https://www.youtube.com/@DataWithBaraa)                                       | 195,000+     |
 | Zach Wilson                | [Data with Zach](https://www.youtube.com/@eczachly_)                                          | 150,000+       |
 | Shashank Mishra            | [E-learning Bridge](https://www.youtube.com/@shashank_mishra)                                   | 100,000+       |
 | Seattle Data Guy           | [Seattle Data Guy](https://www.youtube.com/c/SeattleDataGuy)                                  | 100,000+       |
