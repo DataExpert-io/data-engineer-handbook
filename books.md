@@ -7,6 +7,7 @@
 - [Data Mesh](https://www.oreilly.com/library/view/data-mesh/9781492092384/)
 - [Machine Learning System Design Interview](https://www.amazon.com/Machine-Learning-System-Design-Interview/dp/1736049127)
 - [Streaming Systems](https://www.amazon.com/Streaming-Systems-Where-Large-Scale-Processing/dp/1491983876)
+- [Streaming Databases: Unifying Batch and Stream Processing](https://www.amazon.com/Streaming-Databases-Unifying-Stream-Processing/dp/1098154835)
 - [High Performance Spark](https://www.amazon.com/High-Performance-Spark-Practices-Optimizing/dp/1491943203)
 - [Spark: The Definitive Guide](https://www.oreilly.com/library/view/spark-the-definitive/9781491912201/)
 - [Learning Spark](https://www.oreilly.com/library/view/learning-spark/9781449359034/)
