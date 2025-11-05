@@ -3,7 +3,7 @@ The homework this week will be using the `devices` and `events` dataset
 
 Construct the following eight queries:
 
-- A query to deduplicate `game_details` from Day 1 so there's no duplicates
+- A query to deduplicate `events` from Day 1 so there's no duplicates
 
 - A DDL for an `user_devices_cumulated` table that has:
   - a `device_activity_datelist` which tracks a users active days by `browser_type`
