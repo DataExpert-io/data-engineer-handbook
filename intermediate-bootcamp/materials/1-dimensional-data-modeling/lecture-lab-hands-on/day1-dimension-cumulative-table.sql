@@ -15,7 +15,7 @@ CREATE TYPE season_stats AS
 CREATE TABLE players
 (
     player_name    TEXT,
-    HEIGHT         TEXT,
+    height         TEXT,
     college        TEXT,
     country        TEXT,
     draft_year     TEXT,
@@ -40,7 +40,7 @@ WITH yesterday AS (SELECT *
                WHERE season = 2001)
 
 SELECT COALESCE(t.player_name, y.player_name)   AS player_name,
-       COALESCE(t.height, y.height)             AS HEIGHT,
+       COALESCE(t.height, y.height)             AS height,
        COALESCE(t.college, y.college)           AS college,
        COALESCE(t.country, y.country)           AS country,
        COALESCE(t.draft_year, y.draft_year)     AS draft_year,
@@ -89,7 +89,7 @@ CREATE TYPE scoring_class AS ENUM ('bad', 'average', 'good', 'star');
 CREATE TABLE players
 (
     player_name             TEXT,
-    HEIGHT                  TEXT,
+    height                  TEXT,
     college                 TEXT,
     country                 TEXT,
     draft_year              TEXT,
@@ -112,7 +112,7 @@ WITH yesterday AS (SELECT *
                WHERE season = 2001)
 
 SELECT COALESCE(t.player_name, y.player_name)   AS player_name,
-       COALESCE(t.height, y.height)             AS HEIGHT,
+       COALESCE(t.height, y.height)             AS height,
        COALESCE(t.college, y.college)           AS college,
        COALESCE(t.country, y.country)           AS country,
        COALESCE(t.draft_year, y.draft_year)     AS draft_year,
