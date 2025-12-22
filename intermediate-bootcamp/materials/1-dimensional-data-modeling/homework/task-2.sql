@@ -23,7 +23,6 @@ $$
                                           GROUP BY actorid)
 
                 SELECT COALESCE(t.actorid, y.actorid)       AS actorid,
-                       COALESCE(t.year, y.current_year + 1) AS current_year,
                        COALESCE(t.actor, y.actor)           AS actor,
                        CASE
                            WHEN y.films IS NULL THEN t.films
@@ -43,7 +42,8 @@ $$
                        CASE
                            WHEN t.films IS NOT NULL THEN TRUE
                            ELSE FALSE
-                           END                              AS is_active
+                           END                              AS is_active,
+                       COALESCE(t.year, y.current_year + 1) AS current_year
                 FROM today_aggregated t
                          FULL OUTER JOIN yesterday y ON t.actorid = y.actorid;
 
