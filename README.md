@@ -347,6 +347,7 @@ Top must follow newsletters for data engineering:
 - [LearnDataEngineering.com](https://www.learndataengineering.com)
 - [Technical Freelancer Academy](https://www.technicalfreelanceracademy.com/) Use code **zwtech** for a discount!
 - [IBM Data Engineering for Everyone](https://www.edx.org/learn/data-engineering/ibm-data-engineering-basics-for-everyone)
+- [PrepNPlaced Open Learning](https://www.prepnplaced.com/open-learning) - 153 hours of free SQL, Python, PySpark, and Power BI lessons with MCQs and a free skill test
 - [Qwiklabs](https://www.qwiklabs.com/)
 - [DataCamp](https://www.datacamp.com/)
 - [Udemy Courses from Shruti Mantri](https://www.udemy.com/user/shruti-mantri-5/)
