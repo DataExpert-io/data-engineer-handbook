@@ -3,6 +3,8 @@
 
 This repo has all the resources you need to become an amazing data engineer!
 
+### Join the free Databricks AI boot camp on August 3rd [here](https://learn.dataexpert.io/program/the-one-week-beginners-databricks-boot-camp-7129) and signup for Databricks Free Edition [here](https://signup.databricks.com/?provider=DB_FREE_TIERutm_source=github&utm_medium=video&utm_campaign=DataExpert)
+
 ## Getting started
 
 If you are new to data engineering, start by following this [2024 breaking into data engineering roadmap](https://blog.dataengineer.io/p/the-2024-breaking-into-data-engineering)
