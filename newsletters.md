@@ -25,3 +25,4 @@
 - [From An Engineer Sight](https://fromanengineersight.substack.com/)
 - [Data Engineering Community](https://dataengineeringcommunity.substack.com/)
 - [Data Engineer Things](https://dataengineerthings.substack.com/)
+- [TLDR Data](https://tldr.tech/data)
