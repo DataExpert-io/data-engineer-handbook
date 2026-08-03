@@ -2,6 +2,7 @@ from flask import Flask, jsonify, request
 from statsig import statsig
 from statsig.statsig_event import StatsigEvent
 from statsig.statsig_user import StatsigUser
+import hashlib
 import random
 import os
 
@@ -37,7 +38,7 @@ def signup():
     hash_string = request.remote_addr
     if random_num:
         hash_string = str(random.randint(0, 1000000))
-    user_id = str(hash(hash_string))
+    user_id = hashlib.sha256(hash_string.encode('utf-8')).hexdigest()
     statsig_user = StatsigUser(user_id)
     statsig_event = StatsigEvent(
         user=statsig_user,
@@ -53,7 +54,7 @@ def get_tasks():
     hash_string = request.remote_addr
     if random_num:
         hash_string = str(random.randint(0, 1000000))
-    user_id = str(hash(hash_string))
+    user_id = hashlib.sha256(hash_string.encode('utf-8')).hexdigest()
     color = statsig.get_experiment(StatsigUser(user_id), "button_color_v3").get("Button Color", "blue")
     paragraph_text = statsig.get_experiment(StatsigUser(user_id), "button_color_v3").get("Paragraph Text", "Data Engineering Boot Camp")
     experiment_description = 'odd tasks for blue and green, even for red and orange'
