@@ -16,6 +16,8 @@ Learn the foundations of Lakebase and use it as the data layer for a simple appl
 
 By the end of the day, you will have a simple application backed by Lakebase, with a small schema and a working data-access flow.
 
+## The repo for this class to get started can be found [here](https://github.com/EcZachly/databricks-lakebase-app-day-1) 
+
 ## Recommended resources
 
 - [Lakebase documentation](https://docs.databricks.com/aws/en/lakebase/)
