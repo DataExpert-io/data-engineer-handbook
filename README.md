@@ -85,6 +85,7 @@ Top must-join communities for ML:
   - [Dingo](https://github.com/MigoXLab/dingo)
 - Education Companies
   - [DataExpert.io](https://www.dataexpert.io)
+  - [DataDriven.io](https://www.datadriven.io)
   - [LearnDataEngineering.com](https://www.learndataengineering.com)
   - [AlgoExpert](https://www.algoexpert.io)
   - [ByteByteGo](https://www.bytebytego.com)
