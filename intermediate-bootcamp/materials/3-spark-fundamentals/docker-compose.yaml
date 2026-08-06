@@ -50,7 +50,7 @@ services:
         aliases:
           - warehouse.minio
     ports:
-      - 9001:9001
+      - 9101:9001 #changed from 9001:9001 to 9101:9001 to avoid conflicts with reserved ports on Windows
       - 9000:9000
     command: ["server", "/data", "--console-address", ":9001"]
   mc:
