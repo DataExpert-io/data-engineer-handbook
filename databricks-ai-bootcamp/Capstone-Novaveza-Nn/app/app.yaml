@@ -1,0 +1,5 @@
+command: ["python", "app.py"]
+
+env:
+  - name: "LAKEBASE_URL"
+    valueFrom: "LAKEBASE_URL"

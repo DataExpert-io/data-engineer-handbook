@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Novanega Feedback &amp; Feature Request Tracker</title>
+  <style>
+    body { font-family: -apple-system, Arial, sans-serif; max-width: 900px; margin: 40px auto; color: #222; padding: 0 16px; }
+    h1 { font-size: 22px; margin-bottom: 4px; }
+    .subtitle { color: #666; margin-top: 0; margin-bottom: 24px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+    th, td { text-align: left; padding: 8px; border-bottom: 1px solid #ddd; font-size: 14px; }
+    th { font-size: 12px; color: #555; text-transform: uppercase; }
+    tr.ticket-row { cursor: pointer; }
+    tr.ticket-row:hover { background: #f6f6f6; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 12px; }
+    .status-open { background: #e8f0fe; color: #1a56db; }
+    .status-in_progress { background: #fff4e5; color: #b45309; }
+    .status-resolved { background: #e8f8ee; color: #15803d; }
+    fieldset { margin-top: 32px; border: 1px solid #ddd; border-radius: 8px; padding: 16px; }
+    legend { font-weight: 600; padding: 0 6px; }
+    label { display: block; margin-top: 12px; font-weight: 600; font-size: 13px; }
+    input[type="text"], textarea, select { width: 100%; padding: 8px; margin-top: 4px; box-sizing: border-box; font-size: 14px; }
+    textarea { min-height: 70px; }
+    button { margin-top: 16px; padding: 8px 16px; cursor: pointer; }
+    #create-result, #list-result { margin-top: 12px; white-space: pre-wrap; font-size: 13px; }
+    .error { color: #b91c1c; }
+    .success { color: #15803d; }
+    .empty { color: #777; font-style: italic; }
+  </style>
+</head>
+<body>
+  <h1>Novanega Feedback &amp; Feature Request Tracker</h1>
+  <p class="subtitle">All data reads from and writes to Lakebase.</p>
+
+  <div id="list-result"></div>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Category</th>
+        <th>Status</th>
+        <th>Priority</th>
+        <th>Submitted by</th>
+        <th>Created</th>
+      </tr>
+    </thead>
+    <tbody id="ticket-body"></tbody>
+  </table>
+
+  <fieldset>
+    <legend>Create a new ticket</legend>
+    <form id="create-form">
+      <label for="title">Title</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="category">Category</label>
+      <select id="category" name="category" required>
+        {% for c in categories %}
+        <option value="{{ c }}">{{ c }}</option>
+        {% endfor %}
+      </select>
+
+      <label for="priority">Priority</label>
+      <select id="priority" name="priority" required>
+        {% for p in priorities %}
+        <option value="{{ p }}">{{ p }}</option>
+        {% endfor %}
+      </select>
+
+      <label for="submitted_by">Submitted by</label>
+      <select id="submitted_by" name="submitted_by" required>
+        {% for s in submitted_by_options %}
+        <option value="{{ s }}">{{ s }}</option>
+        {% endfor %}
+      </select>
+
+      <label for="message_text">Initial message</label>
+      <textarea id="message_text" name="message_text" required></textarea>
+
+      <label for="author">Your name</label>
+      <input type="text" id="author" name="author" required>
+
+      <button type="submit">Create ticket</button>
+    </form>
+    <div id="create-result"></div>
+  </fieldset>
+
+  <script>
+    const ticketBody = document.getElementById("ticket-body");
+    const listResult = document.getElementById("list-result");
+    const createForm = document.getElementById("create-form");
+    const createResult = document.getElementById("create-result");
+
+    function fmtDate(iso) {
+      return iso ? new Date(iso).toLocaleString() : "-";
+    }
+
+    async function loadTickets() {
+      listResult.textContent = "";
+      try {
+        const resp = await fetch("/api/tickets");
+        const data = await resp.json();
+        if (!resp.ok) {
+          listResult.innerHTML = '<span class="error">Error loading tickets: ' + (data.error || resp.statusText) + '</span>';
+          return;
+        }
+        ticketBody.innerHTML = "";
+        if (data.length === 0) {
+          listResult.innerHTML = '<span class="empty">No tickets yet.</span>';
+          return;
+        }
+        data.forEach((t) => {
+          const tr = document.createElement("tr");
+          tr.className = "ticket-row";
+          tr.onclick = () => { window.location.href = "/ticket/" + t.ticket_id; };
+          tr.innerHTML = `
+            <td>${t.ticket_id}</td>
+            <td>${t.title}</td>
+            <td>${t.category}</td>
+            <td><span class="badge status-${t.status}">${t.status}</span></td>
+            <td>${t.priority}</td>
+            <td>${t.submitted_by}</td>
+            <td>${fmtDate(t.created_at)}</td>
+          `;
+          ticketBody.appendChild(tr);
+        });
+      } catch (err) {
+        listResult.innerHTML = '<span class="error">Failed to load tickets: ' + err + '</span>';
+      }
+    }
+
+    createForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const body = {
+        title: document.getElementById("title").value,
+        category: document.getElementById("category").value,
+        priority: document.getElementById("priority").value,
+        submitted_by: document.getElementById("submitted_by").value,
+        message_text: document.getElementById("message_text").value,
+        author: document.getElementById("author").value,
+      };
+      createResult.textContent = "Creating...";
+      try {
+        const resp = await fetch("/api/tickets", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+        });
+        const data = await resp.json();
+        if (!resp.ok) {
+          const details = data.details ? " (" + data.details.join("; ") + ")" : "";
+          createResult.innerHTML = '<span class="error">' + (data.error || resp.statusText) + details + '</span>';
+          return;
+        }
+        createResult.innerHTML = '<span class="success">Created ticket #' + data.ticket_id + '.</span>';
+        createForm.reset();
+        loadTickets();
+      } catch (err) {
+        createResult.innerHTML = '<span class="error">Request failed: ' + err + '</span>';
+      }
+    });
+
+    loadTickets();
+  </script>
+</body>
+</html>

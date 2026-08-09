@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ticket #{{ ticket_id }} - Novanega Tracker</title>
+  <style>
+    body { font-family: -apple-system, Arial, sans-serif; max-width: 760px; margin: 40px auto; color: #222; padding: 0 16px; }
+    a.back { font-size: 13px; color: #1a56db; text-decoration: none; }
+    h1 { font-size: 20px; margin-top: 8px; }
+    dl { display: grid; grid-template-columns: 140px 1fr; gap: 6px 12px; font-size: 14px; }
+    dt { color: #666; }
+    dd { margin: 0; }
+    fieldset { margin-top: 24px; border: 1px solid #ddd; border-radius: 8px; padding: 16px; }
+    legend { font-weight: 600; padding: 0 6px; }
+    label { display: block; margin-top: 12px; font-weight: 600; font-size: 13px; }
+    input[type="text"], textarea, select { width: 100%; padding: 8px; margin-top: 4px; box-sizing: border-box; font-size: 14px; }
+    textarea { min-height: 60px; }
+    button { margin-top: 16px; padding: 8px 16px; cursor: pointer; }
+    .error { color: #b91c1c; }
+    .success { color: #15803d; }
+    .empty { color: #777; font-style: italic; }
+    .message { border-bottom: 1px solid #eee; padding: 10px 0; }
+    .message-meta { font-size: 12px; color: #777; }
+    .message-text { margin-top: 4px; font-size: 14px; }
+    .locked-field { color: #999; }
+  </style>
+</head>
+<body>
+  <a class="back" href="/">&larr; All tickets</a>
+  <h1 id="ticket-title">Ticket #{{ ticket_id }}</h1>
+  <div id="ticket-detail-result"></div>
+
+  <dl id="ticket-fields"></dl>
+
+  <fieldset>
+    <legend>Edit ticket</legend>
+    <form id="edit-form">
+      <label for="edit-title">Title</label>
+      <input type="text" id="edit-title" name="title">
+
+      <label for="edit-category">Category</label>
+      <select id="edit-category" name="category">
+        {% for c in categories %}
+        <option value="{{ c }}">{{ c }}</option>
+        {% endfor %}
+      </select>
+
+      <label for="edit-priority">Priority</label>
+      <select id="edit-priority" name="priority">
+        {% for p in priorities %}
+        <option value="{{ p }}">{{ p }}</option>
+        {% endfor %}
+      </select>
+
+      <label for="edit-status">Status</label>
+      <select id="edit-status" name="status">
+        {% for s in statuses %}
+        <option value="{{ s }}">{{ s }}</option>
+        {% endfor %}
+      </select>
+
+      <p class="locked-field">submitted_by, created_by, and created_at are not editable after creation.</p>
+
+      <button type="submit">Save changes</button>
+    </form>
+    <div id="edit-result"></div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Messages</legend>
+    <div id="messages"></div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Add a message</legend>
+    <form id="message-form">
+      <label for="message_text">Message</label>
+      <textarea id="message_text" name="message_text" required></textarea>
+
+      <label for="author">Your name</label>
+      <input type="text" id="author" name="author" required>
+
+      <button type="submit">Add message</button>
+    </form>
+    <div id="message-result"></div>
+  </fieldset>
+
+  <script>
+    const ticketId = {{ ticket_id }};
+    const ticketDetailResult = document.getElementById("ticket-detail-result");
+    const ticketFields = document.getElementById("ticket-fields");
+    const editForm = document.getElementById("edit-form");
+    const editResult = document.getElementById("edit-result");
+    const messagesDiv = document.getElementById("messages");
+    const messageForm = document.getElementById("message-form");
+    const messageResult = document.getElementById("message-result");
+
+    function fmtDate(iso) {
+      return iso ? new Date(iso).toLocaleString() : "-";
+    }
+
+    async function loadTicket() {
+      try {
+        const resp = await fetch(`/api/tickets/${ticketId}`);
+        const t = await resp.json();
+        if (!resp.ok) {
+          ticketDetailResult.innerHTML = '<span class="error">' + (t.error || resp.statusText) + '</span>';
+          return;
+        }
+        document.getElementById("ticket-title").textContent = `#${t.ticket_id} - ${t.title}`;
+        ticketFields.innerHTML = `
+          <dt>Category</dt><dd>${t.category}</dd>
+          <dt>Status</dt><dd>${t.status}</dd>
+          <dt>Priority</dt><dd>${t.priority}</dd>
+          <dt>Submitted by</dt><dd>${t.submitted_by}</dd>
+          <dt>Created by</dt><dd>${t.created_by}</dd>
+          <dt>Created at</dt><dd>${fmtDate(t.created_at)}</dd>
+        `;
+        document.getElementById("edit-title").value = t.title;
+        document.getElementById("edit-category").value = t.category;
+        document.getElementById("edit-priority").value = t.priority;
+        document.getElementById("edit-status").value = t.status;
+      } catch (err) {
+        ticketDetailResult.innerHTML = '<span class="error">Failed to load ticket: ' + err + '</span>';
+      }
+    }
+
+    async function loadMessages() {
+      try {
+        const resp = await fetch(`/api/tickets/${ticketId}/messages`);
+        const data = await resp.json();
+        if (!resp.ok) {
+          messagesDiv.innerHTML = '<span class="error">' + (data.error || resp.statusText) + '</span>';
+          return;
+        }
+        if (data.length === 0) {
+          messagesDiv.innerHTML = '<span class="empty">No messages yet.</span>';
+          return;
+        }
+        messagesDiv.innerHTML = "";
+        data.forEach((m) => {
+          const div = document.createElement("div");
+          div.className = "message";
+          div.innerHTML = `
+            <div class="message-meta">${m.author} &middot; ${fmtDate(m.created_at)}</div>
+            <div class="message-text">${m.message_text}</div>
+          `;
+          messagesDiv.appendChild(div);
+        });
+      } catch (err) {
+        messagesDiv.innerHTML = '<span class="error">Failed to load messages: ' + err + '</span>';
+      }
+    }
+
+    editForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const body = {
+        title: document.getElementById("edit-title").value,
+        category: document.getElementById("edit-category").value,
+        priority: document.getElementById("edit-priority").value,
+        status: document.getElementById("edit-status").value,
+      };
+      editResult.textContent = "Saving...";
+      try {
+        const resp = await fetch(`/api/tickets/${ticketId}`, {
+          method: "PATCH",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+        });
+        const data = await resp.json();
+        if (!resp.ok) {
+          const details = data.details ? " (" + data.details.join("; ") + ")" : "";
+          editResult.innerHTML = '<span class="error">' + (data.error || resp.statusText) + details + '</span>';
+          return;
+        }
+        editResult.innerHTML = '<span class="success">Saved.</span>';
+        loadTicket();
+      } catch (err) {
+        editResult.innerHTML = '<span class="error">Request failed: ' + err + '</span>';
+      }
+    });
+
+    messageForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const body = {
+        message_text: document.getElementById("message_text").value,
+        author: document.getElementById("author").value,
+      };
+      messageResult.textContent = "Adding...";
+      try {
+        const resp = await fetch(`/api/tickets/${ticketId}/messages`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+        });
+        const data = await resp.json();
+        if (!resp.ok) {
+          const details = data.details ? " (" + data.details.join("; ") + ")" : "";
+          messageResult.innerHTML = '<span class="error">' + (data.error || resp.statusText) + details + '</span>';
+          return;
+        }
+        messageResult.innerHTML = '<span class="success">Message added.</span>';
+        messageForm.reset();
+        loadMessages();
+      } catch (err) {
+        messageResult.innerHTML = '<span class="error">Request failed: ' + err + '</span>';
+      }
+    });
+
+    loadTicket();
+    loadMessages();
+  </script>
+</body>
+</html>

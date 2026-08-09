@@ -1,0 +1,9 @@
+command:
+  - "python"
+  - "app.py"
+
+env:
+  - name: LAKEBASE_URL
+    valueFrom: "LAKEBASE_URL"
+  - name: APP_IDENTITY
+    value: "novanega-app"

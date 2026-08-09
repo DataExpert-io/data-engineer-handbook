@@ -1,0 +1,15 @@
+# Databricks App config for the weather MCP server.
+#
+# VERIFY BEFORE DEPLOYING: compare this `command` against the actual
+# app.yaml in databricks-lakebase-app-day-3 (the Alpaca MCP server
+# reference). If that file uses a different entry point, port env var,
+# or launcher (e.g. uvicorn directly instead of `python file.py`), match
+# it exactly rather than trusting this draft -- this was written from the
+# standard FastMCP pattern, not from reading that file directly.
+command: ["python", "weather_mcp_server.py"]
+
+env:
+  - name: "MCP_HOST"
+    value: "0.0.0.0"
+  - name: "MCP_PORT"
+    value: "8000"

@@ -1,0 +1,9 @@
+command: ["python", "confirmation_mcp_server.py"]
+
+env:
+  - name: "MCP_HOST"
+    value: "0.0.0.0"
+  - name: "MCP_PORT"
+    value: "8000"
+  - name: "LAKEBASE_URL"
+    valueFrom: "LAKEBASE_URL"
