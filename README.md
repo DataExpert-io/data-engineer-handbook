@@ -297,7 +297,7 @@ Here's the mostly comprehensive list of data engineering creators:
 - [DataWare](https://www.ascend.io/dataaware-podcast/)
 - [The Data Coffee Break Podcast](https://www.deezer.com/us/show/5293247)
 - [The Datastack show](https://datastackshow.com/)
-- [Intricity101 Data Sharks Podcast](https://www.intricity.com/learningcenter/podcast)
+- [Intricity101 Data Sharks Podcast](https://podcasts.apple.com/us/podcast/intricity101/id1568439821)
 - [Drill to Detail with Mark Rittman](https://www.rittmananalytics.com/drilltodetail/)
 - [Analytics Power Hour](https://analyticshour.io/)
 - [Catalog & cocktails](https://listen.casted.us/public/127/Catalog-%26-Cocktails-2fcf8728)
