@@ -1,5 +1,6 @@
 # A great list of newsletters to subscribe to
 
+- [AI Weekly](https://aiweekly.co/)
 - [DataEngineer.io Newsletter](https://blog.dataengineer.io)
 - [Seattle Data Guy](https://seattledataguy.substack.com)
 - [Joe Reis](https://joereis.substack.com)
