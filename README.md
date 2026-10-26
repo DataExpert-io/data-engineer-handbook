@@ -358,6 +358,7 @@ Top must follow newsletters for data engineering:
 - [DataTeams - Data Engingeer hiring platform](https://www.datateams.ai/)
 - [Udemy Courses from Daniel Blanco](https://danielblanco.dev/links)
 - [DeepLearning.AI Data Engineering Professional Certificate](https://www.coursera.org/professional-certificates/data-engineering)
+- [DataDank](https://datadank.com/) - Free data engineering tutorials, interview questions, and a structured 90-day interview preparation roadmap.
 
 ### Certifications Courses
 
