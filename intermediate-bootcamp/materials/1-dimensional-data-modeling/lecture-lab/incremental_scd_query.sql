@@ -40,7 +40,30 @@ WITH last_season_scd AS (
          WHERE ts.scoring_class = ls.scoring_class
          AND ts.is_active = ls.is_active
      ),
-     changed_records AS (
+-- less convoluted way of getting the unnested_changed_records	 
+--,changed_records AS (
+--        SELECT
+--        ts.player_name
+--        FROM this_season_data ts
+--        LEFT JOIN last_season_scd ls
+--        ON ls.player_name = ts.player_name
+--         WHERE (ts.scoring_class <> ls.scoring_class
+--          OR ts.is_active <> ls.is_active)
+--)
+--	 
+--
+--,unnested_changed_records AS (
+--		select t.player_name, t.scoring_class, t.is_active, t.current_season, t.current_season  
+--        from this_season_data t 
+--        inner join changed_records c
+--	    	on c.player_name = t.player_name
+--		union all
+--		select l.player_name,l.scoring_class, l.is_active, l.start_season, l.end_season 
+--		from last_season_scd l
+--		inner join changed_records c
+--			on c.player_name = l.player_name
+--         )
+  changed_records AS (
         SELECT
                 ts.player_name,
                 UNNEST(ARRAY[
