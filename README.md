@@ -108,6 +108,7 @@ Top must-join communities for ML:
   - [Sling](https://slingdata.io/)
   - [Meltano](https://meltano.com/)
   - [Estuary](https://estuary.dev/)
+  - [OLake](https://olake.io/)
   - [Arpe.io](https://arpe.io/)
 - Semantic Layers
   - [Cube](https://cube.dev)
