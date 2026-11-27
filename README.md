@@ -358,6 +358,7 @@ Top must follow newsletters for data engineering:
 - [DataTeams - Data Engingeer hiring platform](https://www.datateams.ai/)
 - [Udemy Courses from Daniel Blanco](https://danielblanco.dev/links)
 - [DeepLearning.AI Data Engineering Professional Certificate](https://www.coursera.org/professional-certificates/data-engineering)
+- [The Work Gym](https://theworkgym.com/) - Browser practice for SQL, dbt, Airflow, Kafka, Databricks and Snowflake with every exercise checked; the first unit of each course is free.
 
 ### Certifications Courses
 
